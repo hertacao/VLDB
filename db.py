@@ -13,10 +13,10 @@ roleDict = {"Editor in Chief": 1, "Managing Editor": 2, "Member Advisory Board":
             "Publication Editor": 4, "Associate Editor": 5, "Member Review Board": 6}
 
 countrySQL = "SELECT COUNT(*) AS Value, Country FROM \
-             (SELECT DISTINCT(personID), affiliationID FROM journal_responsibility) journal \
+             (SELECT DISTINCT(personID), affiliationID FROM journal_responsibility ORDER BY journalVol DESC) journal_res \
              LEFT JOIN \
              affiliation \
-             ON journal.affiliationID = affiliation.affiliationID \
+             ON journal_res.affiliationID = affiliation.affiliationID \
              GROUP BY Country"
 
 journalSQL = "SELECT FirstName, LastName, Role, Affiliation, Country FROM \
