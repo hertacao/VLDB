@@ -5,10 +5,13 @@
 
 import numpy as np
 import pandas as pd
-import db
+from sql import *
 import excel as ex
+from db_conncet import *
 
 # Press the green button in the gutter to run the script.
+file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\2020-07-09-PVLDB-Members.xlsx"
+
 
 def sort_excel(filestring, sheet, csv):
     df = ex.read_excel(filestring, sheet)
@@ -34,30 +37,32 @@ def sort_excel_messy(filestring, sheet, csv):
     ex.write_csv(df, csv)
 
 
-def getCountry():
-    return pd.read_sql(db.countrySQL, con=db.mydb)
+def getCountryStat():
+    return pd.read_sql(countrySQL, con=mydb)
 
 
 def getJournal(journalVol):
-    return pd.read_sql(db.journalSQL % journalVol, con=db.mydb)
+    return pd.read_sql(journalSQL % journalVol, con=mydb)
+
+
+def writeJournalToDB(csvString, dbConnection, journalVol):
+    df = ex.read_csv(csvString)
+    df = df.replace({np.nan: None})
+    for index, row in df.iterrows():
+        dbConnection.insert_journal_res_entry(row['FirstName'], row['LastName'], row['OrcID'],
+                                              row['Affiliation'], row['Country'], journalVol, row['Role'])
 
 
 if __name__ == '__main__':
-    #filestring = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\2020-07-09-PVLDB-Members.xlsx"
-    #sort_excel(filestring, 0, 'VLDB14')
-    #csv = r"csv\VLDB13.csv"
-    #df = read_csv(csv)
-    #df = df.replace({np.nan: None})
-    #print(df.to_string())
-    #reset()
-    #for index, row in df.iterrows():
-    #    insert_journal_entry(row['FirstName'], row['LastName'], row['OrcID'],
-    #                               row['Affiliation'], row['Country'], 13, row['Role'])
-    #print(get_by_country())
+    # sort_excel(filestring, 0, 'VLDB14')
+    csv = r"csv\VLDB13.csv"
+    db = DB(mydb)
+    db.reset()
+    writeJournalToDB(csv, db, 13)
+    print(getJournal(13))
 
-    #check_person("Wolfgang", "Lehner")
-    df2 = getCountry()
-    ex.write_csv(df2, 'country_stat')
-    print(df2)
+    # df2 = getCountryStat()
+    # ex.write_csv(df2, 'country_stat')
+    # print(df2)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
