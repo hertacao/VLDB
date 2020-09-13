@@ -5,7 +5,7 @@
 
 import numpy as np
 import pandas as pd
-from sql import *
+from db import *
 import excel as ex
 from db_conncet import *
 
@@ -13,7 +13,7 @@ from db_conncet import *
 file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\2020-07-09-PVLDB-Members.xlsx"
 
 
-def sort_excel(filestring, sheet, csv):
+def sort_excel(filestring, sheet, csvname):
     df = ex.read_excel(filestring, sheet)
     df.insert(1, 'FirstName', [ex.get_firstname(name) for name in df['Name']])
     df.insert(2, 'LastName', [ex.get_lastname(name) for name in df['Name']])
@@ -21,10 +21,10 @@ def sort_excel(filestring, sheet, csv):
     df['OrcID'] = [ex.search_orcid(name) for name in df['Name']]
 
     print(df.to_string())
-    ex.write_csv(df, csv)
+    ex.write_csv(df, csvname)
 
 
-def sort_excel_messy(filestring, sheet, csv):
+def sort_excel_messy(filestring, sheet, csvname):
     df = ex.read_excel(filestring, sheet)
     df.insert(1, 'FirstName', [ex.get_firstname(ex.get_name(string)) for string in df['Name']])
     df.insert(2, 'LastName', [ex.get_lastname(ex.get_name(string)) for string in df['Name']])
@@ -34,18 +34,19 @@ def sort_excel_messy(filestring, sheet, csv):
     df['OrcID'] = [ex.search_orcid(name) for name in df['Name']]
 
     print(df.to_string())
-    ex.write_csv(df, csv)
+    ex.write_csv(df, csvname)
 
 
-def getCountryStat():
-    return pd.read_sql(countrySQL, con=mydb)
+def get_country_stat():
+    return pd.read_sql(countrySQL, con=sqlite)
 
 
-def getJournal(journalVol):
-    return pd.read_sql(journalSQL % journalVol, con=mydb)
+def get_journal(journalVol):
+    print(journalSQL.format(journalVol))
+    return pd.read_sql(journalSQL.format(journalVol), con=sqlite)
 
 
-def writeJournalToDB(csvString, dbConnection, journalVol):
+def write_journal_to_db(csvString, dbConnection, journalVol):
     df = ex.read_csv(csvString)
     df = df.replace({np.nan: None})
     for index, row in df.iterrows():
@@ -56,13 +57,13 @@ def writeJournalToDB(csvString, dbConnection, journalVol):
 if __name__ == '__main__':
     # sort_excel(filestring, 0, 'VLDB14')
     csv = r"csv\VLDB13.csv"
-    db = DB(mydb)
-    db.reset()
-    writeJournalToDB(csv, db, 13)
-    print(getJournal(13))
+    db = DB("sqlite")
+    # db.reset()
+    # writeJournalToDB(csv, db, 13)
+    # print(getJournal(13))
 
-    # df2 = getCountryStat()
-    # ex.write_csv(df2, 'country_stat')
-    # print(df2)
+    df2 = get_country_stat()
+    ex.write_csv(df2, 'country_stat')
+    print(df2)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

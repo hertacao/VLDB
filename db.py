@@ -1,3 +1,5 @@
+from db_conncet import *
+
 roleDict = {"Founding Editor in Chief": 1, "Editor in Chief": 2, "Managing Editor": 3,
             "Member Advisory Board": 4, "Publication Editor": 5, "Associate Editor": 6,
             "Member Review Board": 7, "Information Director": 8}
@@ -17,7 +19,7 @@ countrySQL = "SELECT COUNT(*) AS Value, Country FROM \
              GROUP BY Country"
 
 journalSQL = "SELECT FirstName, LastName, Role, Affiliation, Country FROM \
-             (SELECT * FROM journal_responsibility WHERE JournalVol = %s) journal_res \
+             (SELECT * FROM journal_responsibility WHERE JournalVol = {}) journal_res \
              INNER JOIN \
              person \
              ON journal_res.PersonID = person.PersonID \
@@ -28,27 +30,38 @@ journalSQL = "SELECT FirstName, LastName, Role, Affiliation, Country FROM \
              country \
              ON affiliation.CountryID = country.CountryID \
              LEFT JOIN \
-             role \
-             ON journal_res.RoleID = role.RoleID"
+             journal_role \
+             ON journal_res.RoleID = journal_role.RoleID"
 
 
 class DB:
     conn = 0
     cursor = 0
+    db = None
     OLD_JOURNAL_VOLUMES = 4
 
-    def __init__(self, conn):
-        self.conn = conn
-        self.cursor = conn.cursor()
+    @staticmethod
+    def get_connection(dbname):
+        connections = {
+            'mysql': mydb,
+            'postgresql': pgdb,
+            'sqlite': sqlite,
+        }
+        return connections.get(dbname, "Invalid database")
+
+    def __init__(self, dbname):
+        self.conn = self.get_connection(dbname)
+        self.cursor = self.conn.cursor()
 
     def close(self):
         self.conn.close()
 
+    """
     def alter(self, sql):
         result = self.cursor.execute(sql, multi=True)
         result.send(None)
 
-    def reset(self):
+    def reset_mysql(self):
         try:
             self.alter("DELETE FROM journal_responsibility")
             self.alter("DELETE FROM person")
@@ -61,42 +74,45 @@ class DB:
         except Exception as e:
             self.conn.rollback()
             raise e
+    """
+
+    def reset(self):
+        self.cursor.execute("DELETE FROM journal_responsibility")
+        self.cursor.execute("DELETE FROM person")
+        self.cursor.execute("DELETE FROM affiliation")
+        self.cursor.execute("DELETE FROM sqlite_sequence")
+        self.conn.commit()
 
     def check(self, sql, val):
         self.cursor.execute(sql, val)
-        results = self.cursor.fetchall()
-        # gets the number of rows affected by the command executed
-        row_count = self.cursor.rowcount
-        if row_count == 0:
+        result = self.cursor.fetchone()
+        if result is None:
             return False
-        if row_count == 1:
-            result = results.pop()
+        else:
             if len(result) == 1:
                 print(val, "record exists, ID:", result[0])
                 return result[0]
             else:
                 print(val, "record exists", result)
                 return result
-        else:
-            raise Exception("multiple entries found", results)
 
     def check_country(self, country):
-        sql = "SELECT CountryID FROM country WHERE Country = %s"
-        val = (country, )
+        sql = "SELECT CountryID FROM country WHERE Country = ?"
+        val = (country,)
         return self.check(sql, val)
 
     def check_person(self, firstName, lastName):
-        sql = "SELECT PersonID FROM person WHERE FirstName = %s AND LastName = %s"
+        sql = "SELECT PersonID FROM person WHERE FirstName = ? AND LastName = ?"
         val = (firstName, lastName)
         return self.check(sql, val)
 
     def check_affiliation(self, name):
-        sql = "SELECT AffiliationID FROM affiliation WHERE Affiliation = %s"
+        sql = "SELECT AffiliationID FROM affiliation WHERE Affiliation = ?"
         val = (name,)
         return self.check(sql, val)
 
     def check_journal_responsibility(self, journalVol, personID, roleID):
-        sql = "SELECT * FROM journal_responsibility WHERE JournalVol = %s AND PersonID = %s AND RoleID = %s"
+        sql = "SELECT * FROM journal_responsibility WHERE JournalVol = ? AND PersonID = ? AND RoleID = ?"
         val = (journalVol, personID, roleID)
         return self.check(sql, val)
 
@@ -112,7 +128,7 @@ class DB:
         else:
             countryID = False
         if not countryID:
-            sql = "INSERT INTO country (Country, Region) VALUES (%s, %s)"
+            sql = "INSERT INTO country (Country, Region) VALUES (?, ?)"
             val = (country, region)
             return self.insert(sql, val)
         else:
@@ -124,7 +140,7 @@ class DB:
         else:
             affiliationID = False
         if not affiliationID:
-            sql = "INSERT INTO affiliation (Affiliation, CountryID) VALUES (%s, %s)"
+            sql = "INSERT INTO affiliation (Affiliation, CountryID) VALUES (?, ?)"
             val = (affiliation, countryID)
             return self.insert(sql, val)
         else:
@@ -141,7 +157,7 @@ class DB:
         else:
             personID = False
         if not personID:
-            sql = "INSERT INTO person (FirstName, LastName, OrcID) VALUES (%s, %s, %s)"
+            sql = "INSERT INTO person (FirstName, LastName, OrcID) VALUES (?, ?, ?)"
             val = (firstName, lastName, orcID)
             return self.insert(sql, val)
         else:
@@ -153,7 +169,7 @@ class DB:
         else:
             journal_responsibility = False
         if not journal_responsibility:
-            sql = "INSERT INTO journal_responsibility (JournalVol, PersonID, RoleID, AffiliationID) VALUES (%s, %s, %s, %s)"
+            sql = "INSERT INTO journal_responsibility (JournalVol, PersonID, RoleID, AffiliationID) VALUES (?, ?, ?, ?)"
             val = (journalVol, personID, roleID, affiliationID)
             return self.insert(sql, val)
 

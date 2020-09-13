@@ -1,5 +1,6 @@
 import mysql.connector
 import psycopg2
+import sqlite3
 
 
 mydb = mysql.connector.connect(
@@ -15,5 +16,8 @@ pgdb = psycopg2.connect(
     password="root",
     host="127.0.0.1",
     port="5432")
+
+dbfilestring = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\pvldb.db"
+sqlite = sqlite3.connect(dbfilestring)
 
 print("Database opened successfully")
