@@ -1,4 +1,4 @@
-from db_conncet import *
+from db_connect import *
 
 roleDict = {"Founding Editor in Chief": 1, "Editor in Chief": 2, "Managing Editor": 3,
             "Member Advisory Board": 4, "Publication Editor": 5, "Associate Editor": 6,
@@ -6,32 +6,6 @@ roleDict = {"Founding Editor in Chief": 1, "Editor in Chief": 2, "Managing Edito
 
 roleDictOld = {"Editor in Chief": 9, "General Program Chair": 10, "Program Chair": 11,
                "Proceedings Chair": 12, "Information Director": 13, "Steering Committee": 14}
-
-countrySQL = "SELECT COUNT(*) AS Value, Country FROM \
-             (SELECT DISTINCT(PersonID), AffiliationID FROM journal_responsibility \
-             ORDER BY JournalVol DESC) journal_res \
-             LEFT JOIN \
-             affiliation \
-             ON journal_res.AffiliationID = affiliation.AffiliationID \
-             LEFT JOIN \
-             country \
-             ON affiliation.CountryID = country.CountryID \
-             GROUP BY Country"
-
-journalSQL = "SELECT FirstName, LastName, Role, Affiliation, Country FROM \
-             (SELECT * FROM journal_responsibility WHERE JournalVol = {}) journal_res \
-             INNER JOIN \
-             person \
-             ON journal_res.PersonID = person.PersonID \
-             LEFT JOIN \
-             affiliation \
-             ON journal_res.AffiliationID = affiliation.AffiliationID \
-             LEFT JOIN \
-             country \
-             ON affiliation.CountryID = country.CountryID \
-             LEFT JOIN \
-             journal_role \
-             ON journal_res.RoleID = journal_role.RoleID"
 
 
 class DB:
@@ -43,13 +17,12 @@ class DB:
     @staticmethod
     def get_connection(dbname):
         connections = {
-            'mysql': mydb,
             'postgresql': pgdb,
             'sqlite': sqlite,
         }
         return connections.get(dbname, "Invalid database")
 
-    def __init__(self, dbname):
+    def __init__(self, dbname) -> object:
         self.conn = self.get_connection(dbname)
         self.cursor = self.conn.cursor()
 
@@ -80,6 +53,7 @@ class DB:
         self.cursor.execute("DELETE FROM journal_responsibility")
         self.cursor.execute("DELETE FROM person")
         self.cursor.execute("DELETE FROM affiliation")
+        self.cursor.execute("DELETE FROM country WHERE Region IS NULL")
         self.cursor.execute("DELETE FROM sqlite_sequence")
         self.conn.commit()
 
@@ -87,13 +61,13 @@ class DB:
         self.cursor.execute(sql, val)
         result = self.cursor.fetchone()
         if result is None:
-            return False
+            return None
         else:
             if len(result) == 1:
-                print(val, "record exists, ID:", result[0])
+                # print(val, "record exists, ID:", result[0])
                 return result[0]
             else:
-                print(val, "record exists", result)
+                # print(val, "record exists", result)
                 return result
 
     def check_country(self, country):
@@ -106,14 +80,40 @@ class DB:
         val = (firstName, lastName)
         return self.check(sql, val)
 
-    def check_affiliation(self, name):
-        sql = "SELECT AffiliationID FROM affiliation WHERE Affiliation = ?"
-        val = (name,)
+    def check_affiliation(self, name, location):
+        if location is None:
+            sql = "SELECT AffiliationID FROM affiliation WHERE Affiliation = ?"
+            val = (name,)
+        else:
+            sql = "SELECT AffiliationID FROM affiliation WHERE Affiliation = ? AND Location = ?"
+            val = (name, location)
         return self.check(sql, val)
 
     def check_journal_responsibility(self, journalVol, personID, roleID):
         sql = "SELECT * FROM journal_responsibility WHERE JournalVol = ? AND PersonID = ? AND RoleID = ?"
         val = (journalVol, personID, roleID)
+        return self.check(sql, val)
+
+    def get_country_of_affiliation(self, name):
+        sql = "SELECT Country FROM \
+                (SELECT CountryID FROM affiliation WHERE Affiliation = ?) aff \
+                LEFT JOIN \
+                country \
+                ON country.CountryID = aff.CountryID"
+        val = (name,)
+        return self.check(sql, val)
+
+    def get_affiliation_from_name(self, firstname, lastname):
+        sql = "SELECT Affiliation, Location FROM \
+        (SELECT PersonID FROM person WHERE FirstName = ? AND LastName = ?) pers \
+        LEFT JOIN \
+        journal_responsibility \
+        ON journal_responsibility.PersonID = pers.personID \
+        LEFT JOIN \
+        affiliation \
+        ON journal_responsibility.AffiliationID = affiliation.AffiliationID \
+        GROUP BY affiliation.AffiliationID"
+        val = (firstname, lastname)
         return self.check(sql, val)
 
     def insert(self, sql, val):
@@ -134,21 +134,21 @@ class DB:
         else:
             return countryID
 
-    def insert_affiliation(self, affiliation, countryID, forced=False):
+    def insert_affiliation(self, affiliation, location, countryID, forced=False):
         if not forced:
-            affiliationID = self.check_affiliation(affiliation)
+            affiliationID = self.check_affiliation(affiliation, location)
         else:
             affiliationID = False
         if not affiliationID:
-            sql = "INSERT INTO affiliation (Affiliation, CountryID) VALUES (?, ?)"
-            val = (affiliation, countryID)
+            sql = "INSERT INTO affiliation (Affiliation, Location, CountryID) VALUES (?, ?, ?)"
+            val = (affiliation, location, countryID)
             return self.insert(sql, val)
         else:
             return affiliationID
 
-    def insert_affiliation_entry(self, affiliation, country):
+    def insert_affiliation_entry(self, affiliation, location, country):
         countryID = self.insert_country(country, None)
-        affiliationID = self.insert_affiliation(affiliation, countryID)
+        affiliationID = self.insert_affiliation(affiliation, location, countryID)
         return affiliationID
 
     def insert_person(self, firstName, lastName, orcID, forced=False):
@@ -173,18 +173,10 @@ class DB:
             val = (journalVol, personID, roleID, affiliationID)
             return self.insert(sql, val)
 
-    def insert_journal_res_entry(self, firstName, lastName, orcID, affiliation, country, journalVol, role):
+    def insert_journal_res_entry(self, firstName, lastName, orcID, affiliation, location, country, journalVol, role):
         personID = self.insert_person(firstName, lastName, orcID)
-        affiliationID = self.insert_affiliation_entry(affiliation, country)
+        affiliationID = self.insert_affiliation_entry(affiliation, location, country)
         roleID = roleDict.get(role)
         self.insert_journal_responsibility(journalVol, personID, roleID, affiliationID)
+        print(personID, roleID, affiliationID)
 
-    def get_journal(self, journalVol):
-        self.cursor.execute(journalSQL, (journalVol,))
-        result = self.cursor.fetchall()
-        return result
-
-    def get_by_country(self):
-        self.cursor.execute(countrySQL)
-        result = self.cursor.fetchall()
-        return result
