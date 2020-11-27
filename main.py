@@ -45,6 +45,7 @@ def init_run(journalVol):
 def first_run(journalVol):
     # read as dataframe
     df = ex.read_csv('VLDB{}'.format(journalVol))
+    print(df.to_string())
     # compare affiliation with db
     dc.compare_affiliation_with_db(df)
 
@@ -56,6 +57,7 @@ def second_run(journalVol):
     # add stuff from db
     df = dc.fill_affiliation_from_db(df)
     df = dc.fill_country_from_db(df)
+    print(df.to_string())
     # write csv
     ex.write_csv(df, 'VLDB{}'.format(journalVol))
 
@@ -75,13 +77,13 @@ def write_to_db():
 
 
 if __name__ == '__main__':
-    journalVol = 7
+    journalVol = 10
     #init_run(journalVol)
     # first_run(journalVol)
     # second_run(journalVol)
-    # third_run(journalVol)
+    third_run(journalVol)
 
-    write_to_db()
+    #write_to_db()
 
     # sql queries
     # print(sql.get_journal(journalVol))
