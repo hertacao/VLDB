@@ -1,6 +1,6 @@
 Name,FirstName,LastName,Affiliation,Location,Role,Country,OrcID
 Chen Li,Chen,Li,University of California,Irvine,Editor in Chief,United States,
-Volker Markl,Volker,Markl,Technical University Berlin,,Editor in Chief,Germany,
+Volker Markl,Volker,Markl,Technical University of Berlin,,Editor in Chief,Germany,
 Divesh Srivastava,Divesh,Srivastava,AT&T Labs,,Managing Editor,United States,
 H. V. Jagadish,H. V.,Jagadish,University of Michigan,,Member Advisory Board,United States,https://orcid.org/0000-0003-0724-5214
 Renée J. Miller,Renée J.,Miller,Northeastern University,Boston,Member Advisory Board,United States,
@@ -11,14 +11,14 @@ Susan Davidson,Susan,Davidson,University of Pennsylvania,,Member Advisory Board,
 S. Sudarshan,S.,Sudarshan,Indian Institute of Technology,Bombay,Member Advisory Board,India,
 Gerhard Weikum,Gerhard,Weikum,Max Planck Institute,Saarbrücken,Member Advisory Board,Germany,
 Divesh Srivastava,Divesh,Srivastava,AT&T Labs,,Member Advisory Board,United States,
-Kevin Chang,Kevin,Chang,University of Illinois,Urbana Champaign,Associate Editor,United States,
+Kevin Chang,Kevin,Chang,University of Illinois,Urbana-Champaign,Associate Editor,United States,
 Shivnath Babu,Shivnath,Babu,Duke University,,Associate Editor,United States,
 Magdalena Balazinska,Magdalena,Balazinska,University of Washington,,Associate Editor,United States,
 Felix Naumann,Felix,Naumann,Hasso Plattner Institute,,Associate Editor,Germany,https://orcid.org/0000-0002-4483-1389
 Stefan Manegold,Stefan,Manegold,Centrum Wiskunde & Informatica,,Associate Editor,Netherlands,
 Yi Chen,Yi,Chen,New Jersey Institute of Technology,,Associate Editor,United States,
 Fatma Ozcan,Fatma,Ozcan,IBM Research,Almaden,Associate Editor,United States,
-Jignesh Patel,Jignesh,Patel,University of Wisconsin,Madison,Associate Editor,United States,
+Jignesh Patel,Jignesh M.,Patel,University of Wisconsin,Madison,Associate Editor,United States,
 Rainer Gemulla,Rainer,Gemulla,University of Mannheim,,Associate Editor,Germany,https://orcid.org/0000-0003-2762-0050
 Tyson Condie,Tyson,Condie,Microsoft Research,,Publication Editor,United States,
 Daisy Zhe Wang,Daisy Zhe,Wang,University of Florida,,Publication Editor,United States,
@@ -26,7 +26,7 @@ Daniel Abadi,Daniel,Abadi,Yale University,,Member Review Board,United States,
 Alberto Abello,Alberto,Abello,Polytechnic University of Catalonia,,Member Review Board,Spain,https://orcid.org/0000-0002-3223-2186
 Ashraf Aboulnaga,Ashraf,Aboulnaga,Qatar Computing Research Institute,,Member Review Board,Qatar,
 Foto Afrati,Foto,Afrati,National Technical University of Athens,,Member Review Board,Greece,
-Sihem Amer Yahia,Sihem Amer,Yahia,French National Centre for Scientific Research LIG,,Member Review Board,France,
+Sihem Amer Yahia,Sihem Amer,Yahia,French National Centre for Scientific Research,,Member Review Board,France,
 Aijun An,Aijun,An,York University,,Member Review Board,Canada,https://orcid.org/0000-0003-1765-5751
 Arvind Arasu,Arvind,Arasu,Microsoft Research,,Member Review Board,United States,
 Walid Aref,Walid,Aref,Purdue University,,Member Review Board,United States,https://orcid.org/0000-0001-8169-7775
@@ -38,19 +38,19 @@ Michael Böhlen,Michael H.,Böhlen,University of Zurich,,Member Review Board,Swi
 Peter Boncz,Peter,Boncz,Centrum Wiskunde & Informatica,,Member Review Board,Netherlands,
 Angela Bonifati,Angela,Bonifati,University of Lille 1 Sciences and Technology,,Member Review Board,France,https://orcid.org/0000-0002-9582-869X
 Philippe Bonnet,Philippe,Bonnet,IT University of Copenhagen,,Member Review Board,Denmark,
-Nico Bruno,Nico,Bruno,Microsoft Research,,Member Review Board,United States,
+Nico Bruno,Nicolas,Bruno,Microsoft Research,,Member Review Board,United States,
 Alex Buchmann,Alex,Buchmann,Technical University of Darmstadt,,Member Review Board,Germany,
-Mike Cafarella,Mike,Cafarella,University of Michigan,,Member Review Board,United States,
-K. Selcuk Candan,K. Selcuk,Candan,Arizona State University,,Member Review Board,United States,
+Mike Cafarella,Michael J.,Cafarella,University of Michigan,,Member Review Board,United States,
+K. Selcuk Candan,K. Selçuk,Candan,Arizona State University,,Member Review Board,United States,
 Malu Castellanos,Malu,Castellanos,HP Labs,,Member Review Board,United States,
 Kaushik Chakrabarti,Kaushik,Chakrabarti,Microsoft Research,,Member Review Board,United States,
 Lei Chen,Lei,Chen,Hong Kong University of Science and Technology,,Member Review Board,Hong Kong SAR,
 Fei Chiang,Fei,Chiang,McMaster University,,Member Review Board,Canada,
 Byron Choi,Byron,Choi,Hong Kong Baptist University,,Member Review Board,Hong Kong SAR,https://orcid.org/0000-0002-8381-336X
-Philippe Cudre Mauroux,Philippe Cudre,Mauroux,University of Fribourg,,Member Review Board,Switzerland,https://orcid.org/0000-0003-2588-4212
+Philippe Cudre Mauroux,Philippe,Cudre-Mauroux,University of Fribourg,,Member Review Board,Switzerland,https://orcid.org/0000-0003-2588-4212
 Mahashweta Das,Mahashweta,Das,HP Labs,,Member Review Board,United States,
 Sudipto Das,Sudipto,Das,Microsoft Research,,Member Review Board,United States,
-Amol Desphande,Amol,Desphande,University of Maryland,,Member Review Board,United States,
+Amol Desphande,Amol,Deshpande,University of Maryland,,Member Review Board,United States,
 Stefan Dessloch,Stefan,Dessloch,Technical University of Kaiserslautern,,Member Review Board,Germany,
 Jens Dittrich,Jens,Dittrich,Saarland University,,Member Review Board,Germany,
 Alin Dobra,Alin,Dobra,University of Florida,,Member Review Board,United States,
@@ -62,7 +62,7 @@ Peter Fischer,Peter,Fischer,University of Freiburg,,Member Review Board,Germany,
 Avrilia Floratou,Avrilia,Floratou,IBM,,Member Review Board,United States,
 Avigdor Gal,Avigdor,Gal,Technion,,Member Review Board,Israel,
 Minos Garofalakis,Minos,Garofalakis,Technical University of Crete,,Member Review Board,Greece,
-Wolfgang Gatterbauer,Wolfgang,Gatterbauer,Carnegie Mellon University,,Member Review Board,United States,https://orcid.org/0000-0002-9614-0504
+Wolfgang Gatterbauer,Wolfgang,Gatterbauer,Carnegie Mellon University,Pittsburgh,Member Review Board,United States,https://orcid.org/0000-0002-9614-0504
 Tingjian Ge,Tingjian,Ge,University of Massachusetts,Lowell,Member Review Board,United States,
 Floris Geerts,Floris,Geerts,University of Antwerp,,Member Review Board,Belgium,https://orcid.org/0000-0002-8967-2473
 Lukasz Golab,Lukasz,Golab,University of Waterloo,,Member Review Board,United States,https://orcid.org/0000-0003-0632-7496
@@ -70,7 +70,7 @@ Torsten Grust,Torsten,Grust,University of Tübingen,,Member Review Board,Germany
 Jarek Gryz,Jarek,Gryz,York University,,Member Review Board,Canada,
 Dimitrios Gunopulos,Dimitrios,Gunopulos,University of Athens,,Member Review Board,Greece,
 Hakan Hacigumus,Hakan,Hacigumus,NEC Laboratories America,,Member Review Board,United States,
-Wook Shin Han,Wook Shin,Han,Pohang University of Science and Technology,,Member Review Board,South Korea,
+Wook Shin Han,Wook-Shin,Han,Pohang University of Science and Technology,,Member Review Board,South Korea,
 Seif Haridi,Seif,Haridi,KTH Royal Institute of Technology,,Member Review Board,Sweden,https://orcid.org/0000-0002-6718-0144
 Oktie Hassanzadeh,Oktie,Hassanzadeh,IBM Research,Almaden,Member Review Board,United States,https://orcid.org/0000-0001-5307-9857
 Bingsheng He,Bingsheng,He,Nanyang Technological University,,Member Review Board,Singapore,
@@ -81,8 +81,8 @@ Vagelis Hristidis,Vagelis,Hristidis,University of California,Riverside,Member Re
 Jeong-Hyon Hwang,Jeong-Hyon,Hwang,State University of New York,Albany,Member Review Board,United States,
 Stratos Idreos,Stratos,Idreos,Harvard University,,Member Review Board,United States,
 Yannis Ioannidis,Yannis,Ioannidis,University of Athens,,Member Review Board,Greece,
-Zachary Ives,Zachary,Ives,University of Pennsylvania,,Member Review Board,United States,
-Christopher Jermaine,Christopher,Jermaine,Rice University,,Member Review Board,United States,
+Zachary Ives,Zachary G.,Ives,University of Pennsylvania,,Member Review Board,United States,
+Christopher Jermaine,Chris,Jermaine,Rice University,,Member Review Board,United States,
 Ruoming Jin,Ruoming,Jin,Kent State University,,Member Review Board,United States,
 Alekh Jindal,Alekh,Jindal,Massachusetts Institute of Technology,,Member Review Board,United States,
 Ryan Johnson,Ryan,Johnson,University of Toronto,,Member Review Board,Canada,
@@ -97,12 +97,12 @@ Martin Kersten,Martin,Kersten,Centrum Wiskunde & Informatica,,Member Review Boar
 Daniel Kifer,Daniel,Kifer,Pennsylvania State University,,Member Review Board,United States,https://orcid.org/0000-0002-4611-7066
 Hideaki Kimura,Hideaki,Kimura,Hewlett Packard,,Member Review Board,United States,
 George Kollios,George,Kollios,Boston University,,Member Review Board,United States,
-Donald Kossman,Donald,Kossman,ETH Zurich,,Member Review Board,Switzerland,
+Donald Kossmann,Donald,Kossmann,ETH Zurich,,Member Review Board,Switzerland,
 Nick Koudas,Nick,Koudas,University of Toronto,,Member Review Board,Canada,
 Georgia Koutrika,Georgia,Koutrika,HP Labs,,Member Review Board,United States,
 Tim Kraska,Tim,Kraska,Brown University,,Member Review Board,United States,
 Harumi Kuno,Harumi,Kuno,HP Labs,,Member Review Board,United States,
-Laks Lakshmanan,Laks,Lakshmanan,University of British Columbia,,Member Review Board,Canada,
+Laks Lakshmanan,Laks V.S.,Lakshmanan,University of British Columbia,,Member Review Board,Canada,
 Paul Larson,Paul,Larson,Microsoft Research,,Member Review Board,United States,
 Hongrae Lee,Hongrae,Lee,Google,,Member Review Board,United States,
 Wolfgang Lehner,Wolfgang,Lehner,Technical University of Dresden,,Member Review Board,Germany,https://orcid.org/0000-0001-8107-2775
@@ -116,7 +116,7 @@ Yunyao Li,Yunyao,Li,IBM Research,Almaden,Member Review Board,United States,
 Erietta Liarou,Erietta,Liarou,École polytechnique fédérale de Lausanne,,Member Review Board,Switzerland,
 Xuemin Lin,Xuemin,Lin,University of New South Wales,,Member Review Board,Australia,
 Ziyang Liu,Ziyang,Liu,NEC Laboratories America,,Member Review Board,United States,
-Eric Lo,Eric,Lo,Polytecnic University of Hong Kong,,Member Review Board,Hong Kong SAR,
+Eric Lo,Eric,Lo,Polytechnic University of Hong Kong,,Member Review Board,Hong Kong SAR,
 Guy Lohman,Guy,Lohman,IBM Research,Almaden,Member Review Board,United States,
 Jiaheng Lu,Jiaheng,Lu,Renmin University of China,,Member Review Board,China,https://orcid.org/0000-0003-2067-454X
 Qiong Luo,Qiong,Luo,Hong Kong University of Science and Technology,,Member Review Board,Hong Kong SAR,
@@ -129,17 +129,17 @@ Sergey Melnik,Sergey,Melnik,Google,,Member Review Board,United States,
 Weiyi Meng,Weiyi,Meng,Binghamton University,,Member Review Board,United States,https://orcid.org/0000-0002-7246-2058
 Sebastian Michel,Sebastian,Michel,Saarland University,,Member Review Board,Germany,
 Iris Miliaraki,Iris,Miliaraki,Yahoo Labs,Barcelona,Member Review Board,Spain,
-Renee Miller,Renee,Miller,University of Toronto,,Member Review Board,Canada,
+Renee Miller,Renée J.,Miller,University of Toronto,,Member Review Board,Canada,
 Zhou Minqi,Zhou,Minqi,East China Normal University,,Member Review Board,China,
 Prasenjit Mitra,Prasenjit,Mitra,Pennsylvania State University,,Member Review Board,United States,
 Bernhard Mitschang,Bernhard,Mitschang,University of Stuttgart,,Member Review Board,Germany,
-Mohamed Mokbel,Mohamed,Mokbel,Northeastern University,,Member Review Board,United States,https://orcid.org/0000-0002-6686-1757
+Mohamed Mokbel,Mohamed F.,Mokbel,Northeastern University,Boston,Member Review Board,United States,https://orcid.org/0000-0002-6686-1757
 Barzan Mozafari,Barzan,Mozafari,University of Michigan,,Member Review Board,United States,
 Hannes Mühleisen,Hannes,Mühleisen,Centrum Wiskunde & Informatica,,Member Review Board,Netherlands,https://orcid.org/0000-0001-8552-0029
 Arnab Nandi,Arnab,Nandi,Ohio State University,Columbus,Member Review Board,United States,
 Vivek Narasayya,Vivek,Narasayya,Microsoft Research,,Member Review Board,United States,
 Jeffrey Naughton,Jeffrey,Naughton,University of Wisconsin,Madison,Member Review Board,United States,
-Rimma Nehme,Rimma,Nehme,Microsoft Research,,Member Review Board,United States,
+Rimma Nehme,Rimma V.,Nehme,Microsoft Research,,Member Review Board,United States,
 Thomas Neumann,Thomas,Neumann,Technical University of Munich,,Member Review Board,Germany,
 Raymond Ng,Raymond,Ng,University of British Columbia,,Member Review Board,Canada,
 Christopher Olston,Christopher,Olston,Google,,Member Review Board,United States,
@@ -150,13 +150,13 @@ Themis Palpanas,Themis,Palpanas,Paris Descartes University,,Member Review Board,
 Ippokratis Pandis,Ippokratis,Pandis,IBM Research,Almaden,Member Review Board,United States,
 Dimitris Papadias,Dimitris,Papadias,Hong Kong University of Science and Technology,,Member Review Board,Hong Kong SAR,https://orcid.org/0000-0001-5588-1026
 Paolo Papotti,Paolo,Papotti,Qatar Computing Research Institute,,Member Review Board,Qatar,https://orcid.org/0000-0003-0651-4128
-Andy Pavlo,Andy,Pavlo,Carnegie Mellon University,,Member Review Board,United States,
+Andy Pavlo,Andrew,Pavlo,Carnegie Mellon University,Pittsburgh,Member Review Board,United States,
 Torben Bach Pedersen,Torben Bach,Pedersen,Aalborg University,,Member Review Board,Denmark,https://orcid.org/0000-0002-1615-777X
 Jian Pei,Jian,Pei,Simon Fraser University,,Member Review Board,Canada,
 Peter Pietzuch,Peter,Pietzuch,Imperial College London,,Member Review Board,United Kingdom,https://orcid.org/0000-0002-6963-5640
 Evaggelia Pitoura,Evaggelia,Pitoura,University of Ioannina,,Member Review Board,Greece,https://orcid.org/0000-0002-3775-4995
 Alkis Polyzotis,Alkis,Polyzotis,Google,Mountain View,Member Review Board,United States,
-Fabio Porto,Fabio,Porto,National Laboratory of Scientific Computation,,Member Review Board,Brazil,
+Fabio Porto,Fabió,Porto,National Laboratory for Scientific Computing,,Member Review Board,Brazil,
 Li Qian,Li,Qian,Facebook,,Member Review Board,United States,
 Jorge Arnulfo Quiane Ruiz,Jorge Arnulfo Quiane,Ruiz,Qatar Computing Research Institute,,Member Review Board,Qatar,
 Tilmann Rabl,Tilmann,Rabl,University of Toronto,,Member Review Board,Canada,
@@ -164,14 +164,14 @@ Erhard Rahm,Erhard,Rahm,University of Leipzig,,Member Review Board,Germany,https
 Krithi Ramamritham,Krithi,Ramamritham,Indian Institute of Technology,Bombay,Member Review Board,India,
 Ravi Ramamurthy,Ravi,Ramamurthy,Microsoft Research,,Member Review Board,United States,
 Vijayshankar Raman,Vijayshankar,Raman,IBM Research,Almaden,Member Review Board,United States,
-Mirek Riedewald,Mirek,Riedewald,Northeastern University,,Member Review Board,United States,
+Mirek Riedewald,Mirek,Riedewald,Northeastern University,Boston,Member Review Board,United States,
 Tore Risch,Tore,Risch,Uppsala University,,Member Review Board,Sweden,
-Kenneth Ross,Kenneth,Ross,Columbia University,,Member Review Board,United States,
+Kenneth Ross,Kenneth A.,Ross,Columbia University,,Member Review Board,United States,
 Elke Rundensteiner,Elke,Rundensteiner,Worcester Polytechnic Institute,,Member Review Board,United States,
 Barna Saha,Barna,Saha,AT&T Labs,,Member Review Board,United States,
 Kenneth Salem,Kenneth,Salem,University of Waterloo,,Member Review Board,United States,
 Simonas Saltenis,Simonas,Saltenis,Aalborg University,,Member Review Board,Denmark,https://orcid.org/0000-0002-2046-6110
-Kai Uwe Sattler,Kai Uwe,Sattler,Technical University of Ilmenau,,Member Review Board,Germany,https://orcid.org/0000-0003-1608-7721
+Kai Uwe Sattler,Kai-Uwe,Sattler,Technical University of Ilmenau,,Member Review Board,Germany,https://orcid.org/0000-0003-1608-7721
 Eric Sedlar,Eric,Sedlar,Oracle Labs,,Member Review Board,United States,
 Bernhard Seeger,Bernhard,Seeger,Philipps University of Marburg,,Member Review Board,Germany,https://orcid.org/0000-0002-9362-153X
 Kyuseok Shim,Kyuseok,Shim,Seoul National University,,Member Review Board,South Korea,
@@ -189,7 +189,7 @@ Jens Teubner,Jens,Teubner,Technical University of Dortmund,,Member Review Board,
 Martin Theobald,Martin,Theobald,University of Antwerp,,Member Review Board,Belgium,
 Andreas Thor,Andreas,Thor,University of Leipzig,,Member Review Board,Germany,
 Yuanyuan Tian,Yuanyuan,Tian,IBM Research,Almaden,Member Review Board,United States,
-Anthony Tung,Anthony,Tung,National University of Singapore,,Member Review Board,Singapore,
+Anthony Tung,Anthony K. H.,Tung,National University of Singapore,,Member Review Board,Singapore,
 Vasilis Vassalos,Vasilis,Vassalos,Athens University of Economics and Business,,Member Review Board,Greece,
 Yannis Vassiliou,Yannis,Vassiliou,National Technical University of Athens,,Member Review Board,Greece,
 Yannis Velegrakis,Yannis,Velegrakis,University of Trento,,Member Review Board,Italy,https://orcid.org/0000-0001-6332-0296
@@ -203,7 +203,7 @@ Gerhard Weikum,Gerhard,Weikum,Max Planck Institute,Saarbrücken,Member Review Bo
 Till Westmann,Till,Westmann,Oracle Labs,,Member Review Board,United States,
 Steven Whang,Steven,Whang,Google,,Member Review Board,United States,https://orcid.org/0000-0001-6419-931X
 Kyu Young Whang,Kyu Young,Whang,Korea Advanced Institute of Science and Technology,,Member Review Board,South Korea,
-Raymond Chi Wing Wong,Raymond Chi Wing,Wong,Hong Kong University of Science and Technology,,Member Review Board,Hong Kong SAR,https://orcid.org/0000-0001-7045-6503
+Raymond Chi Wing Wong,Raymond Chi-Wing,Wong,Hong Kong University of Science and Technology,,Member Review Board,Hong Kong SAR,https://orcid.org/0000-0001-7045-6503
 Xiaokui Xiao,Xiaokui,Xiao,Nanyang Technological University,,Member Review Board,Singapore,
 Xifeng Yan,Xifeng,Yan,University of California,Santa Barbara,Member Review Board,United States,
 Jun Yang,Jun,Yang,Duke University,,Member Review Board,United States,

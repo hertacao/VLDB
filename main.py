@@ -69,21 +69,21 @@ def third_run(journalVol):
 
 
 # write csv to db
-def write_to_db():
+def write_to_db(start, end):
     db = DB("sqlite")
     db.reset()
-    for i in range(14, 10, -1):
+    for i in range(start, end, -1):
         write_journal_to_db('VLDB{}'.format(i), db, i)
 
 
 if __name__ == '__main__':
-    journalVol = 10
+    journalVol = 7
     #init_run(journalVol)
     # first_run(journalVol)
     # second_run(journalVol)
-    third_run(journalVol)
+    # third_run(journalVol)
 
-    #write_to_db()
+    write_to_db(14, 7)
 
     # sql queries
     # print(sql.get_journal(journalVol))
