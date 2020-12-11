@@ -72,7 +72,7 @@ def third_run(journalVol):
 def write_to_db(start, end):
     db = DB("sqlite")
     db.reset()
-    for i in range(start, end, -1):
+    for i in range(start, end-1, -1):
         write_journal_to_db('VLDB{}'.format(i), db, i)
 
 

@@ -21,7 +21,7 @@ class DB:
         }
         return connections.get(dbname, "Invalid database")
 
-    def __init__(self, dbname) -> object:
+    def __init__(self, dbname):
         self.conn = self.get_connection(dbname)
         self.cursor = self.conn.cursor()
 
