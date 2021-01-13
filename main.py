@@ -25,7 +25,7 @@ def write_journal_to_db(csv, dbConnection, journalVol):
 def init_run(journalVol):
     fileNumber = 14 - journalVol
     # basic separation of the string in name and affiliation
-    df = dc.sort_excel(file, fileNumber, "sep")
+    df = dc.sort_excel(file, fileNumber, "join")
 
     # basic replacement of strings
     df = dc.preclean(df)
@@ -35,6 +35,10 @@ def init_run(journalVol):
     df = dc.correct_affiliations(df)
     # separates the affiliation string
     df = dc.sort_affiliation_string(df)
+
+    # unifies name from dict
+    df = dc.correct_name(df)
+
     # add affiliations if missing
     df = dc.fill_affiliation_from_db(df)
     print(df.to_string())
@@ -73,17 +77,18 @@ def write_to_db(start, end):
     db = DB("sqlite")
     db.reset()
     for i in range(start, end-1, -1):
+        print("JOURNAL:", i)
         write_journal_to_db('VLDB{}'.format(i), db, i)
 
 
 if __name__ == '__main__':
-    journalVol = 7
+    journalVol = 5
     #init_run(journalVol)
-    # first_run(journalVol)
-    # second_run(journalVol)
-    # third_run(journalVol)
+    #first_run(journalVol)
+    #second_run(journalVol)
+    #third_run(journalVol)
 
-    write_to_db(14, 7)
+    write_to_db(14, 5)
 
     # sql queries
     # print(sql.get_journal(journalVol))

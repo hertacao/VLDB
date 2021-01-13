@@ -2,6 +2,7 @@ import requests
 import re
 import pandas as pd
 import numpy as np
+import jellyfish
 
 
 def search_orcid(firstname, lastname):
@@ -220,14 +221,15 @@ abbreviations = {
     "AIST": "National Institute of Advanced Industrial Science and Technology",
     "HPI": "Hasso Plattner Institute",
     "KAIST": "Korea Advanced Institute of Science and Technology",
-    "JHU": "John Hopkins University",
+    "JHU": "Johns Hopkins University",
     "ISI": "University of Southern California, Information Sciences Institute",
     "CUHK": "Chinese University of Hong Kong",
     "MPI": "Max Planck Institute",
     "PSU": "Pennsylvania State University",
     "ISTAT": "Italian National Institute of Statistics",
     "NTU": "Nanyang Technological University",
-    "SNU": "Seoul National University"
+    "SNU": "Seoul National University",
+    "SUNY": "State University of New York"
 }
 
 
@@ -238,3 +240,70 @@ def replace_abbreviations(affiliation):
     else:
         return affiliation
 
+
+unified_names = {
+    "Bhowmick": "Sourav S.",
+    "Bernstein": "Philip A.",
+    "Bizer": "Christian",
+    "Böhlen": "Michael H.",
+    "Bruno": "Nicolas",
+    "Cafarella": "Michael J.",
+    "Candan": "K. Selçuk",
+    "Chen": "Arbee L. P.",
+    "Cheng": "Reynold",
+    "Cudré-Mauroux": "Philippe",
+    "Deshpande": "Amol",
+    "Dong": "Xin Luna",
+    "Eltabakh": "Mohamed Y.",
+    "Gedik": "Bugra",
+    "Han": "Wook-Shin",
+    "Hwang": "Seung-won",
+    "Ilyas": "Ihab F.",
+    "Ives": "Zachary G.",
+    "Jagadish": "H. V.",
+    "Jermaine": "Chris",
+    "Kennedy": "Oliver",
+    "Kifer": "Daniel",
+    "Kossmann": "Donald",
+    "Lakshmanan": "Laks V.S.",
+    "Mansour": "Essam",
+    "Miller": "Renée J.",
+    "Mokbel": "Mohamed F.",
+    "Moro": "Mirella Moura",
+    "Nascimento": "Mario A.",
+    "Polyzotis": "Neoklis",
+    "Patel": "Jignesh M.",
+    "Pavlo": "Andrew",
+    "Porto": "Fábio",
+    "Ports": "Dan R. K.",
+    "Quamar": "Abdul",
+    "Ross": "Kenneth A.",
+    "Rusu": "Florin ",
+    "Salles": "Marcos Antonio Vaz",
+    "Salem": "Kenneth",
+    "Sapino": "Maria Luisa",
+    "Sattler": "Kai-Uwe",
+    "Sariyüce": "A. Erdem",
+    "Tung": "Anthony K. H.",
+    "Özsu": "M. Tamer",
+    "Wong": "Raymond Chi-Wing"
+}
+
+
+def replace_name_by_dict(firstname, lastname):
+    if lastname in unified_names:
+        return replace_name(firstname, unified_names[lastname])
+    else:
+        return firstname
+
+
+def replace_name(firstname, comparision):
+    print("firstname: {}    compare: {} ".format(firstname, comparision))
+    levenshtein = jellyfish.levenshtein_distance(firstname, comparision)
+    jaro_winkler = jellyfish.jaro_winkler_similarity(firstname, comparision)
+    print("levensthein: {}    jaro-winkler: {}".format(levenshtein, jaro_winkler))
+
+    if jaro_winkler >= 0.8:
+        return comparision
+    else:
+        return firstname

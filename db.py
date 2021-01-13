@@ -3,8 +3,8 @@ from db_connect import *
 roleDict = {"Founding Editor in Chief": 1, "Editor in Chief": 2, "Managing Editor": 3,
             "Member Advisory Board": 4, "Publication Editor": 5, "Associate Editor": 6,
             "Member Review Board": 7, "Information Director": 8,
-            "Editor in Chief": 9, "General Program Chair": 10, "Program Chair": 11,
-            "Proceedings Chair": 12, "Information Director (old)": 13, "Steering Committee": 14}
+            "Technical Program Chair": 9, "General Program Chair": 10, "Track Chair": 11,
+            "Proceedings Chair": 12, "Steering Committee": 13, "Proceedings Editor": 14}
 
 
 class DB:
@@ -16,7 +16,6 @@ class DB:
     @staticmethod
     def get_connection(dbname):
         connections = {
-            'postgresql': pgdb,
             'sqlite': sqlite,
         }
         return connections.get(dbname, "Invalid database")

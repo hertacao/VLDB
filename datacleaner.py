@@ -1,6 +1,5 @@
 import excel as ex
 from sql import *
-import numpy as np
 import db
 
 db = db.DB("sqlite")
@@ -54,7 +53,7 @@ def sort_affiliation_string(df):
     df['isCountry'] = [db.check_country(info) for info in df['Info']]
     df.loc[df['isCountry'] > 0, 'isCountry'] = True
     df.loc[df['Country'].isnull() & df['isCountry'], 'Country'] = df['Info']
-    df.loc[df['Location'].isnull() & (df['isCountry'] == False), 'Location'] = df['Info']
+    df.loc[df['Location'].isnull() & (df['isCountry'] is False), 'Location'] = df['Info']
     df = df.drop(columns=['Info', 'isCountry'])
     print("country/location inserted")
 
@@ -200,8 +199,10 @@ def compare_affiliation_with_db(df):
     df_not_found = pd.DataFrame(aff_not_found)
     print()
     print()
+    print("Affiliation of csv and database unequal")
     print(df_mismatch.to_string())
     print()
+    print("Affiliation not found in database")
     print(df_not_found.to_string())
 
 
@@ -235,3 +236,9 @@ def compare_affiliation(firstname, lastname, csv_affiliation):
         multiple_aff.append(firstname + " " + lastname)
         print("multiple affiliations")
         print(affiliation_df)
+
+
+def correct_name(df):
+    df['FirstName'] = [ex.replace_name_by_dict(firstname, lastname) for firstname, lastname in zip(df['FirstName'], df['LastName'])]
+    return df
+
