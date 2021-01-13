@@ -1,20 +1,19 @@
 Name,FirstName,LastName,Affiliation,Location,Role,Country,OrcID
-Z. Meral Ozsoyoglu,Z. Meral,Ozsoyoglu,Case Western Reserve University,,Editor in Chief,United States,
 H. V. Jagadish,H. V.,Jagadish,University of Michigan,,Founding Editor in Chief,United States,https://orcid.org/0000-0003-0724-5214
-Philip Bernstein,Philip A.,Bernstein,Microsoft Research,,Member Advisory Board,United States,
-Michael Böhlen,Michael H.,Böhlen,University of Zurich,,Member Advisory Board,Switzerland,https://orcid.org/0000-0003-3694-9026
-Peter Buneman,Peter,Buneman,University of Edinburgh,,Member Advisory Board,United Kingdom,
-Susan Davidson,Susan,Davidson,University of Pennsylvania,,Member Advisory Board,United States,
-S. Sudarshan,S.,Sudarshan,Indian Institute of Technology,Bombay,Member Advisory Board,India,
-Gerhard Weikum,Gerhard,Weikum,Max Planck Institute,Saarbrücken,Member Advisory Board,Germany,
-Gustavo Alonso,Gustavo,Alonso,?,,Associate Editor,?,
-Ugur Cetintemel,Ugur,Cetintemel,Brown University,,Associate Editor,United States,
-Nilesh Dalvi,Nilesh,Dalvi,?,,Associate Editor,?,
-Juliana Freire,Juliana,Freire,New York University,,Associate Editor,United States,https://orcid.org/0000-0003-3915-7075
-Hank Korth,Hank,Korth,Lehigh University,,Associate Editor,United States,
-Anthony Tung,Anthony K. H.,Tung,National University of Singapore,,Associate Editor,Singapore,https://orcid.org/0000-0002-5125-855X
-Ahmet Sacan,Ahmet,Sacan,?,,Proceedings Editor,?,
-Nesime Tatbul,Nesime,Tatbul,Massachusetts Institute of Technology,,Proceedings Editor,United States,
+Joseph M. Hellerstein,Joseph M.,Hellerstein,?,,Editor in Chief,?,
+Jose Blakeley,Jose,Blakeley,Microsoft Research,,Editor in Chief,United States,
+Nick Koudas,Nick,Koudas,University of Toronto,,Associate Editor,Canada,
+Wolfgang Lehner,Wolfgang,Lehner,Technical University of Dresden,,Associate Editor,Germany,https://orcid.org/0000-0001-8107-2775
+Sunita Sarawagi,Sunita,Sarawagi,Indian Institute of Technology,Bombay,Associate Editor,India,
+Uwe Röhm (University of Sydney),Uwe,Röhm,University of Sydney,,Proceedings Chair,Australia,https://orcid.org/0000-0003-3598-7119
+Gerald Weber,Gerald,Weber,University of Auckland,,Information Director,New Zealand,https://orcid.org/0000-0002-2935-1571
+Serge Abiteboul,Serge,Abiteboul,?,,Steering Committee,?,
+Peter Apers,Peter,Apers,?,,Steering Committee,?,
+Philip Bernstein,Philip A.,Bernstein,Microsoft Research,,Steering Committee,United States,
+Elisa Bertino,Elisa,Bertino,Purdue University,,Steering Committee,United States,https://orcid.org/0000-0002-4029-7051
+Peter Buneman,Peter,Buneman,University of Edinburgh,,Steering Committee,United Kingdom,
+Martin Kersten,Martin,Kersten,Centrum Wiskunde & Informatica,,Steering Committee,Netherlands,
+Z Meral Ozsoyuglu,Z Meral,Ozsoyuglu,?,,Steering Committee,?,
 Ashraf Aboulnaga (University of Waterloo),Ashraf,Aboulnaga,University of Waterloo,,Member Review Board,United States,
 Sibel Adali (Rensselaer Polytechnic Institute),Sibel,Adali,Rensselaer Polytechnic Institute,,Member Review Board,United States,
 Charu Aggarwal (IBM Watson Research Center),Charu,Aggarwal,IBM Research,Watson Research Center,Member Review Board,United States,
@@ -22,10 +21,10 @@ Charu Aggarwal (IBM Watson Research Center),Charu,Aggarwal,IBM Research,Watson R
 Anastasia Ailamaki (EPFL Lausanne),Anastasia,Ailamaki,École polytechnique fédérale de Lausanne,,Member Review Board,Switzerland,
 Gustavo Alonso (ETH Zurich),Gustavo,Alonso,ETH Zurich,,Member Review Board,Switzerland,
 Shivnath Babu (Duke University),Shivnath,Babu,Duke University,,Member Review Board,United States,
-Roberto Bayardo (Google),Roberto,Bayardo,Google,,Member Review Board,United States,
+Roberto Bayardo (Google),Roberto,Bayardo,Google,Mountain View,Member Review Board,United States,
 Elisa Bertino (Purdue University),Elisa,Bertino,Purdue University,,Member Review Board,United States,https://orcid.org/0000-0002-4029-7051
 "Peter Boncz (CWI, Netherlands)",Peter,Boncz,Centrum Wiskunde & Informatica,,Member Review Board,Netherlands,
-Angela Bonifati (Icar-CNR),Angela,Bonifati,University of Lille 1 Sciences and Technology,,Member Review Board,France,https://orcid.org/0000-0002-9582-869X
+Angela Bonifati (Icar-CNR),Angela,Bonifati,Claude Bernard University Lyon 1,,Member Review Board,France,https://orcid.org/0000-0002-9582-869X
 Christof Bornhoevd (SAP Palo Alto),Christof,Bornhoevd,SAP,Palo Alto,Member Review Board,Germany,
 Mike Cafarella (University of Washington),Mike,Cafarella,University of Washington,,Member Review Board,United States,
 K. Selcuk Candan (Arizona State University),K. Selçuk,Candan,Arizona State University,Tempe,Member Review Board,United States,
@@ -43,9 +42,9 @@ Graham Cormode (AT&T Labs),Graham,Cormode,AT&T Labs,,Member Review Board,United 
 "Gautam Das (University of Texas, Arlington)",Gautam,Das,University of Texas,Arlington,Member Review Board,United States,
 Anish Das Sarma (Yahoo! Research),Anish Das,Sarma,Yahoo! Research,,Member Review Board,United States,
 Amol Deshpande (University of Maryland),Amol,Deshpande,University of Maryland,,Member Review Board,United States,
-AnHai Doan (University of Wisconsin),AnHai,Doan,University of Wisconsin,,Member Review Board,United States,
+AnHai Doan (University of Wisconsin),AnHai,Doan,University of Wisconsin,Madison,Member Review Board,United States,
 Xin Dong (AT&T Labs),Xin,Dong,AT&T Labs,,Member Review Board,United States,
-Alexandre Evfimievski (IBM Research),Alexandre,Evfimievski,IBM Research,,Member Review Board,United States,
+Alexandre Evfimievski (IBM Research),Alexandre,Evfimievski,IBM Research,Almaden,Member Review Board,United States,
 Wenfei Fan (University of Edinburgh & Bell Labs),Wenfei,Fan,University of Edinburgh,,Member Review Board,United Kingdom,https://orcid.org/0000-0001-5149-2656
 Johann-Christoph Freytag (Humboldt-Universitaet zu Berlin),Johann-Christoph,Freytag,Humboldt University of Berlin,,Member Review Board,Germany,
 Johannes Gehrke (Cornell University),Johannes,Gehrke,Cornell University,,Member Review Board,United States,
@@ -71,7 +70,7 @@ Martin Kersten (CWI),Martin,Kersten,Centrum Wiskunde & Informatica,,Member Revie
 Christoph Koch (Cornell University),Christoph,Koch,Cornell University,,Member Review Board,United States,
 Flip Korn (AT&T Labs),Flip,Korn,AT&T Labs,,Member Review Board,United States,
 Donald Kossmann (ETH Zurich),Donald,Kossmann,ETH Zurich,,Member Review Board,Switzerland,
-Alberto Laender (Federal University of Minas Gerais),Alberto,Laender,Federal University of Minas Gerais,,Member Review Board,Brazil,https://orcid.org/0000-0001-5032-2233
+Alberto Laender (Federal University of Minas Gerais),Alberto,Laender,Federal University of Minas Gerais,Belo Horizonte,Member Review Board,Brazil,https://orcid.org/0000-0001-5032-2233
 Dongwon Lee (Penn State University),Dongwon,Lee,Pennsylvania State University,,Member Review Board,United States,
 Kristen Lefevre (University of Michigan),Kristen,Lefevre,University of Michigan,,Member Review Board,United States,
 "Chen Li (University of California, Irvine)",Chen,Li,University of California,Irvine,Member Review Board,United States,
@@ -111,14 +110,14 @@ S. Sudarshan (IIT Bombay),S.,Sudarshan,Indian Institute of Technology,Bombay,Mem
 Kian-Lee Tan (National University of Singapore),Kian-Lee,Tan,National University of Singapore,,Member Review Board,Singapore,
 Val Tannen (University of Pennsylvania),Val,Tannen,University of Pennsylvania,,Member Review Board,United States,
 Jens Teubner (ETH Zurich),Jens,Teubner,ETH Zurich,,Member Review Board,Switzerland,https://orcid.org/0000-0002-0344-5203
-Martin Theobald (Max-Planck-Institut für Informatik),Martin,Theobald,Max Planck Institute,Saarbrücken,Member Review Board,Germany,
+Martin Theobald (Max-Planck-Institut für Informatik),Martin,Theobald,Max Planck Institut,Saarbrücken,Member Review Board,Germany,
 Frank Tompa (University of Waterloo),Frank,Tompa,University of Waterloo,,Member Review Board,United States,
 Anthony Tung (National University of Singapore),Anthony K. H.,Tung,National University of Singapore,,Member Review Board,Singapore,https://orcid.org/0000-0002-5125-855X
-Patrick Valduriez (INRIA),Patrick,Valduriez,INRIA,,Member Review Board,France,https://orcid.org/0000-0001-6506-7538
-Wie Wang (University of North Carolina),Wie,Wang,University of North Carolina,,Member Review Board,United States,
+Patrick Valduriez (INRIA),Patrick,Valduriez,INRIA,Sophia Antipolis,Member Review Board,France,https://orcid.org/0000-0001-6506-7538
+Wie Wang (University of North Carolina),Wie,Wang,University of North Carolina,Chapel Hill,Member Review Board,United States,
 "Gerhard Weikum (Max Planck Institute, Germany)",Gerhard,Weikum,Max Planck Institute,Saarbrücken,Member Review Board,Germany,
 Yuqing Wu (Indiana University),Yuqing,Wu,Indiana University,Bloomington,Member Review Board,United States,
-Fei Xu (Microsoft),Fei,Xu,Microsoft Research,,Member Review Board,United States,
+Fei Xu (Microsoft Search),Fei,Xu,Microsoft Research,,Member Review Board,United States,
 Sihem Amer-Yahia (Yahoo! Research),Sihem,Amer-Yahia,Yahoo! Research,,Member Review Board,United States,
 Jun Yang (Duke University),Jun,Yang,Duke University,,Member Review Board,United States,
 Cong Yu (Yahoo! Research),Cong,Yu,Yahoo! Research,,Member Review Board,United States,

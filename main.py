@@ -82,13 +82,15 @@ def write_to_db(start, end):
 
 
 if __name__ == '__main__':
-    journalVol = 5
+    journalVol = 3
     #init_run(journalVol)
     #first_run(journalVol)
     #second_run(journalVol)
     #third_run(journalVol)
 
-    write_to_db(14, 5)
+    #write_to_db(14, 5)
+    db = DB("sqlite")
+    write_journal_to_db('VLDB{}'.format(journalVol), db, journalVol)
 
     # sql queries
     # print(sql.get_journal(journalVol))
