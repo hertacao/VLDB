@@ -7,7 +7,7 @@ Philip Bernstein,Philip A.,Bernstein,Microsoft Research,,Steering Committee,Unit
 Elisa Bertino,Elisa,Bertino,Purdue University,,Steering Committee,United States,https://orcid.org/0000-0002-4029-7051
 Peter Buneman,Peter,Buneman,University of Edinburgh,,Steering Committee,United Kingdom,
 Martin Kersten,Martin,Kersten,Centrum Wiskunde & Informatica,,Steering Committee,Netherlands,
-Z Meral Ozsoyuglu,Z Meral,Ozsoyuglu,?,,Steering Committee,?,
+Z Meral Ozsoyuglu,Z. Meral,Özsoyuglu,?,,Steering Committee,?,
 Tova Milo,Tova,Milo,Tel Aviv University,,Track Chair,Israel,
 Jignesh Patel,Jignesh M.,Patel,University of Wisconsin,Madison,Track Chair,United States,
 Philippe Rigaux,Philippe,Rigaux,?,,Proceedings Chair,?,
@@ -20,7 +20,7 @@ Gerald Weber,Gerald,Weber,University of Auckland,,Information Director,New Zeala
 "Angela Bonifati, CNR, Italy",Angela,Bonifati,National Research Council,,Member Review Board,Italy,https://orcid.org/0000-0002-9582-869X
 "Nick Bruno, Microsoft Research, United States",Nicolas,Bruno,Microsoft Research,,Member Review Board,United States,
 "Ugur Cetintemel, University of Brown, United States",Ugur,Cetintemel,Brown University,,Member Review Board,United States,
-"Sang Cha, Seoul National University, Korea",Sang,Cha,Seoul National University,,Member Review Board,Korea,
+"Sang Cha, Seoul National University, Korea",Sang Kyun,Cha,Seoul National University,,Member Review Board,Korea,
 "Chee Yong Chan, NUS, Singapore",Chee Yong,Chan,National University of Singapore,,Member Review Board,Singapore,
 "Mitch Cherniack, University of Brandeis, United States",Mitch,Cherniack,University of Brandeis,,Member Review Board,United States,
 "Junghoo Cho, UCLA, United States",Junghoo,Cho,University of California,Los Angeles,Member Review Board,United States,
@@ -55,9 +55,9 @@ Gerald Weber,Gerald,Weber,University of Auckland,,Information Director,New Zeala
 "Boon Thau Loo, University of Pennsylvania, United States",Boon Thau,Loo,University of Pennsylvania,,Member Review Board,United States,
 "Qiong Luo, HKUST, Hong Kong",Qiong,Luo,Hong Kong University of Science and Technology,,Member Review Board,Hong Kong SAR,
 "Nikos Mamoulis, University of Hong Kong",Nikos,Mamoulis,University of Hong Kong,,Member Review Board,Hong Kong SAR,https://orcid.org/0000-0003-3423-4895
-"Claudia Medeiros, University of Campinas, Brazil",Claudia,Medeiros,University of Campinas,,Member Review Board,Brazil,https://orcid.org/0000-0003-1908-4753
+"Claudia Medeiros, University of Campinas, Brazil",Claudia Bauzer,Medeiros,University of Campinas,,Member Review Board,Brazil,https://orcid.org/0000-0003-1908-4753
 "Michael Morse, MITRE, United States",Michael,Morse,MITRE,,Member Review Board,United States,
-"Chris Olston, Yahoo! Research, United States",Chris,Olston,Yahoo! Research,,Member Review Board,United States,
+"Chris Olston, Yahoo! Research, United States",Christopher,Olston,Yahoo! Research,,Member Review Board,United States,
 "Beng Chin Ooi, NUS, Singapore",Beng Chin,Ooi,National University of Singapore,,Member Review Board,Singapore,https://orcid.org/0000-0003-4446-1100
 "Fatma Ozcan, IBM Almaden, United States",Fatma,Ozcan,IBM Research,Almaden,Member Review Board,United States,
 "Sriram Padmanabhan, IBM SVL, United States",Sriram,Padmanabhan,IBM,Silicon Valley Lab,Member Review Board,United States,
@@ -74,7 +74,7 @@ Gerald Weber,Gerald,Weber,University of Auckland,,Information Director,New Zeala
 "Sandeep Tata, IBM Almaden, United States",Sandeep,Tata,IBM Research,Almaden,Member Review Board,United States,
 "Nesime Tatbul, ETH, Switzerland",Nesime,Tatbul,ETH Zurich,,Member Review Board,Switzerland,
 "Yuanyuan Tian, IBM Almaden, United States",Yuanyuan,Tian,IBM Research,Almaden,Member Review Board,United States,
-"Wei Wang, UNC, United States",Wei,Wang,University of North Carolina at Chapel Hill,,Member Review Board,United States,
+"Wei Wang, UNC, United States",Wei,Wang,University of North Carolina,Chapel Hill,Member Review Board,United States,
 "Raymond Wong, HKUST, Hong Kong",Raymond Chi-Wing,Wong,Hong Kong University of Science and Technology,,Member Review Board,Hong Kong SAR,https://orcid.org/0000-0001-7045-6503
 "Melanie Wu, University of Indiana, United States",Melanie,Wu,Indiana University,,Member Review Board,United States,
 "Cong Yu, Yahoo! Research, United States",Cong,Yu,Yahoo! Research,,Member Review Board,United States,
@@ -120,11 +120,11 @@ Gerald Weber,Gerald,Weber,University of Auckland,,Information Director,New Zeala
 "Benny Kimelfeld, Hebrew University, Israel",Benny,Kimelfeld,Hebrew University of Jerusalem,,Member Review Board,Israel,
 "Rajasekar Krishnamurthy, IBM, United States",Rajasekar,Krishnamurthy,IBM,,Member Review Board,United States,
 "Zoe Lacroix, ASU, United States",Zoe,Lacroix,Arizona State University,,Member Review Board,United States,
-"Mong Li Lee, NUS, Singapore",Mong Li,Lee,National University of Singapore,,Member Review Board,Singapore,https://orcid.org/0000-0002-9636-388X
+"Mong Li Lee, NUS, Singapore",Mong-Li,Lee,National University of Singapore,,Member Review Board,Singapore,https://orcid.org/0000-0002-9636-388X
 "Yunyao Li, IBM, United States",Yunyao,Li,IBM Research,Almaden,Member Review Board,United States,
 "Sergey Melnik, Google, United States",Sergey,Melnik,Google,,Member Review Board,United States,
 "Rosa Meo, University of Torino, Italy",Rosa,Meo,University of Torino,,Member Review Board,Italy,
-"Jeff Naughton, University of Wisconsin, United States",Jeff,Naughton,University of Wisconsin,,Member Review Board,United States,
+"Jeff Naughton, University of Wisconsin, United States",Jeffrey,Naughton,University of Wisconsin,,Member Review Board,United States,
 "Frank Neven, University of Hasselt, Belgium",Frank,Neven,Hasselt University,,Member Review Board,Belgium,https://orcid.org/0000-0002-7143-1903
 "Silvia Nittel, University of Maine, United States",Silvia,Nittel,University of Maine,,Member Review Board,United States,https://orcid.org/0000-0002-3891-5922
 "Betty O'Neill, University of Massachusetts, United States",Betty,O'Neill,University of Massachusetts,,Member Review Board,United States,
@@ -135,7 +135,7 @@ Gerald Weber,Gerald,Weber,University of Auckland,,Information Director,New Zeala
 "Louiqa Raschid, UMIACS, United States",Louiqa,Raschid,University of Maryland,Institute for Advanced Computer Studies,Member Review Board,United States,https://orcid.org/0000-0002-0630-6049
 "Kenn Ross, Columbia University, United States",Kenneth A.,Ross,Columbia University,,Member Review Board,United States,
 "Elke Rundensteiner, WPI, United States",Elke,Rundensteiner,Worcester Polytechnic Institute,,Member Review Board,United States,
-"Timos Selis, NTUA, Greece",Timos,Selis,National Technical University of Athens,,Member Review Board,Greece,
+"Timos Selis, NTUA, Greece",Timos,Sellis,National Technical University of Athens,,Member Review Board,Greece,
 "Cristina Sieangelo, ENS Cachan, France",Cristina,Sieangelo,École normale supérieure Paris-Saclay,,Member Review Board,France,
 "Dan Suciu, University of Washington, United States",Dan,Suciu,University of Washington,,Member Review Board,United States,
 "S. Sudarshan, IIT Bombay, India",S.,Sudarshan,Indian Institute of Technology,Bombay,Member Review Board,India,
