@@ -8,7 +8,8 @@ db = db.DB("sqlite")
 def sort_excel(filestring, sheet, mode):
     sorter = {
         "sep": sort_excel_sep_aff(filestring, sheet),
-        "join": sort_excel_string(filestring, sheet)
+        "join": sort_excel_string(filestring, sheet),
+        "comma": sort_excel_comma(filestring, sheet)
     }
     return sorter.get(mode, sort_excel_string(filestring, sheet))
 
@@ -41,6 +42,20 @@ def sort_excel_string(filestring, sheet):
     df['Affiliation'] = [ex.get_affiliation_from_string(string) for string in df['Name']]
     df.insert(4, 'Location', None)
     df['Country'] = None
+    df['OrcID'] = None
+    print("affiliation inserted")
+    return df
+
+
+def sort_excel_comma(filestring, sheet):
+    df = ex.read_excel(filestring, sheet)
+    df.insert(1, 'FirstName', [ex.get_firstname(string.split(",")[0]) for string in df['Name']])
+    df.insert(2, 'LastName', [ex.get_lastname(string.split(",")[0]) for string in df['Name']])
+    print("names inserted")
+
+    df['Affiliation'] = [ex.get_comma_affiliation(string) for string in df['Name']]
+    df.insert(4, 'Location', None)
+    df['Country'] = [ex.get_comma_country(string) for string in df['Name']]
     df['OrcID'] = None
     print("affiliation inserted")
     return df

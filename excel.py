@@ -52,6 +52,19 @@ def get_firstname(name_string):
     return surname
 
 
+def get_comma_affiliation(string):
+    if len(string.split(",")) > 1:
+        return drop_spaces(string.split(",")[1])
+    else:
+        return None
+
+
+def get_comma_country(string):
+    if len(string.split(",")) > 2:
+        return drop_spaces(string.split(",")[2])
+    else:
+        return None
+
 # drop leading or trailing spaces for a given string
 def drop_spaces(string):
     if string is None:
