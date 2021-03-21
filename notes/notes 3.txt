@@ -1,0 +1,141 @@
+(75, 198) Arizona State University, Tempe
+(134, 224) Carnegie Mellon University, Pittsburgh
+(53, 201) Google, Mountain View
+(232) Google Research
+(167, 210) Federal University of Minas Gerais, Belo Horizonte
+(144) IBM, ?
+(41, 225) Nanyang Technological University, Singapore
+(108, 199) Ohio State University, Columbus
+
+(464, 1) Xin Luna Dong
+(358, 244) Mohamed Y. Eltabakh
+(367, 259) Seung-won Hwang
+(260, 62) Chris Jermaine
+(137, 266) Oliver Kennedy
+(374, 71) Essam Mansour
+(410 482, 337) Renée J. Miller
+(125, 376) Mohamed F. Mokbel
+(80) Heiko Müller
+(92, 290) Jignesh M. Patel
+(439) Emmanuel Müller, https://orcid.org/0000-0002-5409-6875
+(386, 293) Fábio Porto, https://orcid.org/0000-0002-4597-4832
+(433, 294) Dan R. K. Ports
+(295, 345) Abdul Quamar
+(442, 73) Florin Rusu
+(304 391) A. Erdem Sariyüce
+(165, 5) M. Tamer Özsu
+
+(219, 400) Sourav S. Bhowmick
+(206 346) Philip A. Bernstein
+(418, 63) Christian Bizer
+(222, 122) Michael H. Böhlen, https://orcid.org/0000-0003-3694-9026
+(431, 362)H. V. Jagadish
+(80)Heiko Müller
+(92, 290) Jignesh M. Patel
+(44, 312) Anthony K. H. Tung
+(125, 376) Mohamed F. Mokbel
+446 Renee J.
+
+(219, 400) Sourav S. Bhowmick
+(222, 122) Michael H. Böhlen, https://orcid.org/0000-0003-3694-9026
+(125, 376) Mohamed F. Mokbel
+(44, 312) Anthony K. H. Tung
+(92, 290) Jignesh M. Patel
+
+SElECT FirstName, LastName, JournalVol FROM
+(SELECT AffiliationID FROM affiliation WHERE AffiliationID =108) aff
+LEFT JOIN
+journal_responsibility
+ON journal_responsibility.AffiliationID = aff.AffiliationID
+LEFT JOIN
+person
+ON journal_responsibility.PersonID = person.PersonID
+
+SELECT * FROM
+(SELECT PersonID FROM person
+WHERE LastName = "Böhlen") pers
+LEFT JOIN
+journal_responsibility
+ON journal_responsibility.PersonID = pers.PersonID
+
+Renée J. Miller, Northeastern oder Toronto
+Mohamed F. Mokbel, Qatar Resrach Institute oder Minnesota
+Sihem Amer Yahia, French National Centre for Scientific Research LIG
+
+Florian Kirschbaum ab 2017 Anmerkung: University of Waterloo (ab 2017)
+Michael Böhlen University of Zürich, aber erst seit: 2009, davor Free University of Bozen-Bolzano  (2003), davor Aalborg University
+Donald Kossman ETH Zürich bis 2015, seither Microsoft Research, Redmond
+Wang-Chiew Tan  Megagon Labs seit  2017, davor  University of California, Santa Cruz
+
+561 Sourav S. Bhowmick
+542 Michael H. Böhlen
+586 Nicolas Bruno
+123, 626 Michael J. Cafarella
+560, 627 K. Selçuk Candan
+403, 589 Arbee L. P. Chen, https://orcid.org/0000-0003-2872-4484
+333 Amol Deshpande
+545 Mohamed Y. Eltabak
+352 Bugra Gedik, https://orcid.org/0000-0002-0622-1141
+634 Wook-Shin Han
+36, 487 Zachary G. Ives
+595 Chris Jermaine
+263, 599 Daniel Kifer https://orcid.org/0000-0002-4611-7066
+---
+580 Donald Kossmann
+439, 642 Laks V.S. Lakshmanan
+655 Renée J. Miller
+546 Mohamed F. Mokbel
+544 Mirella Moura Moro
+366 Mario A. Nascimento
+660 Rimma V. Nehme
+526 Jignesh M. Patel
+605 Andrew Pavlo
+664 Fabió Porto
+607 Dan R. K. Ports
+491, 609 Kenneth A. Ross
+101 Kenneth Salem
+673 Kai-Uwe Sattler
+499 Anthony K. H. Tung
+684 Raymond Chi-Wing Wong
+
+554 M. Tamer Özsu
+637 Fábio Porto
+724 Kenneth A. Ross
+736 Marcos Antonio Vaz Salles
+726 Maria Luisa Sapino
+733 Anthony K. H. Tung
+739 Raymond Chi-Wing Wong
+430 Ihab F. Ilyas
+679 Xin Luna Dong
+546 Philippe Cudré-Mauroux
+574 Reynold Cheng
+
+359 IBM Research Almaden
+! 113 Imperial College
+373, 98 Indiana University, Bloomington
+309 Microsoft Research, Gray Systems Lab
+351 University of Massachussets, ?
+348 University of Texas, Arlington
+358 Yahoo
+311, 349 ebay Research Labs
+
+308 Microsoft Research, Gray Systems Lab
+343 IBM Research, Watson Research Center
+
+350 Free University Bozen-Bolzano
+
+53 Google
+198 Google Mountain View
+224 Google Research
+
+337Neoklis (Alkis) Polyzotis Google Research
+64 Cong Yu Google Research
+
+
+1 Amazon
+1, 79, 148, 304, 455, 475, 578
+279 Amazon AWebServices
+
+1	Xin Luna	Dong
+788	Xin	Dong
+887	Luna	Dong

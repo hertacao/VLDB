@@ -14,6 +14,15 @@ def sort_excel(filestring, sheet, mode):
     return sorter.get(mode, sort_excel_string(filestring, sheet))
 
 
+def sort_conf_excel(filestring, sheet, mode):
+    sorter = {
+        "bracket": sort_conf_excel_brackets(filestring, sheet),
+        "comma": sort_conf_excel_comma(filestring, sheet)
+    }
+    df = sorter.get(mode, sort_conf_excel_brackets(filestring, sheet))
+    return df[['Name', 'FirstName', 'LastName', 'Affiliation', 'Location', 'Role', 'Country', 'OrcID']]
+
+
 # simple function to correct any mistakes in the data
 # creates separate column for first and last name
 # cleans affiliations when they are given in a separate column
@@ -56,6 +65,35 @@ def sort_excel_comma(filestring, sheet):
     df['Affiliation'] = [ex.get_comma_affiliation(string) for string in df['Name']]
     df.insert(4, 'Location', None)
     df['Country'] = [ex.get_comma_country(string) for string in df['Name']]
+    df['OrcID'] = None
+    print("affiliation inserted")
+    return df
+
+
+# sort conference where affiliation is in brackets
+def sort_conf_excel_brackets(filestring, sheet):
+    df = ex.read_conf_excel(filestring, sheet)
+    df['FirstName'] = [ex.get_firstname(ex.get_name_from_string(string)) for string in df['Name']]
+    df['LastName'] = [ex.get_lastname(ex.get_name_from_string(string)) for string in df['Name']]
+    print("names inserted")
+
+    df['Affiliation'] = [ex.get_affiliation_from_string(string) for string in df['Name']]
+    df['Location'] = None
+    df['Country'] = None
+    df['OrcID'] = None
+    print("affiliation inserted")
+    return df
+
+
+def sort_conf_excel_comma(filestring, sheet):
+    df = ex.read_conf_excel(filestring, sheet)
+    df['FirstName'] =  [ex.get_firstname(string.split(",")[0]) for string in df['Name']]
+    df.insert(3, 'LastName', [ex.get_lastname(string.split(",")[0]) for string in df['Name']])
+    print("names inserted")
+
+    df['Affiliation'] = [ex.get_comma_affiliation(string) for string in df['Name']]
+    df['Location'] = None
+    df['Country'] = None
     df['OrcID'] = None
     print("affiliation inserted")
     return df

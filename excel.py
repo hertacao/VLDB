@@ -35,6 +35,12 @@ def read_excel(filestring, sheet):
     return df
 
 
+def read_conf_excel(filestring, sheet):
+    df = pd.read_excel(filestring, sheet_name=sheet, usecols='B,F', skiprows=1)
+    df = df.replace({np.nan: None})
+    return df
+
+
 def get_lastname(name_string):
     if name_string is None:
         return None
@@ -197,52 +203,57 @@ def replace_usa(affiliation):
 
 
 abbreviations = {
-    "Microsoft": "Microsoft Research",
+    "AIST": "National Institute of Advanced Industrial Science and Technology",
     "Alibaba": "Alibaba Group",
-    "QCRI": "Qatar Computing Research Institute",
-    "CWI": "Centrum Wiskunde & Informatica",
-    "NUS": "National University of Singapore",
-    "NJIT": "New Jersey Institute of Technology",
-    "HKUST": "Hong Kong University of Science and Technology",
-    "NMSU": "New Mexico State University",
-    "UBC": "University of British Columbia",
     "ASU": "Arizona State University",
-    "KAUST": "King Abdullah University of Science and Technology",
-    "BUPT": "Beijing University of Posts and Telecommunications",
-    "UESTC": "University of Electronic Science and Technology of China",
-    "UCSB": "University of California, Santa Barbara",
-    "HKBU": "Hong Kong Baptist University",
-    "DFKI": "German Research Center for Artificial Intelligence",
-    "UNSW": "University of New South Wales",
-    "RMIT": "RMIT University",
-    "METU": "Middle East Technical University",
-    "WPI": "Worcester Polytechnic Institute",
-    "CMU": "Carnegie Mellon University",
-    "LNCC": "National Laboratory of Scientific Computation",
-    "MIT": "Massachusetts Institute of Technology",
-    "CUNY": "City University of New York",
-    "UW": "University of Wisconsin",
-    "NYU": "New York University",
-    "EPFL": "École polytechnique fédérale de Lausanne",
-    "SFU": "Simon Fraser University",
     "AUB": "American University of Beirut",
-    "UCS": "University of Southern California",
+    "BUPT": "Beijing University of Posts and Telecommunications",
+    "CMU": "Carnegie Mellon University",
     "CNRS": "French National Centre for Scientific Research",
-    "UCLA": "University of California, Los Angeles",
+    "CUHK": "Chinese University of Hong Kong",
+    "CUNY": "City University of New York",
+    "CWI": "Centrum Wiskunde & Informatica",
+    "DFKI": "German Research Center for Artificial Intelligence",
+    "EPFL": "École polytechnique fédérale de Lausanne",
+    "HKUST": "Hong Kong University of Science and Technology",
+    "HKBU": "Hong Kong Baptist University",
+    "HPI": "Hasso Plattner Institute",
+    "ISI": "University of Southern California, Information Sciences Institute",
+    "ISTAT": "Italian National Institute of Statistics",
+    "JHU": "Johns Hopkins University",
+    "KAUST": "King Abdullah University of Science and Technology",
+    "KAIST": "Korea Advanced Institute of Science and Technology",
+    "LNCC": "National Laboratory of Scientific Computation",
+    "METU": "Middle East Technical University",
+    "MIT": "Massachusetts Institute of Technology",
+    "Microsoft": "Microsoft Research",
+    "MPI": "Max Planck Institute",
+    "NTU": "Nanyang Technological University",
+    "NUS": "National University of Singapore",
+    "NYU": "New York University",
+    "NJIT": "New Jersey Institute of Technology",
+    "NMSU": "New Mexico State University",
     "Postech": "Pohang University of Science and Technology",
     "POSTECH": "Pohang University of Science and Technology",
-    "AIST": "National Institute of Advanced Industrial Science and Technology",
-    "HPI": "Hasso Plattner Institute",
-    "KAIST": "Korea Advanced Institute of Science and Technology",
-    "JHU": "Johns Hopkins University",
-    "ISI": "University of Southern California, Information Sciences Institute",
-    "CUHK": "Chinese University of Hong Kong",
-    "MPI": "Max Planck Institute",
     "PSU": "Pennsylvania State University",
-    "ISTAT": "Italian National Institute of Statistics",
-    "NTU": "Nanyang Technological University",
+    "Politecnico di Milano": "Polytechnic University of Milan",
+    "QCRI": "Qatar Computing Research Institute",
+    "RMIT": "RMIT University",
+    "Sapienza University di Rome": "Sapienza University of Rome",
+    "SFU": "Simon Fraser University",
     "SNU": "Seoul National University",
-    "SUNY": "State University of New York"
+    "SUNY": "State University of New York",
+    "UBC": "University of British Columbia",
+    "UCLA": "University of California, Los Angeles",
+    "UCS": "University of Southern California",
+    "UCSB": "University of California, Santa Barbara",
+    "UESTC": "University of Electronic Science and Technology of China",
+    "UIC": "University of Illinois",
+    "UNSW": "University of New South Wales",
+    "Universidade Federal do Amazonas": "Federal University of Amazonas",
+    "Universite Paris Sud": "Paris-Sud University",
+    "UW": "University of Wisconsin",
+    "WPI": "Worcester Polytechnic Institute"
 }
 
 

@@ -6,7 +6,6 @@ roleDict = {"Founding Editor in Chief": 1, "Editor in Chief": 2, "Managing Edito
             "Technical Program Chair": 9, "General Program Chair": 10, "Track Chair": 11,
             "Proceedings Chair": 12, "Steering Committee": 13, "Proceedings Editor": 14}
 
-
 class DB:
     conn = 0
     cursor = 0
@@ -26,26 +25,6 @@ class DB:
 
     def close(self):
         self.conn.close()
-
-    """
-    def alter(self, sql):
-        result = self.cursor.execute(sql, multi=True)
-        result.send(None)
-
-    def reset_mysql(self):
-        try:
-            self.alter("DELETE FROM journal_responsibility")
-            self.alter("DELETE FROM person")
-            self.alter("DELETE FROM affiliation")
-            self.alter("ALTER TABLE journal_responsibility AUTO_INCREMENT = 1")
-            self.alter("ALTER TABLE person AUTO_INCREMENT = 1")
-            self.alter("ALTER TABLE affiliation AUTO_INCREMENT = 1")
-            self.conn.commit()
-            print("database resetted")
-        except Exception as e:
-            self.conn.rollback()
-            raise e
-    """
 
     def reset(self):
         self.cursor.execute("DELETE FROM journal_responsibility")

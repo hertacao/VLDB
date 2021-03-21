@@ -1,0 +1,8 @@
+SElECT FirstName, LastName, JournalVol FROM
+(SELECT AffiliationID FROM affiliation WHERE Affiliation = "Nanyang Technological Univesity") aff
+LEFT JOIN
+journal_responsibility
+ON journal_responsibility.AffiliationID = aff.AffiliationID
+LEFT JOIN
+person
+ON journal_responsibility.PersonID = person.PersonID

@@ -10,6 +10,7 @@ import datacleaner as dc
 
 # Press the green button in the gutter to run the script.
 file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\2020-07-09-PVLDB-Members.xlsx"
+conf_file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\VLDB Conferences.xlsx"
 
 
 # write csv to db
@@ -21,12 +22,11 @@ def write_journal_to_db(csv, dbConnection, journalVol):
                                               row['Affiliation'], row['Location'], row['Country'], journalVol, row['Role'])
 
 
-# basi cleaning
-def init_run(journalVol):
-    fileNumber = 14 - journalVol
+# basic cleaning
+def init_run(confYear):
+    fileNumber = 2020 - confYear
     # basic separation of the string in name and affiliation
-    df = dc.sort_excel(file, fileNumber, "join")
-
+    df = dc.sort_conf_excel(conf_file, fileNumber, "bracket")
     # basic replacement of strings
     df = dc.preclean(df)
     # separates the affiliation string
@@ -42,34 +42,34 @@ def init_run(journalVol):
     # add affiliations if missing
     df = dc.fill_affiliation_from_db(df)
     print(df.to_string())
-    ex.write_csv(df, 'VLDB{}'.format(journalVol))
+    #ex.write_csv(df, 'VLDB{}'.format(confYear))
 
 
 # manual sorting
-def first_run(journalVol):
+def first_run(confYear):
     # read as dataframe
-    df = ex.read_csv('VLDB{}'.format(journalVol))
+    df = ex.read_csv('VLDB{}'.format(confYear))
     print(df.to_string())
     # compare affiliation with db
     dc.compare_affiliation_with_db(df)
 
 
 # automated adding from db
-def second_run(journalVol):
+def second_run(confYear):
     # read as dataframe
-    df = ex.read_csv('VLDB{}'.format(journalVol))
+    df = ex.read_csv('VLDB{}'.format(confYear))
     # add stuff from db
     df = dc.fill_affiliation_from_db(df)
     df = dc.fill_country_from_db(df)
     print(df.to_string())
     # write csv
-    ex.write_csv(df, 'VLDB{}'.format(journalVol))
+    ex.write_csv(df, 'VLDB{}'.format(confYear))
 
 
 # add orcid
-def third_run(journalVol):
+def third_run(confYear):
     # add orcid to dataframe
-    df = dc.add_orcid(journalVol)
+    df = dc.add_orcid(confYear)
 
 
 # write csv to db
@@ -82,15 +82,15 @@ def write_to_db(start, end):
 
 
 if __name__ == '__main__':
-    journalVol = 3
-    #init_run(journalVol)
-    #first_run(journalVol)
-    #second_run(journalVol)
-    #third_run(journalVol)
+    confYear = 2020
+    #init_run(confYear)
+    #first_run(confYear)
+    #second_run(confYear)
+    third_run(confYear)
 
-    #write_to_db(14, 5)
-    db = DB("sqlite")
-    write_journal_to_db('VLDB{}'.format(journalVol), db, journalVol)
+    #write_to_db(14, 1)
+    #db = DB("sqlite")
+    #write_journal_to_db('VLDB{}'.format(journalVol), db, journalVol)
 
     # sql queries
     # print(sql.get_journal(journalVol))

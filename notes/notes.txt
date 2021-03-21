@@ -1,0 +1,32 @@
+Oktie Hassanzadeh:
+12: IBM Research - Yorktown
+Website: https://researcher.watson.ibm.com/researcher/view.php?person=us-hassanzadeh
+13: IBM Research
+
+Diptikalyan Saha
+13: IBM Research AI
+12: IBM Research
+https://researcher.watson.ibm.com/researcher/view.php?person=in-diptsaha
+
+Karthik Sankaranarayanan
+12: IBM Reserach
+https://researcher.watson.ibm.com/researcher/view.php?person=in-kartsank
+
+Vincent Leroy
+12: zu viele affiliation, mehrere dblp
+
+Peter Bailis
+12: Stanford
+
+inria in genau
+Korea in South Korea umbennen
+12 ist noch ein fehler mit brazil
+
+SELECT Affiliation FROM
+(SELECT PersonID FROM person WHERE FirstName = "Wolfgang" AND LastName = "Lehner") pers
+LEFT JOIN
+journal_responsibility
+ON journal_responsibility.PersonID = pers.personID
+LEFT JOIN
+affiliation
+ON journal_responsibility.AffiliationID = affiliation.AffiliationID
