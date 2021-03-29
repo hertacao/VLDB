@@ -36,15 +36,18 @@ class DB:
 
     def check(self, sql, val):
         self.cursor.execute(sql, val)
-        result = self.cursor.fetchone()
+        result = self.cursor.fetchall()
         if result is None:
             return None
         else:
             if len(result) == 1:
-                # print(val, "record exists, ID:", result[0])
-                return result[0]
+                if len(result[0]) == 1:
+                    return result[0][0]
+                else:
+                    return result[0]
+            elif len(result[0]) == 1:
+                return [r[0] for r in result]
             else:
-                # print(val, "record exists", result)
                 return result
 
     def check_country(self, country):
@@ -77,6 +80,11 @@ class DB:
                 LEFT JOIN \
                 country \
                 ON country.CountryID = aff.CountryID"
+        val = (name,)
+        return self.check(sql, val)
+
+    def get_location_of_affiliation(self, name):
+        sql = "SELECT Location FROM affiliation WHERE Affiliation = ?"
         val = (name,)
         return self.check(sql, val)
 

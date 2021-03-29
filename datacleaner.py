@@ -99,21 +99,31 @@ def sort_conf_excel_comma(filestring, sheet):
     return df
 
 
+#def sort_conf_excel_mixed(filestring, sheet):
+#    df = ex.read_conf_excel(filestring, sheet)
+#    for index, row in df.iterrows():
+
+
 # sorts the affiliation string in affiliation, location and country
 def sort_affiliation_string(df):
     df['Info'] = [ex.get_info_from_aff_extended(affiliation_string) for affiliation_string in df['Affiliation']]
-
-    df['isCountry'] = [db.check_country(info) for info in df['Info']]
-    df.loc[df['isCountry'] > 0, 'isCountry'] = True
+    df['isCountry'] = [isCountry(info) for info in df['Info']]
     df.loc[df['Country'].isnull() & df['isCountry'], 'Country'] = df['Info']
-    df.loc[df['Location'].isnull() & (df['isCountry'] is False), 'Location'] = df['Info']
+    df.loc[df['Location'].isnull() & ~df['isCountry'], 'Location'] = df['Info']
     df = df.drop(columns=['Info', 'isCountry'])
     print("country/location inserted")
 
     df['Affiliation'] = [ex.get_affiliation_from_aff_extended(affiliation) for affiliation in df['Affiliation']]
     print("affiliation inserted")
+    print(df.to_string())
     return df
 
+
+def isCountry(string):
+    if db.check_country(string) is None:
+        return False
+    else:
+        return True
 
 def add_orcid(journalVol):
     df = ex.read_csv('VLDB{}'.format(journalVol))
@@ -150,6 +160,7 @@ def correct_affiliations(df):
     corrected = [ex.drop_the(affiliation) for affiliation in corrected]
     corrected = [ex.replace_tech(affiliation) for affiliation in corrected]
     corrected = [ex.replace_iit(affiliation) for affiliation in corrected]
+    corrected = [ex.replace_umass(affiliation) for affiliation in corrected]
 
     df['Affiliation'] = [ex.drop_spaces(affiliation) for affiliation in corrected]
 
@@ -170,21 +181,12 @@ def add_affiliation_from_db(firstname, lastname, affiliation, location):
     if affiliation is None or affiliation == "None":
         db_affiliation = db.get_affiliation_from_name(firstname, lastname)
         if db_affiliation:
-            return db_affiliation
-        else:
-            return None, None
-    elif location is None or location == "None":
-        db_affiliation = db.get_affiliation_from_name(firstname, lastname)
-        if db_affiliation is not None:
-            if affiliation == db_affiliation[0]:
+            if type(db_affiliation) == tuple:
                 return db_affiliation
             else:
-                return affiliation, location
-
+                return ",".join(db_affiliation)
         else:
-            return affiliation, None
-    else:
-        return affiliation, location
+            return None, None
 
 
 # fills up dataframe with affiliation extracted from the database
@@ -208,13 +210,33 @@ def add_country_from_db(affiliation, country):
         return country
 
 
+# adds location from the database for an affiliation
+def add_location_from_db(affiliation, location):
+    if location is None:
+        db_location = db.get_location_of_affiliation(affiliation)
+        if db_location:
+            if type(db_location) == str:
+                return db_location
+            else:
+                return ",".join(db_location)
+        else:
+            return None
+    else:
+        return location
+
+
 # fills up countries for a dataframe
-def fill_country_from_db(df):
+def fill_country_location_from_db(df):
     if 'Country' not in df:
         df['Country'] = None
     df['Country'] = [add_country_from_db(affiliation, country) for affiliation, country in
                      zip(df['Affiliation'], df['Country'])]
     print("country added")
+    if 'Location' not in df:
+        df['Location'] = None
+    df['Location'] = [add_location_from_db(affiliation, location) for affiliation, location in
+                     zip(df['Affiliation'], df['Location'])]
+    print("location added")
     return df
 
 

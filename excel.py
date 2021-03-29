@@ -141,7 +141,7 @@ def get_info_from_aff_extended(affiliation_string):
         string_list = affiliation_string.split(",")
     elif "-" in affiliation_string:
         string_list = affiliation_string.split("-")
-    elif "at" in affiliation_string:
+    elif " at " in affiliation_string:
         string_list = affiliation_string.split("at")
     else:
         string_list = []
@@ -187,6 +187,11 @@ def replace_iit(affiliation):
     affiliation = re.sub('IIT\s', 'Indian Institute of Technology, ', affiliation)
     return affiliation
 
+def replace_umass(affiliation):
+    if affiliation is None:
+        return None
+    affiliation = re.sub('UMass\s', 'University of Massachusetts, ', affiliation)
+    return affiliation
 
 def drop_the(affiliation):
     if affiliation is None:
@@ -217,9 +222,11 @@ abbreviations = {
     "EPFL": "École polytechnique fédérale de Lausanne",
     "HKUST": "Hong Kong University of Science and Technology",
     "HKBU": "Hong Kong Baptist University",
+    "HMC": "Harvey Mudd College",
     "HPI": "Hasso Plattner Institute",
     "ISI": "University of Southern California, Information Sciences Institute",
     "ISTAT": "Italian National Institute of Statistics",
+    "ITU": "International Telecommunication Union",
     "JHU": "Johns Hopkins University",
     "KAUST": "King Abdullah University of Science and Technology",
     "KAIST": "Korea Advanced Institute of Science and Technology",
@@ -243,15 +250,22 @@ abbreviations = {
     "SFU": "Simon Fraser University",
     "SNU": "Seoul National University",
     "SUNY": "State University of New York",
+    "SUTD" : "Singapore University of Technology and Design",
+    "Technion": "Technion – Israel Institute of Technology",
     "UBC": "University of British Columbia",
+    "UC": "University of California",
+    "UCI": "University of California, Irvine",
     "UCLA": "University of California, Los Angeles",
-    "UCS": "University of Southern California",
+    "UCR": "University of California, Riverside",
     "UCSB": "University of California, Santa Barbara",
+    "UCSD": "University of California, San Diego",
     "UESTC": "University of Electronic Science and Technology of China",
     "UIC": "University of Illinois",
+    "UIUC": "University of Illinois, Urbana–Champaign",
     "UNSW": "University of New South Wales",
     "Universidade Federal do Amazonas": "Federal University of Amazonas",
     "Universite Paris Sud": "Paris-Sud University",
+    "USC": "University of Southern California",
     "UW": "University of Wisconsin",
     "WPI": "Worcester Polytechnic Institute"
 }

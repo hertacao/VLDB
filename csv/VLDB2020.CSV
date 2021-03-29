@@ -1,145 +1,145 @@
 Name,FirstName,LastName,Affiliation,Location,Role,Country,OrcID
-Masaru Kitsuregawa (University of Tokyo),Masaru,Kitsuregawa,University of Tokyo,,Honorary Chair,Japan,https://orcid.org/0000-0003-4027-2994
-Hiroyuki Kitagawa (University of Tsukuba),Hiroyuki,Kitagawa,University of Tsukuba,,Organizing Committee Chair,Japan,https://orcid.org/0000-0002-2984-2258
+Masaru Kitsuregawa (University of Tokyo),Masaru,Kitsuregawa,University of Tokyo,Tokyo,Honorary Chair,Japan,https://orcid.org/0000-0003-4027-2994
+Hiroyuki Kitagawa (University of Tsukuba),Hiroyuki,Kitagawa,University of Tsukuba,Tennodai,Organizing Committee Chair,Japan,https://orcid.org/0000-0002-2984-2258
 "Sharad Mehrotra (University of California, Irvine)",Sharad,Mehrotra,University of California,Irvine,VLDB Endowment Representative,United States,
-Yoshiharu Ishikawa (Nagoya University),Yoshiharu,Ishikawa,Nagoya University,,General Chairs,Japan,
-Christian S. Jensen (Aalborg University),Christian S.,Jensen,Aalborg University,,General Chairs,Denmark,
-Magdalena Balazinska (University of Washington),Magdalena,Balazinska,University of Washington,,Program Committee Chairs,United States,
-Xiaofang Zhou (University of Queensland),Xiaofang,Zhou,University of Queensland,,Program Committee Chairs,Australia,
-"Michael J. Carey (University of California, Irvine)",Michael J.,Carey,University of California,,Tutorial Chairs,United States,
+Yoshiharu Ishikawa (Nagoya University),Yoshiharu,Ishikawa,Nagoya University,Nagoya,General Chairs,Japan,
+Christian S. Jensen (Aalborg University),Christian S.,Jensen,Aalborg University,Aalborg,General Chairs,Denmark,
+Magdalena Balazinska (University of Washington),Magdalena,Balazinska,University of Washington,Seattle,Program Committee Chairs,United States,
+Xiaofang Zhou (University of Queensland),Xiaofang,Zhou,University of Queensland,Brisbane,Program Committee Chairs,Australia,
+"Michael J. Carey (University of California, Irvine)",Michael J.,Carey,University of California,Irvine,Tutorial Chairs,United States,
 Renée J. Miller (Northeastern University),Renée J.,Miller,Northeastern University,Boston,Tutorial Chairs,United States,https://orcid.org/0000-0002-1484-4787
-Tiziana Catarci (Sapienza Università di Roma),Tiziana,Catarci,Sapienza University of Rome,,Industrial Chairs,Italy,https://orcid.org/0000-0002-3578-1121
-Carlo Curino (Microsoft),Carlo,Curino,Microsoft Research,,Industrial Chairs,United States,
-Divesh Srivastava (AT&T Labs),Divesh,Srivastava,AT&T Labs,,Industrial Chairs,United States,https://orcid.org/0000-0002-7609-9217
-Yasuhiro Fujiwara (NTT Communication Science Laboratories),Yasuhiro,Fujiwara,NTT Communication Science Laboratories,,Demo Chairs,Japan,
+Tiziana Catarci (Sapienza Università di Roma),Tiziana,Catarci,Sapienza University of Rome,Rome,Industrial Chairs,Italy,https://orcid.org/0000-0002-3578-1121
+Carlo Curino (Microsoft),Carlo,Curino,Microsoft Research,Redmond,Industrial Chairs,United States,
+Divesh Srivastava (AT&T Labs),Divesh,Srivastava,AT&T Labs,?,Industrial Chairs,United States,https://orcid.org/0000-0002-7609-9217
+Yasuhiro Fujiwara (NTT Communication Science Laboratories),Yasuhiro,Fujiwara,NTT Communication Science Laboratories,Tokyo/Kyoto,Demo Chairs,Japan,
 Ioana Manolescu (INRIA),Ioana,Manolescu,INRIA,Saclay,Demo Chairs,France,https://orcid.org/0000-0002-0425-2462
-"Ying Zhang (University of Technology, Sydney)",Ying,Zhang,University of Technology Sydney,,Demo Chairs,Australia,
-Anastasia Ailamaki (EPFL),Anastasia,Ailamaki,École polytechnique fédérale de Lausanne,,Panel Chairs,Switzerland,
-Surajit Chaudhuri (Microsoft),Surajit,Chaudhuri,Microsoft Research,,Panel Chairs,United States,
-Wook-Shin Han (POSTECH),Wook-Shin,Han,Pohang University of Science and Technology,,Workshop Chairs,South Korea,
-Makoto Onizuka (Osaka University),Makoto,Onizuka,Osaka University,,Workshop Chairs,Japan,https://orcid.org/0000-0001-5559-8300
-Nesime Tatbul (MIT / Intel Labs),Nesime,Tatbul,Massachusetts Institute of Technology,,Workshop Chairs,United States,
-Ziawasch Abedjan (TU Berlin),Ziawasch,Abedjan,Technical University of Berlin,,PhD Workshop Chairs,Germany,
-Katja Hose (Aalborg University),Katja,Hose,Aalborg University,,PhD Workshop Chairs,Denmark,https://orcid.org/0000-0001-7025-8099
-"Gustavo Alonso (ETH Zurich, Switzerland)",Gustavo,Alonso,ETH Zurich,,Member Best Paper Award Committee,Switzerland,
-"Beng Chin Ooi (National University of Singapore, Singapore)",Beng Chin,Ooi,National University of Singapore,,Best Paper Award Committee Chair,Singapore,https://orcid.org/0000-0003-4446-1100
+"Ying Zhang (University of Technology, Sydney)",Ying,Zhang,University of Technology Sydney,Sydney,Demo Chairs,Australia,
+Anastasia Ailamaki (EPFL),Anastasia,Ailamaki,École polytechnique fédérale de Lausanne,Lausanne,Panel Chairs,Switzerland,
+Surajit Chaudhuri (Microsoft),Surajit,Chaudhuri,Microsoft Research,Redmond,Panel Chairs,United States,
+Wook-Shin Han (POSTECH),Wook-Shin,Han,Pohang University of Science and Technology,Pohang,Workshop Chairs,South Korea,
+Makoto Onizuka (Osaka University),Makoto,Onizuka,Osaka University,Osaka,Workshop Chairs,Japan,https://orcid.org/0000-0001-5559-8300
+Nesime Tatbul (MIT / Intel Labs),Nesime,Tatbul,Massachusetts Institute of Technology,Cambridge,Workshop Chairs,United States,
+Ziawasch Abedjan (TU Berlin),Ziawasch,Abedjan,Technical University of Berlin,Berlin,PhD Workshop Chairs,Germany,
+Katja Hose (Aalborg University),Katja,Hose,Aalborg University,Aalborg,PhD Workshop Chairs,Denmark,https://orcid.org/0000-0001-7025-8099
+"Gustavo Alonso (ETH Zurich, Switzerland)",Gustavo,Alonso,ETH Zurich,Zurich,Member Best Paper Award Committee,Switzerland,
+"Beng Chin Ooi (National University of Singapore, Singapore)",Beng Chin,Ooi,National University of Singapore,Singapore,Best Paper Award Committee Chair,Singapore,https://orcid.org/0000-0003-4446-1100
 "Jignesh M. Patel (University of Wisconsin-Madison, USA)",Jignesh M.,Patel,University of Wisconsin,Madison,Member Best Paper Award Committee,United States,
-"Wang-Chiew Tan (Megagon Labs, USA)",Wang-Chiew,Tan,Megagon Labs,,Member Best Paper Award Committee,United States,
-"Meihui Zhang (Beijing Institute of Technology, China)",Meihui,Zhang,Beijing Institute of Technology,,Member Best Paper Award Committee,China,https://orcid.org/0000-0002-0752-9877
-"Anastasia Ailamaki (EPFL, Switzerland): Chair",Anastasia Ailamaki :,Chair,École polytechnique fédérale de Lausanne,,Best Industry Paper Award Committee Chair,Switzerland,
-"Phil Bernstein (Microsoft Research, USA)",Philip A.,Bernstein,Microsoft Research,,Member Best Industry Paper Award Committee,United States,
-"Elisa Bertino (Purdue University, USA)",Elisa,Bertino,Purdue University,,Member Best Industry Paper Award Committee,United States,https://orcid.org/0000-0002-4029-7051
-"Alon Halevy (Facebook AI, USA)",Alon,Halevy,Facebook AI,,Member Best Industry Paper Award Committee,United States,
+"Wang-Chiew Tan (Megagon Labs, USA)",Wang-Chiew,Tan,Megagon Labs,Mountain View,Member Best Paper Award Committee,United States,
+"Meihui Zhang (Beijing Institute of Technology, China)",Meihui,Zhang,Beijing Institute of Technology,Beijing,Member Best Paper Award Committee,China,https://orcid.org/0000-0002-0752-9877
+"Anastasia Ailamaki (EPFL, Switzerland): Chair",Anastasia,Ailamaki,École polytechnique fédérale de Lausanne,Lausanne,Best Industry Paper Award Committee Chair,Switzerland,
+"Phil Bernstein (Microsoft Research, USA)",Philip A.,Bernstein,Microsoft Research,Redmond,Member Best Industry Paper Award Committee,United States,
+"Elisa Bertino (Purdue University, USA)",Elisa,Bertino,Purdue University,West Lafayette,Member Best Industry Paper Award Committee,United States,https://orcid.org/0000-0002-4029-7051
+"Alon Halevy (Facebook AI, USA)",Alon,Halevy,Facebook AI,Menlo Park,Member Best Industry Paper Award Committee,United States,
 "Laura Haas (University of Massachusetts Amherst, USA)",Laura,Haas,University of Massachusetts,Amherst,Member Best Industry Paper Award Committee,United States,
-"Angelos Anadiotis (Ecole Polytechnique , France)",Angelos,Anadiotis,École Polytechnique,,Best Demonstration Award Committee,France,https://orcid.org/0000-0001-8101-6044
+"Angelos Anadiotis (Ecole Polytechnique , France)",Angelos,Anadiotis,École Polytechnique,Palaiseau,Best Demonstration Award Committee,France,https://orcid.org/0000-0001-8101-6044
 "Ahmed Eldawy (University of California at Riverside, USA)",Ahmed,Eldawy,University of California,Riverside,Best Demonstration Award Committee,United States,
-"Yasuhiro Fujiwara (NTT Communication Science Laboratories, Japan)",Yasuhiro,Fujiwara,NTT Communication Science Laboratories,,Best Demonstration Award Committee,Japan,
-"Boris Glavic (Illinois Institute of Technology, USA)",Boris,Glavic,Illinois Institute of Technology,,Best Demonstration Award Committee,United States,https://orcid.org/0000-0003-2887-2452
+"Yasuhiro Fujiwara (NTT Communication Science Laboratories, Japan)",Yasuhiro,Fujiwara,NTT Communication Science Laboratories,Tokyo/Kyoto,Best Demonstration Award Committee,Japan,
+"Boris Glavic (Illinois Institute of Technology, USA)",Boris,Glavic,Illinois Institute of Technology,Chicago,Best Demonstration Award Committee,United States,https://orcid.org/0000-0003-2887-2452
 "Ioana Manolescu (Inria, France)",Ioana,Manolescu,INRIA,Saclay,Best Demonstration Award Committee,France,https://orcid.org/0000-0002-0425-2462
-"Chaokun Wang (Tsinghua University, China)",Chaokun,Wang,Tsinghua University,,Best Demonstration Award Committee,China,https://orcid.org/0000-0002-2986-2574
-Xiaoyong Du (Renmin University),Xiaoyong,Du,Renmin University of China,,Sponsorship Committee Chairs,China,
-Mohamed Mokbel (Qatar Computing Research Institute),Mohamed F.,Mokbel,Qatar Computing Research Institute,,Sponsorship Committee Chairs,Qatar,https://orcid.org/0000-0002-6686-1757
-Vasilis Vassalos (Athens University of Economics and Business),Vasilis,Vassalos,Athens University of Economics and Business,,Sponsorship Committee Chairs,Greece,
-Hideaki Kimura (Oracle),Hideaki,Kimura,Oracle,,Publicity Committee Chair,United States,
-Hiroaki Shiokawa (University of Tsukuba),Hiroaki,Shiokawa,University of Tsukuba,,Proceedings Chairs,Japan,
-Sen Wang (University of Queensland),Sen,Wang,University of Queensland,,Proceedings Chairs,Australia,
-Toshiyuki Amagasa (University of Tsukuba): Chair,Toshiyuki,Amagasa,University of Tsukuba,,Treasury Committee,Japan,
-Atsuyuki Morishima (University of Tsukuba),Atsuyuki,Morishima,University of Tsukuba,,Treasury Committee,Japan,
+"Chaokun Wang (Tsinghua University, China)",Chaokun,Wang,Tsinghua University,Beijing,Best Demonstration Award Committee,China,https://orcid.org/0000-0002-2986-2574
+Xiaoyong Du (Renmin University),Xiaoyong,Du,Renmin University of China,Beijing,Sponsorship Committee Chairs,China,
+Mohamed Mokbel (Qatar Computing Research Institute),Mohamed F.,Mokbel,Qatar Computing Research Institute,Doha,Sponsorship Committee Chairs,Qatar,https://orcid.org/0000-0002-6686-1757
+Vasilis Vassalos (Athens University of Economics and Business),Vasilis,Vassalos,Athens University of Economics and Business,Athens,Sponsorship Committee Chairs,Greece,
+Hideaki Kimura (Oracle),Hideaki,Kimura,Oracle,?,Publicity Committee Chair,United States,
+Hiroaki Shiokawa (University of Tsukuba),Hiroaki,Shiokawa,University of Tsukuba,Tennodai,Proceedings Chairs,Japan,
+Sen Wang (University of Queensland),Sen,Wang,University of Queensland,Brisbane,Proceedings Chairs,Australia,
+Toshiyuki Amagasa (University of Tsukuba): Chair,Toshiyuki,Amagasa,University of Tsukuba,Tennodai,Treasury Committee,Japan,
+Atsuyuki Morishima (University of Tsukuba),Atsuyuki,Morishima,University of Tsukuba,Tennodai,Treasury Committee,Japan,https://orcid.org/0000-0003-4781-4100
 Nobutaka Suzuki (University of Tsukuba),Nobutaka,Suzuki,University of Tsukuba,,Treasury Committee,Japan,
-Oliver Kennedy (University at Buffalo): Chair,Oliver,Kennedy,State University of New York,Buffalo,Technical Committee,United States,https://orcid.org/0000-0003-0632-1668
-Jun Miyazaki (Tokyo Institute of Technology): Chair,Jun,Miyazaki,Tokyo Institute of Technology,,Technical Committee,Japan,https://orcid.org/0000-0002-3038-7678
-Kazuo Goda (University of Tokyo),Kazuo,Goda,University of Tokyo,,Technical Committee,Japan,https://orcid.org/0000-0003-0618-4157
-Shingo Otsuka (Kanagawa Institute of Technology),Shingo,Otsuka,Kanagawa Institute of Technology,,Technical Committee,Japan,
-Kento Sugiura (Nagoya University),Kento,Sugiura,Nagoya University,,Technical Committee,Japan,
-Shohei Yokoyama (Tokyo Metropolitan University): Chair,Shohei,Yokoyama,Tokyo Metropolitan University,,Web and SNS Committee,Japan,
-Kyoung-Sook Kim (National Institute of Advanced Industrial Science and Technology),Kyoung-Sook,Kim,National Institute of Advanced Industrial Science and Technology,,Web and SNS Committee,Japan,https://orcid.org/0000-0003-0670-8053
-Steven Lynden (National Institute of Advanced Industrial Science and Technology),Steven,Lynden,National Institute of Advanced Industrial Science and Technology,,Web and SNS Committee,Japan,
-Akiyoshi Matono (National Institute of Advanced Industrial Science and Technology),Akiyoshi,Matono,National Institute of Advanced Industrial Science and Technology,,Web and SNS Committee,Japan,https://orcid.org/0000-0002-7242-5126
+Oliver Kennedy (University at Buffalo): Chair,Oliver,Kennedy,State University of New York,Buffalo,Technical Committee,,
+Jun Miyazaki (Tokyo Institute of Technology): Chair,Jun,Miyazaki,Tokyo Institute of Technology,Tokyo,Technical Committee,Japan,
+Kazuo Goda (University of Tokyo),Kazuo,Goda,University of Tokyo,Tokyo,Technical Committee,Japan,https://orcid.org/0000-0003-0618-4157
+Shingo Otsuka (Kanagawa Institute of Technology),Shingo,Otsuka,Kanagawa Institute of Technology,Atsugi,Technical Committee,Japan,
+Kento Sugiura (Nagoya University),Kento,Sugiura,Nagoya University,Nagoya,Technical Committee,Japan,
+Shohei Yokoyama (Tokyo Metropolitan University): Chair,Shohei,Yokoyama,Tokyo Metropolitan University,Tokyo,Web and SNS Committee,,
+Kyoung-Sook Kim (National Institute of Advanced Industrial Science and Technology),Kyoung-Sook,Kim,National Institute of Advanced Industrial Science and Technology,Tokyo,Web and SNS Committee,Japan,https://orcid.org/0000-0003-0670-8053
+Steven Lynden (National Institute of Advanced Industrial Science and Technology),Steven,Lynden,National Institute of Advanced Industrial Science and Technology,Tokyo,Web and SNS Committee,Japan,
+Akiyoshi Matono (National Institute of Advanced Industrial Science and Technology),Akiyoshi,Matono,National Institute of Advanced Industrial Science and Technology,Tokyo,Web and SNS Committee,Japan,https://orcid.org/0000-0002-7242-5126
 "Sajjad Rahnama (University of California, Davis)",Sajjad,Rahnama,University of California,Davis,Sponsor Website Chairs,United States,
 "Mohammad Sadoghi (University of California, Davis)",Mohammad,Sadoghi,University of California,Davis,Sponsor Website Chairs,United States,https://orcid.org/0000-0003-2779-6080
 Masato Oguchi (Ochanomizu University): Chair,Masato,Oguchi,Ochanomizu University,,Local Arrangement Committee,Japan,
-Masashi Toyoda (University of Tokyo),Masashi,Toyoda,University of Tokyo,,Local Arrangement Committee,Japan,https://orcid.org/0000-0001-9473-5531
-Saneyasu Yamaguchi (Kogakuin University),Saneyasu,Yamaguchi,Kogakuin University,,Local Arrangement Committee,Japan,
-Chiemi Watanabe (Tsukuba University of Technology),Chiemi,Watanabe,Tsukuba University of Technology,,Local Arrangement Committee,Japan,
-Kaoru Katayama (Tokyo Metropolitan University),Kaoru,Katayama,Tokyo Metropolitan University,,Registration Chairs,Japan,
-Takashi Tomii (Yokohama National University),Takashi,Tomii,Yokohama National University,,Registration Chairs,Japan,
-Miyuki Nakano (Tsuda University),Miyuki,Nakano,Tsuda University,,Domestic Advisory Board,Japan,
-Haruo Yokota (Tokyo Institute of Technology),Haruo,Yokota,Tokyo Institute of Technology,,Domestic Advisory Board,Japan,https://orcid.org/0000-0001-9788-0443
-Masatoshi Yoshikawa (Kyoto University),Masatoshi,Yoshikawa,Kyoto University,,Domestic Advisory Board,Japan,https://orcid.org/0000-0002-1176-700X
-"Allison Holloway (Oracle, USA)",Allison,Holloway,Oracle,,Member Industrial Track Program Committee,United States,
-"Altigran da Silva (Universidade Federal do Amazonas, Brazil)",Altigran da,Silva,Federal University of Amazonas,,Member Industrial Track Program Committee,Brazil,https://orcid.org/0000-0002-8992-495X
-"Anja Gruenheid (Google Inc., USA)",Anja,Gruenheid,Google Research,Madison,Member Industrial Track Program Committee,United States,
+Masashi Toyoda (University of Tokyo),Masashi,Toyoda,University of Tokyo,Tokyo,Local Arrangement Committee,Japan,https://orcid.org/0000-0001-9473-5531
+Saneyasu Yamaguchi (Kogakuin University),Saneyasu,Yamaguchi,Kogakuin University,Tokyo,Local Arrangement Committee,Japan,
+Chiemi Watanabe (Tsukuba University of Technology),Chiemi,Watanabe,Tsukuba University of Technology,Tsukuba,Local Arrangement Committee,Japan,
+Kaoru Katayama (Tokyo Metropolitan University),Kaoru,Katayama,Tokyo Metropolitan University,Tokyo,Registration Chairs,Japan,
+Takashi Tomii (Yokohama National University),Takashi,Tomii,Yokohama National University,Yokohama,Registration Chairs,Japan,
+Miyuki Nakano (Tsuda University),Miyuki,Nakano,Tsuda University,Tokyo,Domestic Advisory Board,Japan,
+Haruo Yokota (Tokyo Institute of Technology),Haruo,Yokota,Tokyo Institute of Technology,Tokyo,Domestic Advisory Board,Japan,https://orcid.org/0000-0001-9788-0443
+Masatoshi Yoshikawa (Kyoto University),Masatoshi,Yoshikawa,Kyoto University,Kyoto,Domestic Advisory Board,Japan,https://orcid.org/0000-0002-1176-700X
+"Allison Holloway (Oracle, USA)",Allison,Holloway,Oracle,?,Member Industrial Track Program Committee,United States,
+"Altigran da Silva (Universidade Federal do Amazonas, Brazil)",Altigran da,Silva,Federal University of Amazonas,Manaus,Member Industrial Track Program Committee,Brazil,https://orcid.org/0000-0002-8992-495X
+"Anja Gruenheid (Google Inc., USA)",Anja,Gruenheid,Google Research,Seattle,Member Industrial Track Program Committee,United States,
 "Azza Abouzied (New York University Abu Dhabi, United Arab Emirates)",Azza,Abouzied,New York University,Abu Dhabi,Member Industrial Track Program Committee,United Arab Emirates,
-"Danica Porobic (Oracle, USA)",Danica,Porobic,Oracle,,Member Industrial Track Program Committee,United States,
+"Danica Porobic (Oracle, USA)",Danica,Porobic,Oracle,?,Member Industrial Track Program Committee,United States,
 "Entong Shen (Amazon Web Services, USA)",Entong,Shen,Amazon,Amazon Web Services,Member Industrial Track Program Committee,United States,
-"Fabrizio Silvestri (Facebook, United Kingdom)",Fabrizio,Silvestri,Facebook,,Member Industrial Track Program Committee,United Kingdom,https://orcid.org/0000-0001-7669-9055
+"Fabrizio Silvestri (Facebook, United Kingdom)",Fabrizio,Silvestri,Facebook,London,Member Industrial Track Program Committee,United Kingdom,https://orcid.org/0000-0001-7669-9055
 "Fatma Ozcan (IBM Research - Almaden, USA)",Fatma,Ozcan,IBM Research,Almaden,Member Industrial Track Program Committee,United States,
-"Feifei Li (Alibaba Group, China)",Feifei,Li,Alibaba Group,,Member Industrial Track Program Committee,China,
-"Guoliang Li (Tsinghua University, China)",Guoliang,Li,Tsinghua University,,Member Industrial Track Program Committee,China,
-"Heiko Schuldt (University of Basel, Switzerland)",Heiko,Schuldt,University of Basel,,Member Industrial Track Program Committee,Switzerland,https://orcid.org/0000-0001-9865-6371
-"Irini Fundulaki (ICS FORTH, Greece)",Irini,Fundulaki,ICS FORTH,,Member Industrial Track Program Committee,Greece,
-"Jana Giceva (TU Munich, Germany)",Jana,Giceva,Technical University of Munich,,Member Industrial Track Program Committee,Germany,https://orcid.org/0000-0002-1926-3551
+"Feifei Li (Alibaba Group, China)",Feifei,Li,Alibaba Group,Hangzhou,Member Industrial Track Program Committee,China,
+"Guoliang Li (Tsinghua University, China)",Guoliang,Li,Tsinghua University,Bejing,Member Industrial Track Program Committee,China,
+"Heiko Schuldt (University of Basel, Switzerland)",Heiko,Schuldt,University of Basel,Basel,Member Industrial Track Program Committee,Switzerland,https://orcid.org/0000-0001-9865-6371
+"Irini Fundulaki (ICS FORTH, Greece)",Irini,Fundulaki,"Institute of Computer Science, FORTH",Heraklion,Member Industrial Track Program Committee,Greece,
+"Jana Giceva (TU Munich, Germany)",Jana,Giceva,Technical University of Munich,Munich,Member Industrial Track Program Committee,Germany,https://orcid.org/0000-0002-1926-3551
 "Jianguo Wang (Amazon Web Services, USA)",Jianguo,Wang,Amazon,Amazon Web Services,Member Industrial Track Program Committee,United States,
-"Johannes Gehrke (Microsoft, USA)",Johannes,Gehrke,Microsoft Research,,Member Industrial Track Program Committee,United States,
-"Meihui Zhang (Beijing Institute of Technology, China)",Meihui,Zhang,Beijing Institute of Technology,,Member Industrial Track Program Committee,China,https://orcid.org/0000-0002-0752-9877
-"Monica Scannapieco (ISTAT, Italy)",Monica,Scannapieco,Italian National Institute of Statistics,,Member Industrial Track Program Committee,Italy,
-"Norman May (SAP SE, Germany)",Norman,May,SAP SE,,Member Industrial Track Program Committee,Germany,
-"Olga Poppe (Microsoft, USA)",Olga,Poppe,Microsoft Research,,Member Industrial Track Program Committee,United States,
-"Roberto Zicari (Goethe University Frankfurt, Germany)",Roberto,Zicari,Goethe University Frankfurt,,Member Industrial Track Program Committee,Germany,
-"Russell Sears (Apple, USA)",Russell,Sears,Apple,,Member Industrial Track Program Committee,United States,
-"Sameer Agarwal (Facebook, USA)",Sameer,Agarwal,Facebook,,Member Industrial Track Program Committee,United States,
-"Sang Cha (Seoul National University, South Korea)",Sang,Cha,Seoul National University,,Member Industrial Track Program Committee,South Korea,
-"Sihem Amer-Yahia (CNRS, France)",Sihem,Amer-Yahia,French National Centre for Scientific Research,,Member Industrial Track Program Committee,France,
-"Songtao Guo (LinkedIn, USA)",Songtao,Guo,LinkedIn,,Member Industrial Track Program Committee,United States,
-"Sonia Bergamaschi (Università di Modena e Reggio Emilia, Italy)",Sonia,Bergamaschi,University of Modena and Reggio Emilia,,Member Industrial Track Program Committee,Italy,https://orcid.org/0000-0001-8087-6587
-"Wolfram Wingerath (Baqend, Germany)",Wolfram,Wingerath,Baqend,,Member Industrial Track Program Committee,Germany,https://orcid.org/0000-0003-3512-5789
-"Yaron Kanza (AT&T Labs-Research, USA)",Yaron,Kanza,AT&T Labs,,Member Industrial Track Program Committee,United States,
-"Yasushi Sakurai (Osaka University, Japan)",Yasushi,Sakurai,Osaka University,,Member Industrial Track Program Committee,Japan,
+"Johannes Gehrke (Microsoft, USA)",Johannes,Gehrke,Microsoft Research,Redmond,Member Industrial Track Program Committee,United States,
+"Meihui Zhang (Beijing Institute of Technology, China)",Meihui,Zhang,Beijing Institute of Technology,Beijing,Member Industrial Track Program Committee,China,https://orcid.org/0000-0002-0752-9877
+"Monica Scannapieco (ISTAT, Italy)",Monica,Scannapieco,Italian National Institute of Statistics,Rome,Member Industrial Track Program Committee,Italy,
+"Norman May (SAP SE, Germany)",Norman,May,SAP Research,Karlsruhe,Member Industrial Track Program Committee,Germany,
+"Olga Poppe (Microsoft, USA)",Olga,Poppe,Microsoft Research,Gray Systems Lab,Member Industrial Track Program Committee,United States,
+"Roberto Zicari (Goethe University Frankfurt, Germany)",Roberto,Zicari,Goethe University Frankfurt,Frankfurt,Member Industrial Track Program Committee,Germany,
+"Russell Sears (Apple, USA)",Russell,Sears,Apple,Cupertino,Member Industrial Track Program Committee,United States,
+"Sameer Agarwal (Facebook, USA)",Sameer,Agarwal,Facebook,Menlo Park,Member Industrial Track Program Committee,United States,
+"Sang Cha (Seoul National University, South Korea)",Sang,Cha,Seoul National University,Seoul,Member Industrial Track Program Committee,South Korea,
+"Sihem Amer-Yahia (CNRS, France)",Sihem,Amer-Yahia,French National Centre for Scientific Research,Paris,Member Industrial Track Program Committee,France,
+"Songtao Guo (LinkedIn, USA)",Songtao,Guo,LinkedIn,Sunnyvale,Member Industrial Track Program Committee,United States,
+"Sonia Bergamaschi (Università di Modena e Reggio Emilia, Italy)",Sonia,Bergamaschi,University of Modena and Reggio Emilia,Modena,Member Industrial Track Program Committee,Italy,https://orcid.org/0000-0001-8087-6587
+"Wolfram Wingerath (Baqend, Germany)",Wolfram,Wingerath,Baqend,Hamburg,Member Industrial Track Program Committee,Germany,https://orcid.org/0000-0003-3512-5789
+"Yaron Kanza (AT&T Labs-Research, USA)",Yaron,Kanza,AT&T Labs,?,Member Industrial Track Program Committee,United States,
+"Yasushi Sakurai (Osaka University, Japan)",Yasushi,Sakurai,Osaka University,Osaka,Member Industrial Track Program Committee,Japan,
 "Ahmed Eldawy (University of California, Riverside)",Ahmed,Eldawy,University of California,Riverside,Member Demonstration Track Program Committee,United States,
-Alekh Jindal (Microsoft),Alekh,Jindal,Microsoft Research,,Member Demonstration Track Program Committee,United States,
-"Alvin Cheung (University of California, Berkeley)",Alvin,Cheung,University of California,,Member Demonstration Track Program Committee,United States,
-Amelie Marian (Rutgers),Amelie,Marian,Rutgers University,,Member Demonstration Track Program Committee,United States,
-"Angelos Anadiotis (Ecole Polytechnique, France)",Angelos,Anadiotis,École Polytechnique,,Member Demonstration Track Program Committee,France,https://orcid.org/0000-0001-8101-6044
-"Annika Hinze (The University of Waikato, NZ)",Annika,Hinze,University of Waikato,,Member Demonstration Track Program Committee,New Zealand,https://orcid.org/0000-0002-7383-1134
-Benoit Groz (Universite Paris Sud - France),Benoit,Groz,Paris-Sud University,,Member Demonstration Track Program Committee,France,
-Boris Glavic (Illinois Institute of Technology),Boris,Glavic,Illinois Institute of Technology,,Member Demonstration Track Program Committee,United States,https://orcid.org/0000-0003-2887-2452
-Chaokun Wang (Tsinghua University),Chaokun,Wang,Tsinghua University,,Member Demonstration Track Program Committee,China,https://orcid.org/0000-0002-2986-2574
-Daniel Deutch (Tel Aviv University),Daniel,Deutch,Tel Aviv University,,Member Demonstration Track Program Committee,Israel,
-David Eyers (University of Otago),David,Eyers,University of Otago,,Member Demonstration Track Program Committee,New Zealand,https://orcid.org/0000-0002-7284-8006
-Dong Wen (University of Technology Sydney),Dong,Wen,University of Technology Sydney,,Member Demonstration Track Program Committee,Australia,
-Fabian Suchanek (Telecom ParisTecg),Fabian,Suchanek,Télécom Paris,,Member Demonstration Track Program Committee,France,
-Fan Zhang (Guangzhou University),Fan,Zhang,Guangzhou University,,Member Demonstration Track Program Committee,China,
-Guanfeng Liu (Macquarie University),Guanfeng,Liu,Macquarie University,,Member Demonstration Track Program Committee,Australia,
-"Helena Galhardas (INESC-ID and IST, Universidade de Lisboa)",Helena,Galhardas,Institute for Systems and Computer Engineering,Technology and Science,Member Demonstration Track Program Committee,Portugal,https://orcid.org/0000-0002-9330-3910
-Ioana Giurgiu (IBM Research),Ioana,Giurgiu,IBM Research,,Member Demonstration Track Program Committee,United States,
-Jens Teubner (TU Dortmund University),Jens,Teubner,Technical University of Dortmund,,Member Demonstration Track Program Committee,Germany,https://orcid.org/0000-0002-0344-5203
-Jiang Du (Facebook),Jiang,Du,Facebook,,Member Demonstration Track Program Committee,United States,
-Katerina (Tzompanaki CY Cergy Paris University.),Katerina,Tzompanaki,CY Cergy Paris University,,Member Demonstration Track Program Committee,France,
-Katja Hose (Aalborg University),Katja,Hose,Aalborg University,,Member Demonstration Track Program Committee,Denmark,https://orcid.org/0000-0001-7025-8099
-"Kazuo Goda (Institute of Industrial Science, The University of Tokyo)",Kazuo,Goda,University of Tokyo,Institute of Industrial Science,Member Demonstration Track Program Committee,Japan,https://orcid.org/0000-0003-0618-4157
-Keishi Tajima (Kyoto University),Keishi,Tajima,Kyoto University,,Member Demonstration Track Program Committee,Japan,
-Letizia Tanca (Politecnico di Milano),Letizia,Tanca,Polytechnic University of Milan,,Member Demonstration Track Program Committee,Italy,https://orcid.org/0000-0003-2607-3171
-"Lu Chen (Aalborg University, Denmark)",Lu,Chen,Aalborg University,,Member Demonstration Track Program Committee,Denmark,
+Alekh Jindal (Microsoft),Alekh,Jindal,Microsoft Research,Gray Systems Lab,Member Demonstration Track Program Committee,United States,
+"Alvin Cheung (University of California, Berkeley)",Alvin,Cheung,University of California,Berkeley,Member Demonstration Track Program Committee,United States,
+Amelie Marian (Rutgers),Amelie,Marian,Rutgers University,New Brunswick,Member Demonstration Track Program Committee,United States,
+"Angelos Anadiotis (Ecole Polytechnique, France)",Angelos,Anadiotis,École Polytechnique,Palaiseau,Member Demonstration Track Program Committee,France,https://orcid.org/0000-0001-8101-6044
+"Annika Hinze (The University of Waikato, NZ)",Annika,Hinze,University of Waikato,Hamilton,Member Demonstration Track Program Committee,New Zealand,https://orcid.org/0000-0002-7383-1134
+Benoit Groz (Universite Paris Sud - France),Benoit,Groz,Paris-Sud University,Orsay,Member Demonstration Track Program Committee,France,
+Boris Glavic (Illinois Institute of Technology),Boris,Glavic,Illinois Institute of Technology,Chicago,Member Demonstration Track Program Committee,United States,https://orcid.org/0000-0003-2887-2452
+Chaokun Wang (Tsinghua University),Chaokun,Wang,Tsinghua University,Beijing,Member Demonstration Track Program Committee,China,https://orcid.org/0000-0002-2986-2574
+Daniel Deutch (Tel Aviv University),Daniel,Deutch,Tel Aviv University,Tel Aviv,Member Demonstration Track Program Committee,Israel,
+David Eyers (University of Otago),David,Eyers,University of Otago,Dunedin,Member Demonstration Track Program Committee,New Zealand,https://orcid.org/0000-0002-7284-8006
+Dong Wen (University of Technology Sydney),Dong,Wen,University of Technology Sydney,Sydney,Member Demonstration Track Program Committee,Australia,
+Fabian Suchanek (Telecom ParisTecg),Fabian,Suchanek,Télécom Paris,Palaiseau,Member Demonstration Track Program Committee,France,
+Fan Zhang (Guangzhou University),Fan,Zhang,Guangzhou University,Guangzhou,Member Demonstration Track Program Committee,China,
+Guanfeng Liu (Macquarie University),Guanfeng,Liu,Macquarie University,Sydney,Member Demonstration Track Program Committee,Australia,
+"Helena Galhardas (INESC-ID and IST, Universidade de Lisboa)",Helena,Galhardas,? INESC/Universidade de Lisboa,Lisbon,Member Demonstration Track Program Committee,Portugal,https://orcid.org/0000-0002-9330-3910
+Ioana Giurgiu (IBM Research),Ioana,Giurgiu,IBM Research,Zurich,Member Demonstration Track Program Committee,Switzerland,
+Jens Teubner (TU Dortmund University),Jens,Teubner,Technical University of Dortmund University,Dortmund,Member Demonstration Track Program Committee,,https://orcid.org/0000-0002-0344-5203
+Jiang Du (Facebook),Jiang,Du,Facebook,Menlo Park,Member Demonstration Track Program Committee,United States,
+Katerina (Tzompanaki CY Cergy Paris University.),Katerina,Tzompanaki,CY Cergy Paris University,Cergy-Pontoise,Member Demonstration Track Program Committee,,
+Katja Hose (Aalborg University),Katja,Hose,Aalborg University,Aalborg,Member Demonstration Track Program Committee,Denmark,https://orcid.org/0000-0001-7025-8099
+"Kazuo Goda (Institute of Industrial Science, The University of Tokyo)",Kazuo,Goda,University of Tokyo,Institute of Industrial Science,Member Demonstration Track Program Committee,,https://orcid.org/0000-0003-0618-4157
+Keishi Tajima (Kyoto University),Keishi,Tajima,Kyoto University,Kyoto,Member Demonstration Track Program Committee,Japan,
+Letizia Tanca (Politecnico di Milano),Letizia,Tanca,Polytechnic University of Milan,Milano,Member Demonstration Track Program Committee,Italy,https://orcid.org/0000-0003-2607-3171
+"Lu Chen (Aalborg University, Denmark)",Lu,Chen,Aalborg University,Aalborg,Member Demonstration Track Program Committee,Denmark,
 Luc Bouganim (INRIA),Luc,Bouganim,INRIA,Saclay,Member Demonstration Track Program Committee,France,
 Lucian Popa (IBM Almaden Research Center),Lucian,Popa,IBM Research,Almaden,Member Demonstration Track Program Committee,United States,
-Michael Grossniklaus (University of Konstanz),Michael,Grossniklaus,University of Konstanz,,Member Demonstration Track Program Committee,Germany,https://orcid.org/0000-0003-1609-2221
-Michael Gubanov Florida (State University),Michael,Gubanov,Florida State University,,Member Demonstration Track Program Committee,United States,
-Nesreen Ahmed (Intel Labs),Nesreen,Ahmed,Intel Labs,,Member Demonstration Track Program Committee,United States,
+Michael Grossniklaus (University of Konstanz),Michael,Grossniklaus,University of Konstanz,Konstanz,Member Demonstration Track Program Committee,Germany,https://orcid.org/0000-0003-1609-2221
+Michael Gubanov Florida (State University),Michael,Gubanov,Florida State University,Tallahassee,Member Demonstration Track Program Committee,United States,
+Nesreen Ahmed (Intel Labs),Nesreen,Ahmed,Intel Labs,Santa Clara,Member Demonstration Track Program Committee,United States,
 Oana Balalau (Inria and Ecole Polytechnique),Oana,Balalau,INRIA,Saclay,Member Demonstration Track Program Committee,France,
-"Oscar Romero (Universitat Politecnica de Catalunya, Spain)",Oscar,Romero,Polytechnic University of Catalonia,,Member Demonstration Track Program Committee,Spain,
-"Pinar Karagoz (METU, Turkey)",Pinar,Karagoz,Middle East Technical University,,Member Demonstration Track Program Committee,Turkey,https://orcid.org/0000-0003-1366-8395
-Qiong Luo (Hong Kong University of Science and Technology),Qiong,Luo,Hong Kong University of Science and Technology,,Member Demonstration Track Program Committee,Hong Kong SAR,
-Saravanan (Thirumuruganathan QCRI),Saravanan,Thirumuruganathan,Qatar Computing Research Institute,,Member Demonstration Track Program Committee,Qatar,
-Slava Novgorodov (eBay Research),Slava,Novgorodov,eBay Research Labs,,Member Demonstration Track Program Committee,United States,
+"Oscar Romero (Universitat Politecnica de Catalunya, Spain)",Oscar,Romero,Polytechnic University of Catalonia,Barcelona,Member Demonstration Track Program Committee,Spain,
+"Pinar Karagoz (METU, Turkey)",Pinar,Karagoz,Middle East Technical University,Ankara,Member Demonstration Track Program Committee,Turkey,https://orcid.org/0000-0003-1366-8395
+Qiong Luo (Hong Kong University of Science and Technology),Qiong,Luo,Hong Kong University of Science and Technology,Hong Kong,Member Demonstration Track Program Committee,Hong Kong SAR,
+Saravanan (Thirumuruganathan QCRI),Saravanan,Thirumuruganathan,Qatar Computing Research Institute,Doha,Member Demonstration Track Program Committee,,
+Slava Novgorodov (eBay Research),Slava,Novgorodov,eBay Research,Israel,Member Demonstration Track Program Committee,,
 Abolfazl Asudeh (UIC),Abolfazl,Asudeh,University of Illinois,Chicago,PhD Workshop PC Members,United States,https://orcid.org/0000-0002-5251-6186
-Matthias Bohm (TU Graz),Matthias,Bohm,Graz University of Technology,,PhD Workshop PC Members,Austria,
-Raul Castro Fernandez (University of Chicago),Raul Castro,Fernandez,University of Chicago,,PhD Workshop PC Members,United States,
-Hannes Muhleisen (CWI),Hannes,Muhleisen,Centrum Wiskunde & Informatica,,PhD Workshop PC Members,Netherlands,https://orcid.org/0000-0001-8552-0029
-Stefan Manegold (CWI),Stefan,Manegold,Centrum Wiskunde & Informatica,,PhD Workshop PC Members,Netherlands,
-Fatemeh Nargesian (University of Rochester),Fatemeh,Nargesian,University of Rochester,,PhD Workshop PC Members,United States,
-Paolo Papotti (Eurecom),Paolo,Papotti,EURECOM,,PhD Workshop PC Members,France,https://orcid.org/0000-0003-0651-4128
-Jorge Arnulfo Quiane Ruiz (TU Berlin),Jorge Arnulfo Quiane,Ruiz,Technical University of Berlin,,PhD Workshop PC Members,Germany,
-Tilmann Rabl (HPI),Tilmann,Rabl,Hasso Plattner Institute,,PhD Workshop PC Members,Germany,
-Ralf Schenkel (University of Trier),Ralf,Schenkel,University of Trier,,PhD Workshop PC Members,Germany,https://orcid.org/0000-0001-5379-5191
-Matthias Weidlich (HU Berlin),Matthias,Weidlich,Humboldt University of Berlin,,PhD Workshop PC Members,Germany,https://orcid.org/0000-0003-3325-7227
-Eugene Wu (Columbia University),Eugene,Wu,Columbia University,,PhD Workshop PC Members,United States,
+Matthias Bohm (TU Graz),Matthias,Bohm,Graz University of Technology,Graz,PhD Workshop PC Members,Austria,
+Raul Castro Fernandez (University of Chicago),Raul Castro,Fernandez,University of Chicago,Chicago,PhD Workshop PC Members,United States,
+Hannes Muhleisen (CWI),Hannes,Muhleisen,Centrum Wiskunde & Informatica,Amsterdam,PhD Workshop PC Members,Netherlands,https://orcid.org/0000-0001-8552-0029
+Stefan Manegold (CWI),Stefan,Manegold,Centrum Wiskunde & Informatica,Amsterdam,PhD Workshop PC Members,Netherlands,
+Fatemeh Nargesian (University of Rochester),Fatemeh,Nargesian,University of Rochester,Rochester,PhD Workshop PC Members,United States,
+Paolo Papotti (Eurecom),Paolo,Papotti,EURECOM,Antibes,PhD Workshop PC Members,France,https://orcid.org/0000-0003-0651-4128
+Jorge Arnulfo Quiane Ruiz (TU Berlin),Jorge Arnulfo Quiane,Ruiz,Technical University of Berlin,Berlin,PhD Workshop PC Members,Germany,
+Tilmann Rabl (HPI),Tilmann,Rabl,Hasso Plattner Institute,Potsdam,PhD Workshop PC Members,Germany,
+Ralf Schenkel (University of Trier),Ralf,Schenkel,University of Trier,Trier,PhD Workshop PC Members,Germany,https://orcid.org/0000-0001-5379-5191
+Matthias Weidlich (HU Berlin),Matthias,Weidlich,Humboldt University of Berlin,Berlin,PhD Workshop PC Members,,https://orcid.org/0000-0003-3325-7227
+Eugene Wu (Columbia University),Eugene,Wu,Columbia University,New York City,PhD Workshop PC Members,United States,

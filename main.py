@@ -2,8 +2,8 @@
 
 # Press Umschalt+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
 from db import *
+import db as db
 import excel as ex
 import sql
 import datacleaner as dc
@@ -35,18 +35,18 @@ def init_run(confYear):
     df = dc.correct_affiliations(df)
     # separates the affiliation string
     df = dc.sort_affiliation_string(df)
-
+    #print(df.to_string())
     # unifies name from dict
     df = dc.correct_name(df)
 
     # add affiliations if missing
     df = dc.fill_affiliation_from_db(df)
     print(df.to_string())
-    #ex.write_csv(df, 'VLDB{}'.format(confYear))
+    ex.write_csv(df, 'VLDB{}'.format(confYear))
 
 
 # manual sorting
-def first_run(confYear):
+def manual_compare(confYear):
     # read as dataframe
     df = ex.read_csv('VLDB{}'.format(confYear))
     print(df.to_string())
@@ -55,15 +55,20 @@ def first_run(confYear):
 
 
 # automated adding from db
-def second_run(confYear):
+def db_fill(confYear):
     # read as dataframe
     df = ex.read_csv('VLDB{}'.format(confYear))
     # add stuff from db
     df = dc.fill_affiliation_from_db(df)
-    df = dc.fill_country_from_db(df)
+    df = dc.fill_country_location_from_db(df)
     print(df.to_string())
     # write csv
     ex.write_csv(df, 'VLDB{}'.format(confYear))
+
+
+def print_file(confYear):
+    df = ex.read_csv('VLDB{}'.format(confYear))
+    print(df.to_string())
 
 
 # add orcid
@@ -84,9 +89,10 @@ def write_to_db(start, end):
 if __name__ == '__main__':
     confYear = 2020
     #init_run(confYear)
-    #first_run(confYear)
+    #manual_compare(confYear)
+    print_file(confYear)
     #second_run(confYear)
-    third_run(confYear)
+    #third_run(confYear)
 
     #write_to_db(14, 1)
     #db = DB("sqlite")
