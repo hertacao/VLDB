@@ -30,14 +30,20 @@ class DB:
         self.cursor.execute("DELETE FROM journal_responsibility")
         self.cursor.execute("DELETE FROM person")
         self.cursor.execute("DELETE FROM affiliation")
+        self.cursor.execute("DELETE FROM person_affiliation")
         self.cursor.execute("DELETE FROM country WHERE Region IS NULL")
         self.cursor.execute("DELETE FROM sqlite_sequence")
+        self.conn.commit()
+
+    def reset_conf(self):
+        self.cursor.execute("DELETE FROM conference_responsibility")
+        self.cursor.execute("DELETE FROM sqlite_sequence WHERE name='conference_responsibility'")
         self.conn.commit()
 
     def check(self, sql, val):
         self.cursor.execute(sql, val)
         result = self.cursor.fetchall()
-        if result is None:
+        if result is None or len(result) == 0:
             return None
         else:
             if len(result) == 1:
@@ -74,13 +80,18 @@ class DB:
         val = (journalVol, personID, roleID)
         return self.check(sql, val)
 
-    def get_country_of_affiliation(self, name):
+    def check_conference_responsibility(self, conferenceNo, personID, roleID):
+        sql = "SELECT * FROM conference_responsibility WHERE ConferenceNo = ? AND PersonID = ? AND RoleID = ?"
+        val = (conferenceNo, personID, roleID)
+        return self.check(sql, val)
+
+    def get_country_of_affiliation(self, affiliation, location):
         sql = "SELECT Country FROM \
-                (SELECT CountryID FROM affiliation WHERE Affiliation = ?) aff \
+                (SELECT CountryID FROM affiliation WHERE Affiliation = ? AND Location = ?) aff \
                 LEFT JOIN \
                 country \
                 ON country.CountryID = aff.CountryID"
-        val = (name,)
+        val = (affiliation, location)
         return self.check(sql, val)
 
     def get_location_of_affiliation(self, name):
@@ -92,11 +103,11 @@ class DB:
         sql = "SELECT Affiliation, Location FROM \
         (SELECT PersonID FROM person WHERE FirstName = ? AND LastName = ?) pers \
         LEFT JOIN \
-        journal_responsibility \
-        ON journal_responsibility.PersonID = pers.personID \
+        person_affiliation \
+        ON person_affiliation.PersonID = pers.personID \
         LEFT JOIN \
         affiliation \
-        ON journal_responsibility.AffiliationID = affiliation.AffiliationID \
+        ON person_affiliation.AffiliationID = affiliation.AffiliationID \
         GROUP BY affiliation.AffiliationID"
         val = (firstname, lastname)
         return self.check(sql, val)
@@ -164,4 +175,25 @@ class DB:
         roleID = roleDict.get(role)
         self.insert_journal_responsibility(journalVol, personID, roleID, affiliationID)
         print(personID, roleID, affiliationID)
+
+    def insert_conference_responsibility(self, conferenceNo, personID, roleID, affiliationID, forced=False):
+        if not forced:
+            journal_responsibility = self.check_conference_responsibility(conferenceNo, personID, roleID)
+        else:
+            journal_responsibility = False
+        if not journal_responsibility:
+            sql = "INSERT INTO conference_responsibility (ConferenceNo, PersonID, RoleID, AffiliationID) VALUES (?, ?, ?, ?)"
+            val = (conferenceNo, personID, roleID, affiliationID)
+            return self.insert(sql, val)
+
+    def insert_conference_res_entry(self, firstName, lastName, orcID, affiliation, location, country, conferenceNo, roleID):
+        personID = self.insert_person(firstName, lastName, orcID)
+        affiliationID = self.insert_affiliation_entry(affiliation, location, country)
+        self.insert_conference_responsibility(conferenceNo, personID, roleID, affiliationID)
+        print(personID, roleID, affiliationID)
+
+    def insert_conf_role(self, confRole):
+        sql = "INSERT INTO conference_role (Role) VALUES (?)"
+        val = (confRole,)
+        return self.insert(sql, val)
 

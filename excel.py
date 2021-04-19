@@ -28,6 +28,11 @@ def read_csv(csv):
     df = df.replace({np.nan: None})
     return df
 
+def read_conf_role_excel(filestring):
+    df = pd.read_excel(filestring, sheet_name="Conference Role")
+    df = df.replace({np.nan: None})
+    return df
+
 
 def read_excel(filestring, sheet):
     df = pd.read_excel(filestring, sheet_name=sheet, usecols='B:E', skiprows=4)

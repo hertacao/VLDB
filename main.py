@@ -11,6 +11,7 @@ import datacleaner as dc
 # Press the green button in the gutter to run the script.
 file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\2020-07-09-PVLDB-Members.xlsx"
 conf_file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\VLDB Conferences.xlsx"
+conf_role = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\PVLDBDB Tables.xlsx"
 
 
 # write csv to db
@@ -19,14 +20,42 @@ def write_journal_to_db(csv, dbConnection, journalVol):
     for index, row in df.iterrows():
         print(row['FirstName'], row['LastName'], row['Role'])
         dbConnection.insert_journal_res_entry(row['FirstName'], row['LastName'], row['OrcID'],
-                                              row['Affiliation'], row['Location'], row['Country'], journalVol, row['Role'])
+                                              row['Affiliation'], row['Location'], row['Country'], journalVol,
+                                              row['Role'])
+
+
+def write_conf_to_db(csv, dbConnection, confYear):
+    df = ex.read_csv(csv)
+    confRoles = ex.read_conf_role_excel(conf_role)
+    for index, row in df.iterrows():
+        roleID = get_conf_roleID(confRoles, row['Role'], confYear)
+        conferenceNo = confYear - 1974
+        print(row['FirstName'], row['LastName'], row['Role'], roleID, conferenceNo)
+        dbConnection.insert_conference_res_entry(row['FirstName'], row['LastName'], row['OrcID'],
+                                              row['Affiliation'], row['Location'], row['Country'], conferenceNo,
+                                              roleID)
+
+
+def write_conf_role_to_db(df):
+    db = DB("sqlite")
+    for index, row in df.iterrows():
+        if row['RoleID'] != 'x':
+            db.insert_conf_role(row['Role'])
+
+
+def get_conf_roleID(confRoles, role, year):
+    id = confRoles[confRoles[year] == role].RoleID.item()
+    if id is None:
+        return print("Error ID not found")
+    else:
+        return id
 
 
 # basic cleaning
-def init_run(confYear):
+def init_run(confYear, mode):
     fileNumber = 2020 - confYear
     # basic separation of the string in name and affiliation
-    df = dc.sort_conf_excel(conf_file, fileNumber, "bracket")
+    df = dc.sort_conf_excel(conf_file, fileNumber, mode)
     # basic replacement of strings
     df = dc.preclean(df)
     # separates the affiliation string
@@ -35,7 +64,7 @@ def init_run(confYear):
     df = dc.correct_affiliations(df)
     # separates the affiliation string
     df = dc.sort_affiliation_string(df)
-    #print(df.to_string())
+    # print(df.to_string())
     # unifies name from dict
     df = dc.correct_name(df)
 
@@ -72,31 +101,40 @@ def print_file(confYear):
 
 
 # add orcid
-def third_run(confYear):
+def fill_orcid(confYear):
     # add orcid to dataframe
     df = dc.add_orcid(confYear)
 
 
-# write csv to db
+def check_for_None(confYear):
+    df = ex.read_csv('VLDB{}'.format(confYear))
+    df = df.loc[df['Country'].isna()]
+    print(df.to_string())
+
+# write multiple csv to db
 def write_to_db(start, end):
     db = DB("sqlite")
     db.reset()
-    for i in range(start, end-1, -1):
+    for i in range(start, end - 1, -1):
         print("JOURNAL:", i)
         write_journal_to_db('VLDB{}'.format(i), db, i)
 
 
 if __name__ == '__main__':
-    confYear = 2020
-    #init_run(confYear)
-    #manual_compare(confYear)
-    print_file(confYear)
-    #second_run(confYear)
-    #third_run(confYear)
+    db = DB("sqlite")
+    #db.reset_conf()
+    confYear = 2019
 
-    #write_to_db(14, 1)
-    #db = DB("sqlite")
-    #write_journal_to_db('VLDB{}'.format(journalVol), db, journalVol)
+    # print(df.to_string())
+
+    # init_run(confYear, "mixed")
+    # manual_compare(confYear)
+    # db_fill(confYear)
+    fill_orcid(confYear)
+    # print_file(confYear)
+    # check_for_None(confYear)
+    # write_conf_to_db('VLDB{}'.format(confYear), db, confYear)
+
 
     # sql queries
     # print(sql.get_journal(journalVol))

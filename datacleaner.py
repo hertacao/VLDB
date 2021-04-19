@@ -1,5 +1,6 @@
 import excel as ex
 from sql import *
+import re
 import db
 
 db = db.DB("sqlite")
@@ -17,7 +18,8 @@ def sort_excel(filestring, sheet, mode):
 def sort_conf_excel(filestring, sheet, mode):
     sorter = {
         "bracket": sort_conf_excel_brackets(filestring, sheet),
-        "comma": sort_conf_excel_comma(filestring, sheet)
+        "comma": sort_conf_excel_comma(filestring, sheet),
+        "mixed": sort_conf_excel_mixed(filestring, sheet)
     }
     df = sorter.get(mode, sort_conf_excel_brackets(filestring, sheet))
     return df[['Name', 'FirstName', 'LastName', 'Affiliation', 'Location', 'Role', 'Country', 'OrcID']]
@@ -87,7 +89,7 @@ def sort_conf_excel_brackets(filestring, sheet):
 
 def sort_conf_excel_comma(filestring, sheet):
     df = ex.read_conf_excel(filestring, sheet)
-    df['FirstName'] =  [ex.get_firstname(string.split(",")[0]) for string in df['Name']]
+    df['FirstName'] = [ex.get_firstname(string.split(",")[0]) for string in df['Name']]
     df.insert(3, 'LastName', [ex.get_lastname(string.split(",")[0]) for string in df['Name']])
     print("names inserted")
 
@@ -99,9 +101,26 @@ def sort_conf_excel_comma(filestring, sheet):
     return df
 
 
-#def sort_conf_excel_mixed(filestring, sheet):
-#    df = ex.read_conf_excel(filestring, sheet)
-#    for index, row in df.iterrows():
+def sort_conf_excel_mixed(filestring, sheet):
+    df = ex.read_conf_excel(filestring, sheet)
+    df['FirstName'] = None
+    df['LastName'] = None
+    df['Affiliation'] = None
+    df['Location'] = None
+    df['Country'] = None
+    df['OrcID'] = None
+    for index, row in df.iterrows():
+        string = row['Name']
+        m = re.search('\(.*\)', string)
+        if m:
+            row['FirstName'] = ex.get_firstname(ex.get_name_from_string(string))
+            row['LastName'] = ex.get_lastname(ex.get_name_from_string(string))
+            row['Affiliation'] = ex.get_affiliation_from_string(string)
+        else:
+            row['FirstName'] = ex.get_firstname(string.split(",")[0])
+            row['LastName'] = ex.get_lastname(string.split(",")[0])
+            row['Affiliation'] = ex.get_comma_affiliation(string)
+    return df
 
 
 # sorts the affiliation string in affiliation, location and country
@@ -182,11 +201,26 @@ def add_affiliation_from_db(firstname, lastname, affiliation, location):
         db_affiliation = db.get_affiliation_from_name(firstname, lastname)
         if db_affiliation:
             if type(db_affiliation) == tuple:
-                return db_affiliation
+                return db_affiliation[0], db_affiliation[1]
             else:
-                return ",".join(db_affiliation)
+                return "/".join(db_affiliation[0]), "/".join(db_affiliation[1])
         else:
             return None, None
+    elif location is None or location == "None":
+        db_affiliation = db.get_affiliation_from_name(firstname, lastname)
+        if db_affiliation:
+            if type(db_affiliation) == tuple and db_affiliation[0] == affiliation:
+                return db_affiliation[0], db_affiliation[1]
+            else:
+                possible_loc = []
+                for aff in db_affiliation:
+                    if aff[0] == affiliation:
+                        possible_loc.append(aff[1])
+                return affiliation, "/".join(possible_loc)
+        else:
+            return affiliation, None
+    else:
+        return affiliation, location
 
 
 # fills up dataframe with affiliation extracted from the database
@@ -194,14 +228,14 @@ def fill_affiliation_from_db(df):
     affiliations = [add_affiliation_from_db(firstname, lastname, affiliation, location) for firstname, lastname, affiliation, location in
                     zip(df['FirstName'], df['LastName'], df['Affiliation'], df['Location'])]
     df[['Affiliation', 'Location']] = pd.DataFrame(affiliations, index=df.index)
-    print("affiliation added")
+    print("affiliation for person added from database")
     return df
 
 
 # adds country from the database for an affiliation
-def add_country_from_db(affiliation, country):
+def add_country_from_db(affiliation, location, country):
     if country is None:
-        db_country = db.get_country_of_affiliation(affiliation)
+        db_country = db.get_country_of_affiliation(affiliation, location)
         if db_country:
             return db_country
         else:
@@ -227,16 +261,16 @@ def add_location_from_db(affiliation, location):
 
 # fills up countries for a dataframe
 def fill_country_location_from_db(df):
-    if 'Country' not in df:
-        df['Country'] = None
-    df['Country'] = [add_country_from_db(affiliation, country) for affiliation, country in
-                     zip(df['Affiliation'], df['Country'])]
-    print("country added")
     if 'Location' not in df:
         df['Location'] = None
     df['Location'] = [add_location_from_db(affiliation, location) for affiliation, location in
                      zip(df['Affiliation'], df['Location'])]
-    print("location added")
+    print("location for affiliation added")
+    if 'Country' not in df:
+        df['Country'] = None
+    df['Country'] = [add_country_from_db(affiliation, location, country) for affiliation, location, country in
+                     zip(df['Affiliation'], df['Location'], df['Country'])]
+    print("country for affiliation added")
     return df
 
 
