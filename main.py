@@ -123,17 +123,17 @@ def write_to_db(start, end):
 if __name__ == '__main__':
     db = DB("sqlite")
     #db.reset_conf()
-    confYear = 2019
+    confYear = 2018
 
     # print(df.to_string())
 
     # init_run(confYear, "mixed")
     # manual_compare(confYear)
     # db_fill(confYear)
-    fill_orcid(confYear)
+    # fill_orcid(confYear)
     # print_file(confYear)
     # check_for_None(confYear)
-    # write_conf_to_db('VLDB{}'.format(confYear), db, confYear)
+    write_conf_to_db('VLDB{}'.format(confYear), db, confYear)
 
 
     # sql queries

@@ -75,6 +75,11 @@ class DB:
             val = (name, location)
         return self.check(sql, val)
 
+    def check_person_affiliation(self, personID, affiliationID):
+        sql = "SELECT * FROM person_affiliation WHERE PersonID = ? AND AffiliationID = ?"
+        val = (personID, affiliationID)
+        return self.check(sql, val)
+
     def check_journal_responsibility(self, journalVol, personID, roleID):
         sql = "SELECT * FROM journal_responsibility WHERE JournalVol = ? AND PersonID = ? AND RoleID = ?"
         val = (journalVol, personID, roleID)
@@ -159,6 +164,16 @@ class DB:
         else:
             return personID
 
+    def insert_person_affiliation(self, personID, affiliationID, forced=False):
+        if not forced:
+            person_affiliation = self.check_person_affiliation(personID, affiliationID)
+        else:
+            person_affiliation = False
+        if not person_affiliation:
+            sql = "INSERT INTO person_affiliation (PersonID, AffiliationID) VALUES (?, ?)"
+            val = (personID, affiliationID)
+            return self.insert(sql, val)
+
     def insert_journal_responsibility(self, journalVol, personID, roleID, affiliationID, forced=False):
         if not forced:
             journal_responsibility = self.check_journal_responsibility(journalVol, personID, roleID)
@@ -168,13 +183,6 @@ class DB:
             sql = "INSERT INTO journal_responsibility (JournalVol, PersonID, RoleID, AffiliationID) VALUES (?, ?, ?, ?)"
             val = (journalVol, personID, roleID, affiliationID)
             return self.insert(sql, val)
-
-    def insert_journal_res_entry(self, firstName, lastName, orcID, affiliation, location, country, journalVol, role):
-        personID = self.insert_person(firstName, lastName, orcID)
-        affiliationID = self.insert_affiliation_entry(affiliation, location, country)
-        roleID = roleDict.get(role)
-        self.insert_journal_responsibility(journalVol, personID, roleID, affiliationID)
-        print(personID, roleID, affiliationID)
 
     def insert_conference_responsibility(self, conferenceNo, personID, roleID, affiliationID, forced=False):
         if not forced:
@@ -186,9 +194,18 @@ class DB:
             val = (conferenceNo, personID, roleID, affiliationID)
             return self.insert(sql, val)
 
+    def insert_journal_res_entry(self, firstName, lastName, orcID, affiliation, location, country, journalVol, role):
+        personID = self.insert_person(firstName, lastName, orcID)
+        affiliationID = self.insert_affiliation_entry(affiliation, location, country)
+        self.insert_person_affiliation(personID, affiliationID)
+        roleID = roleDict.get(role)
+        self.insert_journal_responsibility(journalVol, personID, roleID, affiliationID)
+        print(personID, roleID, affiliationID)
+
     def insert_conference_res_entry(self, firstName, lastName, orcID, affiliation, location, country, conferenceNo, roleID):
         personID = self.insert_person(firstName, lastName, orcID)
         affiliationID = self.insert_affiliation_entry(affiliation, location, country)
+        self.insert_person_affiliation(personID, affiliationID)
         self.insert_conference_responsibility(conferenceNo, personID, roleID, affiliationID)
         print(personID, roleID, affiliationID)
 
