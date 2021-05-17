@@ -28,7 +28,9 @@ def write_conf_to_db(csv, dbConnection, confYear):
     df = ex.read_csv(csv)
     confRoles = ex.read_conf_role_excel(conf_role)
     for index, row in df.iterrows():
+        print(row['FirstName'], row['LastName'])
         roleID = get_conf_roleID(confRoles, row['Role'], confYear)
+        print("roleID ", roleID)
         conferenceNo = confYear - 1974
         print(row['FirstName'], row['LastName'], row['Role'], roleID, conferenceNo)
         dbConnection.insert_conference_res_entry(row['FirstName'], row['LastName'], row['OrcID'],
@@ -44,6 +46,7 @@ def write_conf_role_to_db(df):
 
 
 def get_conf_roleID(confRoles, role, year):
+    print("Role: " + role)
     id = confRoles[confRoles[year] == role].RoleID.item()
     if id is None:
         return print("Error ID not found")
@@ -123,11 +126,11 @@ def write_to_db(start, end):
 if __name__ == '__main__':
     db = DB("sqlite")
     #db.reset_conf()
-    confYear = 2018
+    confYear = 2012
 
     # print(df.to_string())
 
-    # init_run(confYear, "mixed")
+    # init_run(confYear, "comma")
     # manual_compare(confYear)
     # db_fill(confYear)
     # fill_orcid(confYear)

@@ -1,0 +1,121 @@
+Name,FirstName,LastName,Affiliation,Location,Role,Country,OrcID
+Alfons Kemper (TUM),Alfons,Kemper,Technical University of Munich,Munich,General Conference Chairs,Germany,
+Thomas Neumann (TUM),Thomas,Neumann,Technical University of Munich,Munich,General Conference Chairs,Germany,
+Johann-Christoph Freytag,Johann-Christoph,Freytag,Humboldt University of Berlin,Berlin,Honorary Chair,Germany,
+Stephan Günnemann (TUM),Stephan,Günnemann,Technical University of Munich,Munich,Organization Committee Chair,Germany,https://orcid.org/0000-0001-7772-5059
+Alfons Kemper (TUM),Alfons,Kemper,Technical University of Munich,Munich,Organization Committee Chair,Germany,
+Thomas Neumann (TUM),Thomas,Neumann,Technical University of Munich,Munich,Organization Committee Chair,Germany,
+Peter Boncz (CWI),Peter,Boncz,Centrum Wiskunde & Informatica,Amsterdam,Program Committee Chairs,Netherlands,
+Ken Salem (U Waterloo),Kenneth,Salem,University of Waterloo,Waterloo,Program Committee Chairs,Canada,
+Volker Markl (TU Berlin),Volker,Markl,Technical University of Berlin,Berlin,VLDB Endowment Representative,Germany,
+Mike Carey (UC Irvine),Mike,Carey,University of California,Irvine,Sponsorship Committee Chairs,United States,
+Sang Kyun Cha (Univ. Seoul),Sang Kyun,Cha,Seoul National University,Seoul,Sponsorship Committee Chairs,South Korea,
+Wolfgang Lehner (TU Dresden),Wolfgang,Lehner,Technical University of Dresden,Dresden,Sponsorship Committee Chairs,Germany,https://orcid.org/0000-0001-8107-2775
+Jens Dittrich (Saarland U),Jens,Dittrich,Saarland University,Saarbrücken,Publicity Committee Chair,Germany,
+Vagelis Hristidis (UC Riverside),Vagelis,Hristidis,University of California,Riverside,Tutorial Chairs,United States,https://orcid.org/0000-0001-8679-4988
+Aristides Gionis (Aalto University),Aristides,Gionis,Aalto University,Espoo,Tutorial Chairs,Finland,https://orcid.org/0000-0002-5211-112X
+Felix Naumann (HPI),Felix,Naumann,Hasso Plattner Institute,Potsdam,Industrial Chairs,Germany,https://orcid.org/0000-0002-4483-1389
+Jonathan Goldstein (Microsoft Research),Jonathan,Goldstein,Microsoft Research,Redmond,Industrial Chairs,United States,
+Jingren Zhou (Alibaba),Jingren,Zhou,Alibaba Group,Hangzhou,Industrial Chairs,China,
+Martin Theobald (University of Luxembourg),Martin,Theobald,University of Luxembourg,Esch-sur-Alzette,Demo Chairs,Luxembourg,
+Bingsheng He (NUS),Bingsheng,He,National University of Singapore,Singapore,Demo Chairs,Singapore,
+Reynold Xin (Databricks),Reynold,Xin,Databricks,San Francisco,Demo Chairs,United States,
+Stratos Idreos (Harvard),Stratos,Idreos,Harvard University,Cambridge,Panel Chairs,United States,
+Michael Brodie (MIT),Michael,Brodie,Massachusetts Institute of Technology,Cambridge,Panel Chairs,United States,
+Christian S. Jensen (Aalborg Univ),Christian S.,Jensen,Aalborg University,Aalborg,Workshop Chairs,Denmark,
+M. Tamer Özsu (U Waterloo),M. Tamer,Özsu,University of Waterloo,Waterloo,Workshop Chairs,Canada,https://orcid.org/0000-0002-8126-1717
+Erhard Rahm (Uni Leipzig),Erhard,Rahm,University of Leipzig,Leipzig,PhD Workshop Chairs,Germany,https://orcid.org/0000-0002-2665-1114
+Peter Christen (ANU),Peter,Christen,Australian National University,Canberra,PhD Workshop Chairs,Australia,
+Bettina Kemme (McGill University),Bettina,Kemme,McGill University,Montreal,PhD Workshop Chairs,Canada,
+Aaron Elmore (Univerisity of Chicago),Aaron,Elmore,University of Chicago,Chicago,Proceedings Chairs,United States,
+Alvin Cheung (University of Washington),Alvin,Cheung,University of Washington,Seattle,Proceedings Chairs,United States,
+Felix Martin Schuhknecht (Saarland U),Felix Martin,Schuhknecht,Saarland University,Saarbrücken,Website,Germany,https://orcid.org/0000-0002-0165-4116
+Viktor Leis (TUM),Viktor,Leis,Technical University of Munich,Munich,Volunteers Coordinator,Germany,
+Wolfgang Lehner (TU Dresden),Wolfgang,Lehner,Technical University of Dresden,Dresden,Student Grant Coordinator,Germany,https://orcid.org/0000-0001-8107-2775
+Adam Silberstein - Trifacta,Adam,Silberstein,Trifacta,? Headquarters: San Francisco,Member Industrial Track Program Commitee,United States,
+Albert Maier - IBM Germany,Albert,Maier,IBM,Germany,Member Industrial Track Program Commitee,Germany,
+Amit Rustagi - SanDisk,Amit,Rustagi,SanDisk,?,Member Industrial Track Program Commitee,United States,
+Badrish Chandramouli - Microsoft Research,Badrish,Chandramouli,Microsoft Research,Redmond,Member Industrial Track Program Commitee,United States,
+Benjamin Schlegel - Oracle,Benjamin,Schlegel,Oracle,,Member Industrial Track Program Commitee,United States,
+Berthold Reinwald - IBM Almaden,Berthold,Reinwald,IBM Research,Almaden,Member Industrial Track Program Commitee,United States,
+Brian Cooper - Google,Brian,Cooper,Google,Mountain View,Member Industrial Track Program Commitee,United States,
+Donald Kossmann - ETH Zuerich,Donald,Kossmann,ETH Zurich,,Member Industrial Track Program Commitee,Switzerland,
+Fatma Özcan - IBM Research,Fatma,Özcan,IBM Research,Almaden,Member Industrial Track Program Commitee,United States,
+Gjergji Kasneci - Schufa Holding AG,Gjergji,Kasneci,Schufa Holding AG,Wiesbaden,Member Industrial Track Program Commitee,Germany,
+Goetz Graefe - Google,Goetz,Graefe,Google Research,Madison,Member Industrial Track Program Commitee,United States,
+Gregor Hackenbroich - SAP,Gregor,Hackenbroich,SAP,Mannheim,Member Industrial Track Program Commitee,Germany,
+James Terwilliger - Microsoft,James,Terwilliger,Microsoft,Redmond,Member Industrial Track Program Commitee,United States,
+Jun Rao - Confluent,Jun,Rao,Confluent,Mountain View,Member Industrial Track Program Commitee,United States,
+Justin Levandoski - Microsoft Research,Justin,Levandoski,Microsoft Research,Redmond,Member Industrial Track Program Commitee,United States,
+Laura Haas - IBM Almaden,Laura,Haas,IBM Research,Almaden,Member Industrial Track Program Commitee,United States,
+Matthias Weidlich - Humboldt-Universität zu Berlin,Matthias,Weidlich,Humboldt University of Berlin,Berlin,Member Industrial Track Program Commitee,Germany,https://orcid.org/0000-0003-3325-7227
+Michael Waas - Datometry Inc.,Michael,Waas,Datometry,San Francisco,Member Industrial Track Program Commitee,United States,
+Niloy Mukherjee - LinkedIn,Niloy,Mukherjee,LinkedIn,Sunnyvale,Member Industrial Track Program Commitee,United States,
+Reynold Xin - Databricks,Reynold,Xin,Databricks,San Francisco,Member Industrial Track Program Commitee,United States,
+Ryan Stutsman - University of Utah,Ryan,Stutsman,University of Utah,Salt Lake City,Member Industrial Track Program Commitee,United States,
+Sang Kyun Cha - Seoul National University,Sang Kyun,Cha,Seoul National University,Seoul,Member Industrial Track Program Commitee,South Korea,
+Sergey Melnik - Google,Sergey,Melnik,Google,Redmond,Member Industrial Track Program Commitee,United States,
+Tamraparni Dasu - AT&T Research,Tamraparni,Dasu,AT&T Labs,Research,Member Industrial Track Program Commitee,United States,
+Wolfgang Lehner - Technische Universität Dresden,Wolfgang,Lehner,Technical University of Dresden,Dresden,Member Industrial Track Program Commitee,Germany,https://orcid.org/0000-0001-8107-2775
+Zbigniew Jerzak - SAP,Zbigniew,Jerzak,SAP,Berlin,Member Industrial Track Program Commitee,Germany,
+Angela Bonifati (Univ. of Lyon),Angela,Bonifati,University of Lyon,Lyon,PhD Workshop PC Members,France,https://orcid.org/0000-0002-9582-869X
+Stéphane Bressan (National University of Singapore),Stéphane,Bressan,National University of Singapore,Singapore,PhD Workshop PC Members,Singapore,
+George Fletcher (TU Eindhoven),George,Fletcher,Eindhoven University of Technology,Eindhoven,PhD Workshop PC Members,Netherlands,https://orcid.org/0000-0003-2111-6769
+Lukasz Golab (University of Waterloo),Lukasz,Golab,University of Waterloo,Waterloo,PhD Workshop PC Members,Canada,https://orcid.org/0000-0003-0632-7496
+Carson Leung (University of Manitoba),Carson,Leung,University of Manitoba,Winnipeg,PhD Workshop PC Members,Canada,https://orcid.org/0000-0002-7541-9127
+Sebastian Link (University of Auckland),Sebastian,Link,University of Auckland,Auckland,PhD Workshop PC Members,New Zealand,
+Rachel Pottinger (Univ. of British Columbia),Rachel,Pottinger,University of British Columbia,Vancouver,PhD Workshop PC Members,Canada,
+Louiqa Raschid (University of Maryland),Louiqa,Raschid,University of Maryland,College Park,PhD Workshop PC Members,United States,https://orcid.org/0000-0002-0630-6049
+Donatello Santoro (Universita della Basilicata),Donatello,Santoro,University of Basilicata,Potenza,PhD Workshop PC Members,Italy,https://orcid.org/0000-0002-5651-8584
+Timos Sellis (Swinburne University of Technology),Timos,Sellis,Swinburne University of Technology,Melbourne,PhD Workshop PC Members,Australia,https://orcid.org/0000-0002-9067-5639
+Andreas Thor (HFT Leipzig),Andreas,Thor,University of Applied Sciences for Telecommunications Leipzig,Leipzig,PhD Workshop PC Members,Germany,
+Wei Wang (University of New South Wales),Wei,Wang,University of New South Wales,Sydney,PhD Workshop PC Members,Australia,
+Qing Wang (Australian National University),Qing,Wang,Australian National University,Canberra,PhD Workshop PC Members,Australia,
+Alekh Jindal (Microsoft),Alekh,Jindal,Microsoft Research,Redmond,Demo Track PC Members,United States,
+Alkis Simitsis (HP Labs),Alkis,Simitsis,HP Labs,Palo Alto,Demo Track PC Members,United States,
+Avery Ching (Facebook),Avery,Ching,Facebook,Menlo Park,Demo Track PC Members,United States,
+Carsten Binnig (Brown University),Carsten,Binnig,Brown University,Providence,Demo Track PC Members,United States,
+Dahlmeier Daniel (SAP),Daniel,Dahlmeier,SAP,Walldorf,Demo Track PC Members,Germany,
+Danica Porobic (Oracle Labs),Danica,Porobic,Oracle Labs,,Demo Track PC Members,United States,
+Donald Kossmann (ETH Zurich),Donald,Kossmann,ETH Zurich,Zurich,Demo Track PC Members,Switzerland,
+Emmanuel Müller (Hasso Plattner Institute),Emmanuel,Müller,Hasso Plattner Institute,Potsdam,Demo Track PC Members,Germany,
+Eric Lo (Hong Kong Polytechnic University),Eric,Lo,Hong Kong Polytechnic University,Hong Kong,Demo Track PC Members,Hong Kong SAR,
+Eugene Wu (Columbia University),Eugene,Wu,Columbia University,New York City,Demo Track PC Members,United States,
+Fatma Özcan (IBM Research),Fatma,Özcan,IBM Research,Almaden,Demo Track PC Members,United States,
+Fei Chiang (McMaster University),Fei,Chiang,McMaster University,Hamilton,Demo Track PC Members,Canada,
+Felix Martin Schuhknecht (Saarland University),Felix Martin,Schuhknecht,Saarland University,Saarbrücken,Demo Track PC Members,Germany,https://orcid.org/0000-0002-0165-4116
+Fred Reiss (IBM),Fred,Reiss,IBM,San Francicso,Demo Track PC Members,United States,
+Guoliang Li (Tsinghua University),Guoliang,Li,Tsinghua University,Bejing,Demo Track PC Members,China,
+Jiannan Wang (UC Berkeley),Jiannan,Wang,University of California,Berkeley,Demo Track PC Members,United States,
+"Johann Gamper (Free University of Bozen-Bolzano, Italy)",Johann,Gamper,Free University of Bozen-Bolzano,Bolzano,Demo Track PC Members,Italy,https://orcid.org/0000-0002-7128-507X
+Jorge Quiane Ruiz (QCRI),Jorge Quiane,Ruiz,Qatar Computing Research Institute,Doha,Demo Track PC Members,Qatar,
+Joseph Gonzales (UC Berkeley),Joseph,Gonzales,University of California,Berkeley,Demo Track PC Members,United States,
+Justin Levandoski (Microsoft Research),Justin,Levandoski,Microsoft Research,Redmond,Demo Track PC Members,United States,
+Kai Zeng (Microsoft Research),Kai,Zeng,Microsoft Research,Seattle,Demo Track PC Members,United States,
+Katja Hose (Aalborg University),Katja,Hose,Aalborg University,Aalborg,Demo Track PC Members,Denmark,https://orcid.org/0000-0001-7025-8099
+Kyriakos Mouratidis (Singapore Management University),Kyriakos,Mouratidis,Singapore Management University,Singapore,Demo Track PC Members,Singapore,https://orcid.org/0000-0002-8835-430X
+Leong Hou U (University of Macau),Leong Hou,U,University of Macau,Zhuhai,Demo Track PC Members,Macau SAR,
+Liwen Sun (UC Berkeley),Liwen,Sun,University of California,Berkeley,Demo Track PC Members,United States,
+Matei Zaharia (Stanford University),Matei,Zaharia,Stanford University,Stanford,Demo Track PC Members,United States,
+Michael Cafarella (University of Michigan),Michael J.,Cafarella,University of Michigan,Ann Arbor,Demo Track PC Members,United States,
+Michael Armbrust (Databricks),Michael,Armbrust,Databricks,San Francisco,Demo Track PC Members,United States,
+Paolo Papotti (ASU),Paolo,Papotti,Arizona State University,Tempe,Demo Track PC Members,United States,https://orcid.org/0000-0003-0651-4128
+Rainer Gemulla (University of Mannheim),Rainer,Gemulla,University of Mannheim,Mannheim,Demo Track PC Members,Germany,https://orcid.org/0000-0003-2762-0050
+Ralf Schenkel (University of Trier),Ralf,Schenkel,University of Trier,Trier,Demo Track PC Members,Germany,https://orcid.org/0000-0001-5379-5191
+Rubao Li (Ohio State University),Rubao,Li,Ohio State University,Columbus,Demo Track PC Members,United States,
+Rui Zhang (University of Delaware),Rui,Zhang,University of Delaware,Newark,Demo Track PC Members,United States,
+Sai Wu (Zhejiang University),Sai,Wu,Zhejiang University,Hangzhou,Demo Track PC Members,China,
+"Sairam Gurajada (IBM Research, Almaden)",Sairam,Gurajada,IBM Research,Almaden,Demo Track PC Members,United States,
+Shivaram Venkataraman (UC Berkeley),Shivaram,Venkataraman,University of California,Berkeley,Demo Track PC Members,United States,https://orcid.org/0000-0001-9575-7935
+Shuai Ma (Beihang University),Shuai,Ma,Beihang University,Bejing,Demo Track PC Members,China,
+Srikanta Bedathur (IBM India Research Lab),Srikanta,Bedathur,IBM Research,India,Demo Track PC Members,India,https://orcid.org/0000-0002-3949-2175
+Wolfgang Gatterbauer (Carnegie Mellon University),Wolfgang,Gatterbauer,Carnegie Mellon University,Pittsburgh,Demo Track PC Members,United States,https://orcid.org/0000-0002-9614-0504
+Xiaodong Zhang (Ohio State University),Xiaodong,Zhang,Ohio State University,Columbus,Demo Track PC Members,United States,
+Xike Xie (USTC),Xike,Xie,University of Science and Technology of China,Hefei,Demo Track PC Members,China,https://orcid.org/0000-0001-5290-5408
+Xin Huang (Hong Kong Baptist University),Xin,Huang,Hong Kong Baptist University,Hong Kong,Demo Track PC Members,Hong Kong SAR,
+Yannis Velegrakis (University of Trento),Yannis,Velegrakis,University of Trento,Trento,Demo Track PC Members,Italy,https://orcid.org/0000-0001-6332-0296
+Yin Huai (Databricks),Yin,Huai,Databricks,San Francisco,Demo Track PC Members,United States,
+Yingyi Bu (Couchbase Inc.),Yingyi,Bu,Couchbase,Santa Clara,Demo Track PC Members,United States,
+You Wu (Google Research),You,Wu,Google Research,?,Demo Track PC Members,United States,
+Zeke Wang (National University of Singapore),Zeke,Wang,National University of Singapore,Singapore,Demo Track PC Members,Singapore,
+Zhe Chen (University of Michigan),Zhe,Chen,University of Michigan,Ann Arbor,Demo Track PC Members,United States,

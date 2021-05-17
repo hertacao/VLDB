@@ -1,0 +1,122 @@
+Name,FirstName,LastName,Affiliation,Location,Role,Country,OrcID
+"Yunhe Pan, Chinese Academy of Engineering",Yunhe,Pan,Chinese Academy of Engineering,Beijing,Honorary Chair,China,
+"Chun Chen, Zhejiang University",Chun,Chen,Zhejiang University,Hangzhou,General Chairs,China,
+"Sharad Mehrotra, University of California, Irvine",Sharad,Mehrotra,University of California,Irvine,General Chairs,United States,
+"H.V. Jagadish, University of Michigan",H. V.,Jagadish,University of Michigan,Ann Arbor,Program Chairs,United States,https://orcid.org/0000-0003-0724-5214
+"Aoying Zhou, East Normal University, China",Aoying,Zhou,East China Normal University,Shanghai,Program Chairs,China,
+"Shivnath Babu, Georgia Tech",Shivnath,Babu,Georgia Institute of Technology,Atlanta,Research Track Associate Editors,United States,
+"Lei Chen, HKUST",Lei,Chen,Hong Kong University of Science and Technology,Hong Kong,Research Track Associate Editors,Hong Kong SAR,
+"Graham Cormode, AT&T",Graham,Cormode,AT&T Labs,?,Research Track Associate Editors,United States,https://orcid.org/0000-0002-0698-0922
+"Bin Cui, Peking University, China",Bin,Cui,Peking University,Bejing,Research Track Associate Editors,China,
+"Wynne Hsu, NUS",Wynne,Hsu,National University of Singapore,Singapore,Research Track Associate Editors,Singapore,https://orcid.org/0000-0002-4142-8893
+"Martin Kersten, CWI",Martin,Kersten,Centrum Wiskunde & Informatica,Amsterdam,Research Track Associate Editors,Netherlands,
+"Donald Kossman, ETH",Donald,Kossman,ETH Zurich,Zurich,Research Track Associate Editors,Switzerland,
+"Elke Rundensteiner, WPI",Elke,Rundensteiner,Worcester Polytechnic Institute,Worcester,Research Track Associate Editors,United States,
+"Kyuseok Shim , Seoul National University",Kyuseok,Shim,Seoul National University,Seoul,Research Track Associate Editors,South Korea,
+"Wang-Chiew Tan, UCSC",Wang-Chiew,Tan,University of California,Santa Cruz,Research Track Associate Editors,United States,
+"Letizia Tanca, Politecnico di Milano",Letizia,Tanca,Polytechnic University of Milan,Milano,Research Track Associate Editors,Italy,https://orcid.org/0000-0003-2607-3171
+"Jeffrey Yu, Chinese University of Hongkong",Jeffrey,Yu,Chinese University of Hongkong,Hong Kong,Research Track Associate Editors,Hong Kong SAR,
+"Kyu-Young Whang, KAIST",Kyu-Young,Whang,Korea Advanced Institute of Science and Technology,Daejeon,VLDB Endowment Liaison,South Korea,
+"Gao Cong, Nanyang Technological University",Gao,Cong,Nanyang Technological University,Singapore,Experiments and Analysis Track Associate Charis,Singapore,
+"Jens Dittrich, Saarland",Jens,Dittrich,Saarland University,Saarbrücken,Experiments and Analysis Track Associate Charis,Germany,
+"Zachary Ives, UPenn",Zachary G.,Ives,University of Pennsylvania,Philadelphia,Vision Track Associate Editor,United States,
+"Umesh Dayal, Hitachi",Umeshwar,Dayal,Hitachi,America,Industrial and Applications Track Associate Editors,United States,
+"C Mohan, IBM",C,Mohan,IBM Research,Almaden,Industrial and Applications Track Associate Editors,United States,
+"Ge Yu, Northeastern University",Ge,Yu,Northeastern University,Boston,Industrial and Applications Track Associate Editors,United States,
+"Mong-Li Lee, NUS",Mong-Li,Lee,National University of Singapore,Singapore,Demonstrations Chairs,Singapore,https://orcid.org/0000-0002-9636-388X
+"Fei Fei Li, Utah",Feifei,Li,University of Utah,Salt Lake City,Demonstrations Chairs,United States,
+"Sunil Prabhakar, Purdue",Sunil,Prabhakar,Purdue University,West Lafayette,Demonstrations Chairs,United States,
+"Erich Neuhold, University of Vienna",Erich,Neuhold,University of Vienna,Vienna,PhD Workshop Chairs,Austria,
+"Yunyao Li, IBM",Yunyao,Li,IBM Research,Almaden,PhD Workshop Chairs,United States,
+"Anastasia Ailamaki, EPFL",Anastasia,Ailamaki,École polytechnique fédérale de Lausanne,Lausanne,Workshop Chairs,Switzerland,
+"Kaushik Chakrabarti, Microsoft",Kaushik,Chakrabarti,Microsoft Research,Redmond,Workshop Chairs,United States,
+"Xiaoyong Du, Renmin University",Xiaoyong,Du,Renmin Renmin University of China,Beijing,Tutorial Chairs,China,
+"Murat Kantarcioglu, UT, Dallas",Murat,Kantarcioglu,University of Texas,Dallas,Tutorial Chairs,United States,https://orcid.org/0000-0001-9795-9063
+"Divesh Srivastava, AT&T Labs",Divesh,Srivastava,AT&T Labs,?/Research,Tutorial Chairs,United States,https://orcid.org/0000-0002-7609-9217
+"Hakan Hacigumus, NEC Labs",Hakan,Hacigumus,NEC Laboratories America,Princeton,Panel Chairs,United States,
+"Jignesh Patel, Wisconsin",Jignesh M.,Patel,University of Wisconsin,Madison,Panel Chairs,United States,
+"Xiaoyang Sean Wang, Fudan University",Xiaoyang Sean,Wang,Fudan University,Shanghai,Panel Chairs,China,https://orcid.org/0000-0002-9059-3713
+"Vasilis Vassalos, Athens University of Economics & Business",Vasilis,Vassalos,Athens University of Economics and Business,Athens,Publicity Chair,Greece,
+"Dunlu Peng, University of Shanghai for Science and Technology",Dunlu,Peng,University of Shanghai for Science and Technology,Shanghai,Publicity Chair,China,https://orcid.org/0000-0003-0223-5447
+"Li Xiong, Emory University",Li,Xiong,Emory University,Atlanta,Proceedings Chairs,United States,
+"Cong Yu, Google",Cong,Yu,Google Research,New York City,Proceedings Chairs,United States,
+"Sai Wu, Zhejiang University",Sai,Wu,Zhejiang University,Hangzhou,Web Management Chair,China,
+"Li (Eric) Qian, University of Michigan",Li Eric,Qian,University of Michigan,Ann Arbor,Treasury Chair,United States,
+"Mike Carey, UCI",Mike,Carey,University of California,Irvine,Sponsorship Chairs,United States,
+"Lizhu Zhou, Tsinghua University",Lizhu,Zhou,Tsinghua University,Beijing,Sponsorship Chairs,China,
+"Gang Chen, Zhejiang University",Gang,Chen,Zhejiang University,Hangzhou,Local Organization Chair,China,
+"Lidan Shou, Zhejiang University",Lidan,Shou,Zhejiang University,Hangzhou,Local Organization Chair,China,
+"Ke Chen, Zhejiang University",Ke,Chen,Zhejiang University,Hangzhou,Conference & Registration management,China,
+"Cuiping Li, Renmin University",Cuiping,Li,Renmin University of China,Bejing,Conference & Registration management,China,
+Guanmin Guo,Guanmin,Guo,?,?,Logo Design,?,https://orcid.org/0000-0002-3519-9289
+"Barbara Catania, University of Genova, Italy",Barbara,Catania,University of Genoa,Genoa,PhD Workshop PC Members,Italy,https://orcid.org/0000-0002-6443-169X
+"Gerhard Weikum, Max-Planck-Institut für Informatik, Germany",Gerhard,Weikum,Max Planck Institute,Saarbrücken,PhD Workshop PC Members,Germany,
+"Gustavo Alonso, ETH Zurich, Switzerland",Gustavo,Alonso,ETH Zurich,Zurich,PhD Workshop PC Members,Switzerland,
+"Guoliang Li, Tsinghua University, Beijing, China",Guoliang,Li,Tsinghua University,Bejing,PhD Workshop PC Members,Beijing,
+"Isabel Cruz, University of Illinois at Chicago, USA",Isabel,Cruz,University of Illinois,Chicago,PhD Workshop PC Members,United States,
+"Jae-Gil Lee, KAIST, South Korea",Jae-Gil,Lee,Korea Advanced Institute of Science and Technology,Daejeon,PhD Workshop PC Members,South Korea,
+"Lijun Chang, Chinese University of Hong Kong",Lijun,Chang,Chinese University of Hong Kong,Hong Kong,PhD Workshop PC Members,Hong Kong SAR,
+"Minos Garofolakis, Technical University of Crete, Greece",Minos,Garofolakis,Technical University of Crete,Chania,PhD Workshop PC Members,Greece,
+"Sarana Yi Nutanong, Johns Hopkins University, USA",Sarana Yi,Nutanong,Johns Hopkins University,Baltimore,PhD Workshop PC Members,United States,
+"Sergio Lifschitz, PUC-Rio, Brazil",Sergio,Lifschitz,PUC,Rio,PhD Workshop PC Members,Brazil,https://orcid.org/0000-0003-3073-3734
+"Paolo Atzeni, University of Rome, Italy",Paolo,Atzeni,Roma Tre University,Rom,PhD Workshop PC Members,Italy,https://orcid.org/0000-0003-1513-4725
+"Paul Larson, Microsoft Research, USA",Paul,Larson,Microsoft Research,Redmond,PhD Workshop PC Members,United States,
+"Prasad M. Deshpande, IBM Research - India",Prasad M.,Deshpande,IBM Research,India,PhD Workshop PC Members,India,
+"Philippe Cudre-Mauroux, University of Fribourg, Switzerland",Philippe,Cudre-Mauroux,University of Fribourg,Fribourg,PhD Workshop PC Members,Switzerland,https://orcid.org/0000-0003-2588-4212
+"Wenjie Zhang, University of New South Wales, Australia",Wenjie,Zhang,University of New South Wales,Sydney,PhD Workshop PC Members,Australia,
+"Xiaofang Zhou, University of Queensland, Australia",Xiaofang,Zhou,University of Queensland,Brisbane,PhD Workshop PC Members,Australia,
+"Yoshiharu Ishikawa, Nagoya University, Japan",Yoshiharu,Ishikawa,Nagoya University,Nagoya,PhD Workshop PC Members,Japan,
+"Zhifeng Bao, University of Tasmania",Zhifeng,Bao,University of Tasmania,Hobart,Demo Program Committee Members,Australia,https://orcid.org/0000-0003-2477-381X
+"Sourav S Bhowmick, Nanyang Technological University",Sourav S.,Bhowmick,Nanyang Technological University,Singapore,Demo Program Committee Members,Singapore,
+"Shimin Chen, Chinese Academy of Sciences",Shimin,Chen,Chinese Academy of Sciences,Bejing,Demo Program Committee Members,China,
+"Wei Chen, Institute for Infocomm Research",Wei,Chen,Institute for Infocomm Research,Singapor,Demo Program Committee Members,Singaor,
+"Gil Dobbie, University of Auckland",Gil,Dobbie,University of Auckland,Auckland,Demo Program Committee Members,New Zealand,
+"Tingjian Ge, University of Massachussets, Lowell",Tingjian,Ge,University of Massachusetts,Lowell,Demo Program Committee Members,United States,
+"Lukasz Golab, University of Waterloo",Lukasz,Golab,University of Waterloo,Waterloo,Demo Program Committee Members,Canada,https://orcid.org/0000-0003-0632-7496
+"Anastasios Kementsietsidis, IBM Research",Anastasios,Kementsietsidis,IBM Research,Almaden,Demo Program Committee Members,United States,
+"George Kollios, Boston University",George,Kollios,Boston University,Boston,Demo Program Committee Members,United States,
+"Philip Korn, AT&T Labs",Flip,Korn,AT&T Labs,?,Demo Program Committee Members,United States,
+"Willis Lang, Microsoft Gray Systems Lab",Willis,Lang,Microsoft Research,Gray Systems Lab,Demo Program Committee Members,United States,
+"Wangchao Le, Microsoft",Wangchao,Le,Microsoft Research,Gray Systems Lab,Demo Program Committee Members,United States,
+"Guoliang Li, Tsinghua University",Guoliang,Li,Tsinghua University,Bejing,Demo Program Committee Members,China,
+"Eric Lo, Hong Kong Polytechnic University",Eric,Lo,Hong Kong Polytechnic University,Hong Kong,Demo Program Committee Members,Hong Kong SAR,
+"Ashwin Machanavajjhala, Duke University",Ashwin,Machanavajjhala,Duke University,Durham,Demo Program Committee Members,United States,
+"Mohamed Mokbel, University of Minnesota",Mohamed F.,Mokbel,University of Minnesota,Minneapolis,Demo Program Committee Members,United States,https://orcid.org/0000-0002-6686-1757
+"Arnab Nandi, Ohio State University",Arnab,Nandi,Ohio State University,Columbus,Demo Program Committee Members,United States,
+"Spiros Papadimitriou, Rutgers University",Spiros,Papadimitriou,Rutgers University,New Brunswick,Demo Program Committee Members,United States,
+"Peter Pietzuch, Imperial College London",Peter,Pietzuch,Imperial College London,London,Demo Program Committee Members,United Kingdom,https://orcid.org/0000-0002-6963-5640
+"Chris Re, Stanford University",Chris,Re,Stanford University,Stanford,Demo Program Committee Members,United States,
+"Matthias Renz, Ludwig-Maximilians University Munich",Matthias,Renz,Ludwig Maximilian University of Munich,Munich,Demo Program Committee Members,Germany,
+"Mohamed Sharaf, University of Queensland",Mohamed,Sharaf,University of Queensland,Brisbane,Demo Program Committee Members,Australia,
+"Wang-Chiew Tan, University of California, Santa Cruz",Wang-Chiew,Tan,University of California,Santa Cruz,Demo Program Committee Members,Santa Cruz,
+"Wee Hyong Tok, Microsoft",Wee Hyong,Tok,Microsoft Research,Redmond,Demo Program Committee Members,United States,https://orcid.org/0000-0001-8346-5003
+"Fusheng Wang, Emory University",Fusheng,Wang,Emory University,Atlanta,Demo Program Committee Members,United States,
+"Huayu Wu, Institute for Infocomm Research",Huayu,Wu,Institute for Infocomm Research,Singapor,Demo Program Committee Members,Singapor,
+"Sai Wu, Zhejiang University",Sai,Wu,Zhejiang University,Hangzhou,Demo Program Committee Members,China,
+"Xing Xie, Microsoft Research Asia",Xing,Xie,Microsoft Research,Asia,Demo Program Committee Members,China,
+"Bin Yao, Shanghai Jiao Tong University",Bin,Yao,Shanghai Jiao Tong University,Shanghai,Demo Program Committee Members,China,
+"Jeffrey Xu Yu, The Chinese University of Hong Kong",Jeffrey Xu,Yu,Chinese University of Hong Kong,Hong Kong,Demo Program Committee Members,China,https://orcid.org/0000-0002-9738-827X
+"Demetrios, Zeinalipour-Yazti, University of Cyprus",Demetrios,Zeinalipour-Yazti,University of Cyprus,Nikosia,Demo Program Committee Members,Cyprus,https://orcid.org/0000-0002-7239-2387
+"Liang Huai Yang, Zhejiang University of Technology",Liang Huai,Yang,Zhejiang University of Technology,Zhejiang,Demo Program Committee Members,China,https://orcid.org/0000-0002-4297-4845
+"Rui Zhang, IBM Almaden",Rui,Zhang,IBM Research,Almaden,Demo Program Committee Members,United States,
+"Jingren Zhou, Microsoft",Jingren,Zhou,Microsoft Research,Redmond,Demo Program Committee Members,United States,
+"Xiaofang Zhou, University of Queensland",Xiaofang,Zhou,University of Queensland,Brisbane,Demo Program Committee Members,Australia,
+Alexander Boehm (SAP),Alexander,Boehm,SAP,Walldorf,Member Industrial Track Program Commitee,Germany,
+Ashok Joshi (Oracle),Ashok,Joshi,Oracle,?,Member Industrial Track Program Commitee,United States,
+Dmitriy Ryaboy (Twitter),Dmitriy,Ryaboy,Twitter,?,Member Industrial Track Program Commitee,United States,
+Donovan Schneider (Salesforce),Donovan,Schneider,Salesforce,?,Member Industrial Track Program Commitee,United States,
+Florian Waas (Datometry),Florian,Waas,Datometry,San Francisco,Member Industrial Track Program Commitee,United States,
+Janet Wiener (Facebook),Janet,Wiener,Facebook,Menlo Park,Member Industrial Track Program Commitee,United States,
+Marcus Fontoura (Microsoft),Marcus,Fontoura,Microsoft Research,Redmond,Member Industrial Track Program Commitee,United States,
+Marie-Anne Neimat (The Angels' Forum),Marie-Anne,Neimat,The Angels' Forum,Palo Alto,Member Industrial Track Program Commitee,United States,
+Meichun Hsu (HP),Meichun,Hsu,HP Labs,China,Member Industrial Track Program Commitee,China,
+Paul Larson (Microsoft),Paul,Larson,Microsoft Research,Redmond,Member Industrial Track Program Commitee,United States,
+Rajasekar Krishnamurthy (IBM),Rajasekar,Krishnamurthy,IBM,Armonk,Member Industrial Track Program Commitee,United States,
+Rajeev Rastogi (Amazon),Rajeev,Rastogi,Amazon,Seattle,Member Industrial Track Program Commitee,United States,
+Rajesh Bordawekar (IBM),Rajesh,Bordawekar,IBM Research,? Watson Research Center in News York und Massachusetts,Member Industrial Track Program Commitee,United States,
+Sailesh Krishnamurthy (Cisco),Sailesh,Krishnamurthy,Cisco,San Jose,Member Industrial Track Program Commitee,United States,
+Sam Shah (LinkedIn),Sam,Shah,LinkedIn,Sunnyvale,Member Industrial Track Program Commitee,United States,
+Sang Cha (SAP & Seoul National University),Sang Kyun,Cha,Seoul National University,Seoul,Member Industrial Track Program Commitee,South Korea,
+Stefan Manegold (CWI Amsterdam),Stefan,Manegold,Centrum Wiskunde & Informatica,Amsterdam,Member Industrial Track Program Commitee,Netherlands,
+Xiao Ji (Baosight),Xiao,Ji,Baosight,Shanghai,Member Industrial Track Program Commitee,China,
+Zhenkun Yang (Taobao),Zhenkun,Yang,Taobao,,Member Industrial Track Program Commitee,China,https://orcid.org/0000-0002-6377-6629

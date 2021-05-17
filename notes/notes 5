@@ -109,4 +109,88 @@ hewlett packard enterprise 181 gelöscht
 insert as select
 alter table at column
 update (set collumn select)
-hhhjgjz
+
+
+762	Michael	Carey
+920	Michael J.	Carey
+1035	Mike	Carey
+
+344	Sang Kyun	Cha
+954	Sang	Cha
+
+33	Xuemin	Lin
+1039	Xuemin	Lin,
+
+434	José	Macêdo
+1046	José Antônio	Macêdo
+1034	José Antônio F.	de Macedo
+
+698	Amalie	Marian
+958	Amelie	Marian
+
+977	Hannes	Muhleisen
+512	Hannes	Mühleisen
+
+1031	Daniel De	Oliveira
+1053	Daniel de	Oliveira
+503	Daniel	de Oliveira
+
+24	Jorge Arnulfo Quiane	Ruiz
+1061	Jorge Quiane	Ruiz
+
+945	Altigran da	Silva
+1040	Altigran	Silva
+43	Altigran	da Silva
+
+483	Amazon	Seattle,Amazon Web Services
+85	Beijing Institute of Technology	Bejing
+434	Beijing Institute of Technology	Beijing
+72 Free University of Bozen-Bolzano	Bozen
+520 Free University of Bozen-Bolzano	Bolzano
+487	Intel Labs	?,Pittsburgh
+476	Microsoft Research	Redmond,Gray Systems Lab,? Asia
+
+184	Technical University of Dortmund	Dortmund
+464	Technical University of Dortmund University	Dortmund
+123	University of Illinois	Urbana-Champaign
+495	University of Illinois	Urbana–Champaign
+223	University of São Paulo	Sao Paulo
+507	University of São Paulo	São Paulo
+
+1166	580 Moi
+1168	580 Mountain View
+1170	580 San francisco
+1171	583
+
+1212	Alexander	Boehm
+221	Alexander	Böhm
+123	Michael J.	Cafarella
+1113	Mike	Cafarella
+1176	Philippe	Cudre-Mauroux	https://orcid.org/0000-0003-2588-4212
+546	Philippe	Cudré-Mauroux	https://orcid.org/0000-0003-2588-4212
+575	Prasad	Deshpande
+1201	Prasad M.	Deshpande
+423	Gillian	Dobbie
+1203	Gil	Dobbie
+334	Johann-Christoph	Freytag
+1165	Johann Christoph	Freytag
+567	Minos	Garofalakis
+1199	Minos	Garofolakis
+1096	Joseph	Gonzales
+522	Joseph	Gonzalez
+804	Joseph M.	Hellerstein
+1114	Joe	Hellerstein
+1143	Arnd Christian	König
+1179	Arnd	Konig
+998	Yongzhu (Eric)	Li
+1076	Yongzhu Eric	Li
+634	Li	Qian
+1194	Li Eric	Qian
+296	Uwe	Roehm
+555	Uwe	Röhm
+149	S.	Sudarshan
+1107	S	Sudarshan
+650	Kyu Young	Whang
+1190	Kyu-Young	Whang
+1152	Demetris	Zeinalipour
+323	Demetrios	Zeinalipour-Yazti

@@ -30,6 +30,7 @@ def sort_conf_excel(filestring, sheet, mode):
 # cleans affiliations when they are given in a separate column
 def sort_excel_sep_aff(filestring, sheet):
     df = ex.read_excel(filestring, sheet)
+    df = name_clean(df)
     df.insert(1, 'FirstName', [ex.get_firstname(name) for name in df['Name']])
     df.insert(2, 'LastName', [ex.get_lastname(name) for name in df['Name']])
     print("names inserted")
@@ -46,6 +47,7 @@ def sort_excel_sep_aff(filestring, sheet):
 # extracts affiliations from a combined string of name and affiliation
 def sort_excel_string(filestring, sheet):
     df = ex.read_excel(filestring, sheet)
+    df = name_clean(df)
     df.insert(1, 'FirstName', [ex.get_firstname(ex.get_name_from_string(string)) for string in df['Name']])
     df.insert(2, 'LastName', [ex.get_lastname(ex.get_name_from_string(string)) for string in df['Name']])
     print("names inserted")
@@ -60,6 +62,7 @@ def sort_excel_string(filestring, sheet):
 
 def sort_excel_comma(filestring, sheet):
     df = ex.read_excel(filestring, sheet)
+    df = name_clean(df)
     df.insert(1, 'FirstName', [ex.get_firstname(string.split(",")[0]) for string in df['Name']])
     df.insert(2, 'LastName', [ex.get_lastname(string.split(",")[0]) for string in df['Name']])
     print("names inserted")
@@ -75,6 +78,7 @@ def sort_excel_comma(filestring, sheet):
 # sort conference where affiliation is in brackets
 def sort_conf_excel_brackets(filestring, sheet):
     df = ex.read_conf_excel(filestring, sheet)
+    df = name_clean(df)
     df['FirstName'] = [ex.get_firstname(ex.get_name_from_string(string)) for string in df['Name']]
     df['LastName'] = [ex.get_lastname(ex.get_name_from_string(string)) for string in df['Name']]
     print("names inserted")
@@ -89,6 +93,7 @@ def sort_conf_excel_brackets(filestring, sheet):
 
 def sort_conf_excel_comma(filestring, sheet):
     df = ex.read_conf_excel(filestring, sheet)
+    df = name_clean(df)
     df['FirstName'] = [ex.get_firstname(string.split(",")[0]) for string in df['Name']]
     df.insert(3, 'LastName', [ex.get_lastname(string.split(",")[0]) for string in df['Name']])
     print("names inserted")
@@ -103,6 +108,7 @@ def sort_conf_excel_comma(filestring, sheet):
 
 def sort_conf_excel_mixed(filestring, sheet):
     df = ex.read_conf_excel(filestring, sheet)
+    df = name_clean(df)
     df['FirstName'] = None
     df['LastName'] = None
     df['Affiliation'] = None
@@ -111,15 +117,22 @@ def sort_conf_excel_mixed(filestring, sheet):
     df['OrcID'] = None
     for index, row in df.iterrows():
         string = row['Name']
-        m = re.search('\(.*\)', string)
-        if m:
+        has_brackets = re.search('\(.*\)', string)
+        if has_brackets:
             row['FirstName'] = ex.get_firstname(ex.get_name_from_string(string))
             row['LastName'] = ex.get_lastname(ex.get_name_from_string(string))
             row['Affiliation'] = ex.get_affiliation_from_string(string)
         else:
-            row['FirstName'] = ex.get_firstname(string.split(",")[0])
-            row['LastName'] = ex.get_lastname(string.split(",")[0])
-            row['Affiliation'] = ex.get_comma_affiliation(string)
+            has_hyphen = re.search(' - ', string)
+            if has_hyphen:
+                row['FirstName'] = ex.get_firstname(string.split(" - ")[0])
+                row['LastName'] = ex.get_lastname(string.split(" - ")[0])
+                row['Affiliation'] = string.split(" - ")[1]
+            else:
+                row['FirstName'] = ex.get_firstname(string.split(",")[0])
+                row['LastName'] = ex.get_lastname(string.split(",")[0])
+                row['Affiliation'] = ex.get_comma_affiliation(string)
+                row['Country'] = ex.get_comma_country(string)
     return df
 
 
@@ -168,6 +181,12 @@ def add_orcid(journalVol):
 def preclean(df):
     corrected = [ex.replace_usa(affiliation) for affiliation in df['Affiliation']]
     df['Affiliation'] = corrected
+    return df
+
+
+def name_clean(df):
+    stripped = [ex.remove_mail(name) for name in df['Name']]
+    df['Name'] = stripped
     return df
 
 
@@ -252,7 +271,7 @@ def add_location_from_db(affiliation, location):
             if type(db_location) == str:
                 return db_location
             else:
-                return ",".join(db_location)
+                return "/".join(db_location)
         else:
             return None
     else:

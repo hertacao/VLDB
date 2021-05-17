@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import jellyfish
 
+name_separator = ['de', 'De', 'van', 'Van', 'von', 'Von']
 
 def search_orcid(firstname, lastname):
     if firstname is None or lastname is None:
@@ -49,6 +50,13 @@ def read_conf_excel(filestring, sheet):
 def get_lastname(name_string):
     if name_string is None:
         return None
+    for sep in name_separator:
+        m = re.search(' ' + sep + ' ', name_string)
+        if m:
+            name_list = name_string.split(sep)
+            lastname = sep.lower() + name_list.pop()
+            return lastname
+
     name_list = name_string.split()
     lastname = name_list.pop()
     return lastname
@@ -57,6 +65,12 @@ def get_lastname(name_string):
 def get_firstname(name_string):
     if name_string is None:
         return None
+    for sep in name_separator:
+        m = re.search(' ' + sep + ' ', name_string)
+        if m:
+            name_list = name_string.split(' ' + sep + ' ')
+            return name_list[0]
+
     name_list = name_string.split()
     name_list.pop()
     surname = " ".join(name_list)
@@ -211,10 +225,34 @@ def replace_usa(affiliation):
     affiliation = re.sub('USA', 'United States', affiliation)
     return affiliation
 
+def remove_mail(string):
+    if string is None:
+        return None
+    m = re.search('<.*>', string)
+
+    if m:
+        name = remove_comma(string.replace(m.group(), ''))
+    else:
+        name = string
+    name = drop_spaces(name)
+    return name
+
+def remove_comma(string):
+    if string is None:
+        return None
+    m = re.search(',', string)
+
+    if m:
+        name = string.replace(m.group(), '')
+    else:
+        name = string
+    name = drop_spaces(name)
+    return name
 
 abbreviations = {
     "AIST": "National Institute of Advanced Industrial Science and Technology",
     "Alibaba": "Alibaba Group",
+    "ANU": "Australian National University",
     "ASU": "Arizona State University",
     "AUB": "American University of Beirut",
     "BUPT": "Beijing University of Posts and Telecommunications",
@@ -225,6 +263,7 @@ abbreviations = {
     "CWI": "Centrum Wiskunde & Informatica",
     "DFKI": "German Research Center for Artificial Intelligence",
     "EPFL": "École polytechnique fédérale de Lausanne",
+    "ETH": "ETH Zurich",
     "HKUST": "Hong Kong University of Science and Technology",
     "HKBU": "Hong Kong Baptist University",
     "HMC": "Harvey Mudd College",
@@ -245,6 +284,7 @@ abbreviations = {
     "NYU": "New York University",
     "NJIT": "New Jersey Institute of Technology",
     "NMSU": "New Mexico State University",
+    "OSU": "Ohio State University",
     "Postech": "Pohang University of Science and Technology",
     "POSTECH": "Pohang University of Science and Technology",
     "PSU": "Pennsylvania State University",
@@ -257,6 +297,7 @@ abbreviations = {
     "SUNY": "State University of New York",
     "SUTD" : "Singapore University of Technology and Design",
     "Technion": "Technion – Israel Institute of Technology",
+    "TUM" : "Technical University of Munich",
     "UBC": "University of British Columbia",
     "UC": "University of California",
     "UCI": "University of California, Irvine",
@@ -271,6 +312,7 @@ abbreviations = {
     "Universidade Federal do Amazonas": "Federal University of Amazonas",
     "Universite Paris Sud": "Paris-Sud University",
     "USC": "University of Southern California",
+    "USTC": "University of Science and Technology of China",
     "UW": "University of Wisconsin",
     "WPI": "Worcester Polytechnic Institute"
 }
@@ -292,6 +334,8 @@ unified_names = {
     "Bruno": "Nicolas",
     "Cafarella": "Michael J.",
     "Candan": "K. Selçuk",
+    "Carey": "Michael J.",
+    "Cha": "Sang Kyun",
     "Chen": "Arbee L. P.",
     "Cheng": "Reynold",
     "Cudré-Mauroux": "Philippe",
@@ -309,7 +353,9 @@ unified_names = {
     "Kifer": "Daniel",
     "Kossmann": "Donald",
     "Lakshmanan": "Laks V.S.",
+    "Madden": "Samuel",
     "Mansour": "Essam",
+    "Marian": "Amélie",
     "Miller": "Renée J.",
     "Mokbel": "Mohamed F.",
     "Moro": "Mirella Moura",
@@ -322,6 +368,7 @@ unified_names = {
     "Quamar": "Abdul",
     "Ross": "Kenneth A.",
     "Rusu": "Florin ",
+    "Ruiz": "Jorge Arnulfo Quiane",
     "Salles": "Marcos Antonio Vaz",
     "Salem": "Kenneth",
     "Sapino": "Maria Luisa",

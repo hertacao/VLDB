@@ -1,0 +1,130 @@
+Name,FirstName,LastName,Affiliation,Location,Role,Country,OrcID
+"Anand Deshpande (Persistent Systems, India)",Anand,Deshpande,Persistent Systems,Pune,General Conference Chairs,India,
+"T M Vijayaraman (Persistent Systems, India) ",T M,Vijayaraman,Persistent Systems,Pune,General Conference Chairs,India,
+"Mukesh Mohania (IBM Research, India and Australia)",Mukesh,Mohania,IBM Research,India,Organization Committee Chair,India,
+"Surajit Chaudhuri (Microsoft Research, USA)",Surajit,Chaudhuri,Microsoft Research,Redmond,Program Committee Chairs,United States,
+"Jayant Haritsa (IISc Bangalore, India)",Jayant,Haritsa,Indian Institute of Science,Bangalore,Program Committee Chairs,India,
+"Rohit Kamat (Persistent Systems, India)",Rohit,Kamat,Persistent Systems,Pune,Treasury Chair,India,
+"S Sudarshan (IIT Bombay, India)",S,Sudarshan,Indian Institute of Technology,Bombay,VLDB Endowment Representative,India,
+"Michael Carey (University of California - Irvine, USA)",Michael J.,Carey,University of California,Irvine,Sponsorship Committee Chairs,United States,
+"Anand Deshpande (Persistent Systems, India)",Anand,Deshpande,Persistent Systems,Pune,Sponsorship Committee Chairs,India,
+"Rajkumar Sen (MemSQL, USA)",Rajkumar,Sen,MemSQL,San Francisco,Publicity Committee Chairs,United States,
+"Manish Bhide (IBM Software Lab, India)",Manish,Bhide,IBM Research,India,Publicity Committee Chairs,India,
+"Chris Re (Stanford University, USA)",Chris,Re,Stanford University,Stanford,Tutorial Chairs,United States,
+"S Sudarshan (IIT Bombay, India)",S,Sudarshan,Indian Institute of Technology,Bombay,Tutorial Chairs,India,
+"Gerhard Weikum (Max-Planck Institute for Informatics, Germany) ",Gerhard,Weikum,Max Planck Institute,Saarbrücken,Tutorial Chairs,Germany,
+"Gustavo Alonso (ETH Zurich, Switzerland)",Gustavo,Alonso,ETH Zurich,Zurich,Industrial Chairs,Switzerland,
+"Anant Jhingran (Apigee, USA)",Anant,Jhingran,Apigee,San Jose,Industrial Chairs,United States,
+"S Seshadri (Zettata, India)",S,Seshadri,Zettata,?,Industrial Chairs,India,
+"Mike Cafarella (University of Michigan - Ann Arbor, USA)",Mike,Cafarella,University of Michigan,Ann Arbor,Demo Chairs,United States,
+"Stratos Idreos (Harvard University, USA)",Stratos,Idreos,Harvard University,Cambridge,Demo Chairs,United States,
+"Anthony Tung (NUS, Singapore)",Anthony K. H.,Tung,National University of Singapore,Singapore,Demo Chairs,Singapore,https://orcid.org/0000-0002-5125-855X
+"Juliana Freire (New York University, USA)",Juliana,Freire,New York University,New York City,Panel Chairs,United States,https://orcid.org/0000-0003-3915-7075
+"Sam Madden (MIT, USA)",Samuel,Madden,Massachusetts Institute of Technology,Cambridge,Panel Chairs,United States,
+"Sihem Amer-Yahia (CNRS, France)",Sihem,Amer-Yahia,French National Centre for Scientific Research,Paris,Workshop Chairs,France,
+"Joe Hellerstein (University of California - Berkeley, USA)",Joe,Hellerstein,University of California,Berkeley,Workshop Chairs,United States,
+"Torsten Grust (University of Tübingen, Germany)",Torsten,Grust,University of Tübingen,Tübingen,PhD Workshop Chairs,Germany,https://orcid.org/0000-0002-8279-0493
+"Kamal Karlapalem (IIIT-Hyderabad/IIT-Gandhinagar, India)",Kamal,Karlapalem,International Institute of Information Technology,Hyderabad,PhD Workshop Chairs,India,https://orcid.org/0000-0003-2528-7979
+"Andy Pavlo (CMU, USA)",Andrew,Pavlo,Carnegie Mellon University,Pittsburgh,PhD Workshop Chairs,United States,
+"Srikanta Bedathur (IBM Research, India)",Srikanta,Bedathur,IBM Research,India,Proceedings Chairs,India,https://orcid.org/0000-0002-3949-2175
+"Katja Hose (Aalborg University, Denmark)",Katja,Hose,Aalborg University,Aalborg,Proceedings Chairs,Denmark,https://orcid.org/0000-0001-7025-8099
+"Rashmi Tambe (Persistent Systems, India)",Rashmi,Tambe,Persistent Systems,Pune,Organization Committee,India,
+"Pratyush Panangipalli (Persistent Systems, India) ",Pratyush,Panangipalli,Persistent Systems,Pune,Organization Committee,India,
+"Kamal Karlapalem (IIIT-Hyderabad/IIT-Gandhinagar, India)",Kamal,Karlapalem,International Institute of Information Technology,Hyderabad,Student Grant Coordinators,India,https://orcid.org/0000-0003-2528-7979
+"Rekha Singhal (TCS, India)",Rekha,Singhal,Tata Consultancy Services,Mumbai,Student Grant Coordinators,India,
+Srinath Srinivasa (IIIT-Bangalore),Srinath,Srinivasa,International Institute of Information Technology,Bangalore,Student Grant Coordinators,India,
+"Shyam Gupta (IIT Delhi, India)",Shyam,Gupta,Indian Institute of Technology,Delhi,Volunteers Coordinator,India,
+"Rajeev Gupta (IQLECT, India)",Rajeev,Gupta,BangDB,Bangalore,Registration Coordinators,India,
+Rema Ananthanarayanan (IBM Research - India),Rema,Ananthanarayanan,IBM Research,India,Registration Coordinators,India,
+"Ramesh Agrawal (JNU, India)",Ramesh,Agrawal,Jawaharlal Nehru University,New Delhi,Travel and Transportation Coordinator,India,https://orcid.org/0000-0003-3122-5096
+Subhash Bhalla (University of Aizu - Japan),Subhash,Bhalla,University of Aizu,Aizuwakamatsu,Travel and Transportation Coordinator,Japan,https://orcid.org/0000-0002-3294-9013
+"Vasudha Bhatnagar (Delhi University, India)",Vasudha,Bhatnagar,Delhi University,New Delhi,Sessions Coordinators,India,https://orcid.org/0000-0002-9706-9340
+Danish Contractor (IBM Research - India),Danish,Contractor,IBM Research,AI,Sessions Coordinators,India,https://orcid.org/0000-0002-6843-1961
+Nitendra Rajput (IBM Research - India),Nitendra,Rajput,IBM Research,India,Cultural Program Coordinator,India,
+"Naveen Gupta (Delhi University, India)",Naveen,Gupta,Delhi University,New Delhi,Food Coordinator,India,
+"Cagri Balkesen (Oracle Labs, Switzerland)",Cagri,Balkesen,Oracle Labs,?,Industrial Track PC Members,Switzerland,
+"Sang K. Cha (Seoul National University, South Korea)",Sang Kyun,Cha,Seoul National University,Seoul,Industrial Track PC Members,South Korea,
+"Shimin Chen (ICT, China)",Shimin,Chen,"Institute of Computing Technology, Chinese Academy of Sciences",Beijing,Industrial Track PC Members,China,
+"Wei Fan (Huawei Labs, Hong Kong)",Wei,Fan,Huawei Labs,Hong Kong,Industrial Track PC Members,Hong Kong SAR,
+"Ioana Giurgiu (IBM Research, Switzerland)",Ioana,Giurgiu,IBM Research,Zurich,Industrial Track PC Members,Switzerland,
+"Gernot Heiser (NICTA, Australia)",Gernot,Heiser,NICTA,Sydney,Industrial Track PC Members,Australia,https://orcid.org/0000-0002-7069-0831
+"Wolfgang Lehner (TU Dresden, Germany)",Wolfgang,Lehner,Technical University of Dresden,Dresden,Industrial Track PC Members,Germany,https://orcid.org/0000-0001-8107-2775
+"Ippokratis Pandis (Amazon, USA)",Ippokratis,Pandis,Amazon,Amazon Web Services,Industrial Track PC Members,United States,
+"Shankar Pasupathy (NetApp, USA)",Shankar,Pasupathy,NetApp,Sunnyvale,Industrial Track PC Members,United States,
+"Marta Patiño (UPM, Spain)",Marta,Patiño,Technical University of Madrid,Madrid,Industrial Track PC Members,Spain,
+"Vishy Poosala (Facebook, USA)",Vishy,Poosala,Facebook,Menlo Park,Industrial Track PC Members,United States,
+"Jun Rao (Confluent, USA)",Jun,Rao,Confluent,Mountain View,Industrial Track PC Members,United States,
+"Prasan Roy (Sclera, India)",Prasan,Roy,Sclera,?,Industrial Track PC Members,India,
+"Tudor-Ioan Salomie (Google, Switzerland)",Tudor-Ioan,Salomie,Google,Zurich,Industrial Track PC Members,Switzerland,
+"Sunil Sayyaparaju (Aerospike, India)",Sunil,Sayyaparaju,Aerospike,Bangalore,Industrial Track PC Members,India,
+"Liuba Shrira (Brandeis University, USA)",Liuba,Shrira,Brandeis University,Waltham,Industrial Track PC Members,United States,
+"Swami Sivasubramanian (Amazon, USA)",Swami,Sivasubramanian,Amazon,Seattle,Industrial Track PC Members,United States,
+"Ruihua Song (Microsoft Research, China)",Ruihua,Song,Microsoft Research,Asia,Industrial Track PC Members,China,https://orcid.org/0000-0001-6036-9035
+"Jun Tatemura (NEC Labs, USA)",Jun,Tatemura,NEC Laboratories America,Princeton,Industrial Track PC Members,United States,
+"Yuanyuan Tian (IBM Research, USA)",Yuanyuan,Tian,IBM Research,Almaden,Industrial Track PC Members,United States,https://orcid.org/0000-0003-4510-1852
+"Philipp Unterbrunner (Snowflake Computing, USA)",Philipp,Unterbrunner,Snowflake Computing,San Matteo,Industrial Track PC Members,United States,
+"Lan Jun Wang (IBM Research, China)",Lan Jun,Wang,IBM Research,Beijing,Industrial Track PC Members,China,
+"Ioannis Alagiannis (Microsoft, USA)",Ioannis,Alagiannis,Microsoft Research,Seattle,Demo Track PC Members,United States,
+"Manos Athanassoulis (Harvard University, USA)",Manos,Athanassoulis,Harvard University,,Demo Track PC Members,United States,https://orcid.org/0000-0003-1837-0010
+"Zhifeng Bao (RMIT University, Australia)",Zhifeng,Bao,RMIT University,Melbourne,Demo Track PC Members,Australia,https://orcid.org/0000-0003-2477-381X
+"Carsten Binnig (Brown University, USA)",Carsten,Binnig,Brown University,Providence,Demo Track PC Members,United States,
+"Vanessa Braganholo (Universidade Federal de Minas Gerais, Brazil)",Vanessa,Braganholo,Federal University of Minas Gerais,,Demo Track PC Members,Brazil,https://orcid.org/0000-0002-1184-8192
+"Gao Cong (Nanyang Technological University, Singapore)",Gao,Cong,Nanyang Technological University,Singapore,Demo Track PC Members,Singapore,
+"Jing Gao (SUNY Buffalo, USA)",Jing,Gao,State University of New York,Buffalo,Demo Track PC Members,United States,
+"Todd Green (LogicBlox, USA)",Todd,Green,LogicBlox,?,Demo Track PC Members,United States,
+"Jan Hidders (University of Delft, Netherlands)",Jan,Hidders,Delft University of Technology,Delft,Demo Track PC Members,Netherlands,https://orcid.org/0000-0002-8865-4329
+"Alekh Jindal (Microsoft, USA)",Alekh,Jindal,Microsoft Research,Redmond,Demo Track PC Members,United States,
+"Panos Kalnis (King Abdullah University of Science and Technology, Saudi Arabia)",Panos,Kalnis,King Abdullah University of Science and Technology,Thuwal,Demo Track PC Members,Saudi Arabia,https://orcid.org/0000-0002-5060-1360
+"Verena Kantere (University of Geneva, Switzerland)",Verena,Kantere,University of Geneva,Geneva,Demo Track PC Members,Switzerland,
+"Zoi Kaoudi (Qatar Computing Research Institute, Quatar)",Zoi,Kaoudi,Qatar Computing Research Institute,Qatar,Demo Track PC Members,Qatar,
+"Panagiotis Karras (Skoltech University, Russia)",Panagiotis,Karras,Skolkovo Institute of Science and Technology,Moscow,Demo Track PC Members,Russia,
+"Oliver Kennedy (SUNY Buffalo, USA)",Oliver,Kennedy,State University of New York,Buffalo,Demo Track PC Members,United States,https://orcid.org/0000-0003-0632-1668
+"Min-Soo Kim (DGIST, South Korea)",Min-Soo,Kim,Daegu Gyeongbuk Institute of Science and Technology,Daegu,Demo Track PC Members,South Korea,
+"Arnd Christian König (Microsoft Research, USA)",Arnd Christian,König,Microsoft Research,Redmond,Demo Track PC Members,United States,
+"Georgia Koutrika (HP Labs, USA)",Georgia,Koutrika,HP Labs,Palo Alto,Demo Track PC Members,United States,
+"Harumi Kuno (HP Labs, USA)",Harumi,Kuno,HP Labs,Palo Alto,Demo Track PC Members,United States,
+"Jae-Gil Lee (KAIST, South Korea)",Jae-Gil,Lee,Korea Advanced Institute of Science and Technology,Daejeon,Demo Track PC Members,South Korea,
+"Erietta Liarou (Harvard University, USA)",Erietta,Liarou,Harvard University,,Demo Track PC Members,United States,
+"Eric Lo (Polytechnic University of Hong Kong, China)",Eric,Lo,Polytechnic University of Hong Kong,Hong Kong,Demo Track PC Members,China,
+"Guy Lohman (IBM Research, USA)",Guy,Lohman,IBM Research,Almaden,Demo Track PC Members,United States,
+"Mirella Moro (Universidade Federal de Minas Gerais, Brazil)",Mirella Moura,Moro,Federal University of Minas Gerais,Belo Horizonte,Demo Track PC Members,Brazil,https://orcid.org/0000-0002-0545-2001
+"Wilfred Ng (Hong Kong University of Science and Technology, China)",Wilfred,Ng,Hong Kong University of Science and Technology,Hong Kong,Demo Track PC Members,China,
+"Kjetil Nørvåg (Norwegian University of Science and Technology, Norway)",Kjetil,Nørvåg,Norwegian University of Science and Technology,Trondheim,Demo Track PC Members,Norway,
+"Tamer Ozsu (University of Waterloo, Canada)",Tamer,Ozsu,University of Waterloo,Waterloo,Demo Track PC Members,Canada,https://orcid.org/0000-0002-8126-1717
+"Michalis Petropoulos (Amazon, USA)",Michalis,Petropoulos,Amazon,Palo Alto,Demo Track PC Members,United States,
+"Mohammad Sadoghi (IBM Research, USA)",Mohammad,Sadoghi,IBM Research,?,Demo Track PC Members,United States,https://orcid.org/0000-0003-2779-6080
+"Yasushi Sakurai (Kumamoto University, Japan)",Yasushi,Sakurai,Kumamoto University,?,Demo Track PC Members,Japan,
+"Mohamed Sharaf (University of Queensland, Australia)",Mohamed,Sharaf,University of Queensland,Brisbane,Demo Track PC Members,Australia,
+"Lidan Shou (Zhejiang University, China)",Lidan,Shou,Zhejiang University,Hangzhou,Demo Track PC Members,China,
+"Manish Singh (IIT Hyderabad, India)",Manish,Singh,Indian Institute of Technology,Hyderabad,Demo Track PC Members,India,
+"Kostas Stefanidis (ICS-FORTH, Greece)",Kostas,Stefanidis,"Institute of Computer Science, FORTH",Heraklion,Demo Track PC Members,Greece,https://orcid.org/0000-0003-3483-2334
+"Julia Stoyanovich (Drexel University, USA)",Julia,Stoyanovich,Drexel University,Philadelphia,Demo Track PC Members,United States,
+"Danai Symeonidou (INRIA, France)",Danai,Symeonidou,INRAE,Île-de-France,Demo Track PC Members,France,
+"Ernest Teniente (Universidade Politècnica de Catalunya, Spain)",Ernest,Teniente,Polytechnic University of Catalonia,Barcelona,Demo Track PC Members,Spain,
+"Pinar Tözün (IBM Research, USA)",Pinar,Tözün,IBM Research,?,Demo Track PC Members,United States,https://orcid.org/0000-0001-6838-4854
+"Xiaoli Wang (Xiamen University, China)",Xiaoli,Wang,Xiamen University,Xiamen,Demo Track PC Members,China,
+"Raymond Wong (Hong Kong University of Science and Technology, China)",Raymond Chi-Wing,Wong,Hong Kong University of Science and Technology,Hong Kong,Demo Track PC Members,China,https://orcid.org/0000-0001-7045-6503
+"Demetris Zeinalipour (University of Cyprus, Cyprus)",Demetris,Zeinalipour,University of Cyprus,Nikosia,Demo Track PC Members,Cyprus,https://orcid.org/0000-0002-7239-2387
+"Ce Zhang (University of Wisconsin, USA)",Ce,Zhang,University of Wisconsin,,Demo Track PC Members,United States,
+"Feida Zhu (Singapore Management University, Singapore)",Feida,Zhu,Singapore Management University,Singapore,Demo Track PC Members,Singapore,
+Azza Abouzied                (NYU Abu Dhabi),Azza,Abouzied,New York University,Abu Dhabi,PhD Workshop PC Members,United Arab Emirates,
+Ira Assent                   (Aarhus U),Ira,Assent,Aarhus University,Aarhus,PhD Workshop PC Members,Denmark,https://orcid.org/0000-0002-1091-9948
+Srikanta Bedathur            (IBM Research),Srikanta,Bedathur,IBM Research,India,PhD Workshop PC Members,India,https://orcid.org/0000-0002-3949-2175
+Arnab Bhattacharya           (IIT Kanpur),Arnab,Bhattacharya,Indian Institute of Technology,Kanpur,PhD Workshop PC Members,India,
+Alvin Cheung                 (U Washington),Alvin,Cheung,University of Washington,Seattle,PhD Workshop PC Members,United States,
+Vikram Goyal                 (IIIT Delhi),Vikram,Goyal,International Institute of Information Technology,Delhi,PhD Workshop PC Members,India,
+Michael Grossniklaus         (U Konstanz),Michael,Grossniklaus,University of Konstanz,Konstanz,PhD Workshop PC Members,Germany,https://orcid.org/0000-0003-1609-2221
+Melanie Herschel             (U Stuttgart),Melanie,Herschel,University of Stuttgart,Stuttgart,PhD Workshop PC Members,Germany,
+Alekh Jindal                 (Microsoft),Alekh,Jindal,Microsoft Research,Redmond,PhD Workshop PC Members,United States,
+Hiroyuki Kato                (NII Tokyo),Hiroyuki,Kato,National Institute of Informatics,Tokyo,PhD Workshop PC Members,Japan,
+Yiping Ke                    (Nanyang Technological U),Yiping,Ke,Nanyang Technological University,Singapore,PhD Workshop PC Members,Singapore,https://orcid.org/0000-0001-9473-3202
+Arijit Khan                  (Nanyang Technological U),Arijit,Khan,Nanyang Technological University,Singapore,PhD Workshop PC Members,Singapore,https://orcid.org/0000-0002-7312-6312
+Frank Neven                  (Hasselt U / Transnational U Limburg),Frank,Neven,Hasselt University,Diepenbeek,PhD Workshop PC Members,Belgium,https://orcid.org/0000-0002-7143-1903
+Maya Ramanath                (IIT Delhi),Maya,Ramanath,Indian Institute of Technology,Delhi,PhD Workshop PC Members,India,https://orcid.org/0000-0002-5413-5686
+Sudeepa Roy                  (Duke U),Sudeepa,Roy,Duke University,Durham,PhD Workshop PC Members,United States,
+Steffi Scherzinger           (OTH Regensburg),Steffi,Scherzinger,Regensburg University of Applied Sciences,Regensburg,PhD Workshop PC Members,Germany,
+Satya Valluri                (EPF Lausanne),Satya,Valluri,École polytechnique fédérale de Lausanne,Lausanne,PhD Workshop PC Members,Switzerland,
+Marcos Antonio Vaz Salles    (U Copenhagen),Marcos Antonio Vaz,Salles,University of Copenhagen,Copenhagen,PhD Workshop PC Members,Denmark,
+Stratis Viglas               (U Edinburgh),Stratis,Viglas,University of Edinburgh,Edinburgh,PhD Workshop PC Members,United Kingdom,
+Ying Zhang                   (CWI Amsterdam),Ying,Zhang,Centrum Wiskunde & Informatica,Amsterdam,PhD Workshop PC Members,Netherlands,
+Wenchao Zhou                 (Georgetown U),Wenchao,Zhou,Georgetown University,Washington D.C.,PhD Workshop PC Members,United States,https://orcid.org/0000-0002-7756-1418
