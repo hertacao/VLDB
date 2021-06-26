@@ -9,7 +9,7 @@ import sql
 import datacleaner as dc
 
 # Press the green button in the gutter to run the script.
-file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\2020-07-09-PVLDB-Members.xlsx"
+journal_file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\2020-07-09-PVLDB-Members.xlsx"
 conf_file = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\VLDB Conferences.xlsx"
 conf_role = r"C:\Users\herta\OneDrive\Dokumente\Arbeit\PVLDBDB\PVLDBDB Tables.xlsx"
 
@@ -55,8 +55,8 @@ def get_conf_roleID(confRoles, role, year):
 
 
 # basic cleaning
-def init_run(confYear, mode):
-    fileNumber = 2020 - confYear
+def init_run(journal, mode):
+    fileNumber = 2022 - journal
     # basic separation of the string in name and affiliation
     df = dc.sort_conf_excel(conf_file, fileNumber, mode)
     # basic replacement of strings
@@ -74,28 +74,28 @@ def init_run(confYear, mode):
     # add affiliations if missing
     df = dc.fill_affiliation_from_db(df)
     print(df.to_string())
-    ex.write_csv(df, 'VLDB{}'.format(confYear))
+    ex.write_csv(df, 'VLDB{}'.format(journal))
 
 
 # manual sorting
-def manual_compare(confYear):
+def manual_compare(journal):
     # read as dataframe
-    df = ex.read_csv('VLDB{}'.format(confYear))
+    df = ex.read_csv('VLDB{}'.format(journal))
     print(df.to_string())
     # compare affiliation with db
     dc.compare_affiliation_with_db(df)
 
 
 # automated adding from db
-def db_fill(confYear):
+def db_fill(journal):
     # read as dataframe
-    df = ex.read_csv('VLDB{}'.format(confYear))
+    df = ex.read_csv('VLDB{}'.format(journal))
     # add stuff from db
     df = dc.fill_affiliation_from_db(df)
     df = dc.fill_country_location_from_db(df)
     print(df.to_string())
     # write csv
-    ex.write_csv(df, 'VLDB{}'.format(confYear))
+    ex.write_csv(df, 'VLDB{}'.format(journal))
 
 
 def print_file(confYear):
@@ -104,13 +104,13 @@ def print_file(confYear):
 
 
 # add orcid
-def fill_orcid(confYear):
+def fill_orcid(journal):
     # add orcid to dataframe
-    df = dc.add_orcid(confYear)
+    df = dc.add_orcid(journal)
 
 
-def check_for_None(confYear):
-    df = ex.read_csv('VLDB{}'.format(confYear))
+def check_for_None(journal):
+    df = ex.read_csv('VLDB{}'.format(journal))
     df = df.loc[df['Country'].isna()]
     print(df.to_string())
 
@@ -126,17 +126,17 @@ def write_to_db(start, end):
 if __name__ == '__main__':
     db = DB("sqlite")
     #db.reset_conf()
-    confYear = 2012
+    journal = 2022
 
     # print(df.to_string())
 
-    # init_run(confYear, "comma")
-    # manual_compare(confYear)
-    # db_fill(confYear)
-    # fill_orcid(confYear)
-    # print_file(confYear)
-    # check_for_None(confYear)
-    write_conf_to_db('VLDB{}'.format(confYear), db, confYear)
+    # init_run(journal, "comma")
+    # manual_compare(journal)
+    # db_fill(journal)
+    fill_orcid(journal)
+    # print_file(journal)
+    # check_for_None(journal)
+    # write_conf_to_db('VLDB{}'.format(journal), db, journal)
 
 
     # sql queries

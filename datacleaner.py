@@ -16,8 +16,9 @@ def sort_excel(filestring, sheet, mode):
 
 
 def sort_conf_excel(filestring, sheet, mode):
+    print(mode)
     sorter = {
-        "bracket": sort_conf_excel_brackets(filestring, sheet),
+        #"bracket": sort_conf_excel_brackets(filestring, sheet),
         "comma": sort_conf_excel_comma(filestring, sheet),
         "mixed": sort_conf_excel_mixed(filestring, sheet)
     }
@@ -100,7 +101,7 @@ def sort_conf_excel_comma(filestring, sheet):
 
     df['Affiliation'] = [ex.get_comma_affiliation(string) for string in df['Name']]
     df['Location'] = None
-    df['Country'] = None
+    df['Country'] = [ex.get_comma_country(string) for string in df['Name']]
     df['OrcID'] = None
     print("affiliation inserted")
     return df
@@ -129,10 +130,17 @@ def sort_conf_excel_mixed(filestring, sheet):
                 row['LastName'] = ex.get_lastname(string.split(" - ")[0])
                 row['Affiliation'] = string.split(" - ")[1]
             else:
-                row['FirstName'] = ex.get_firstname(string.split(",")[0])
-                row['LastName'] = ex.get_lastname(string.split(",")[0])
-                row['Affiliation'] = ex.get_comma_affiliation(string)
-                row['Country'] = ex.get_comma_country(string)
+                has_slash = re.search('/', string)
+                if has_slash:
+                    row['FirstName'] = ex.get_firstname(string.split("/")[0])
+                    row['LastName'] = ex.get_lastname(string.split("/")[0])
+                    row['Affiliation'] = string.split("/")[1].split(", ")[0]
+                    row['Country'] = string.split("/")[1].split(", ")[1]
+                else:
+                    row['FirstName'] = ex.get_firstname(string.split(",")[0])
+                    row['LastName'] = ex.get_lastname(string.split(",")[0])
+                    row['Affiliation'] = ex.get_comma_affiliation(string)
+                    row['Country'] = ex.get_comma_country(string)
     return df
 
 
@@ -216,6 +224,7 @@ aff_not_found = []
 
 # retrieves affiliation from the db for a given name
 def add_affiliation_from_db(firstname, lastname, affiliation, location):
+    print(firstname, lastname, affiliation)
     if affiliation is None or affiliation == "None":
         db_affiliation = db.get_affiliation_from_name(firstname, lastname)
         if db_affiliation:

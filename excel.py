@@ -59,7 +59,7 @@ def get_lastname(name_string):
 
     name_list = name_string.split()
     lastname = name_list.pop()
-    return lastname
+    return lastname.capitalize()
 
 
 def get_firstname(name_string):
@@ -263,6 +263,7 @@ abbreviations = {
     "CWI": "Centrum Wiskunde & Informatica",
     "DFKI": "German Research Center for Artificial Intelligence",
     "EPFL": "École polytechnique fédérale de Lausanne",
+    "EPF Lausanne": "École polytechnique fédérale de Lausanne",
     "ETH": "ETH Zurich",
     "HKUST": "Hong Kong University of Science and Technology",
     "HKBU": "Hong Kong Baptist University",

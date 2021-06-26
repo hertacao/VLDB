@@ -1,0 +1,77 @@
+Name,FirstName,LastName,Affiliation,Location,Role,Country,OrcID
+"Anastasia Ailamaki (Carnegie Mellon University, United States and EPFL, Switzerland)",Anastasia,Ailamaki,École polytechnique fédérale de Lausanne,Lausanne,PhD Workshop Chair,Switzerland,
+"Neoklis Polyzotis (University of California, Santa Cruz, United States)",Neoklis,Polyzotis,University of California,Santa Cruz,PhD Workshop Chair,United States,https://orcid.org/0000-0002-2694-8591
+"Ashraf Aboulnaga (University of Waterloo, Canada)",Ashraf,Aboulnaga,University of Waterloo,Waterloo,PhD Workshop PC Members,Canada,
+"Periklis Andritsos (University of Trento, Italy)",Periklis,Andritsos,University of Trento,Trento,PhD Workshop PC Members,Italy,
+"Pedro Bizarro (University of Coimbra, Portugal)",Pedro,Bizarro,University of Coimbra,Coimbra,PhD Workshop PC Members,Portugal,
+"Yanlei Diao (University of Massachussets Amherst, United States)",Yanlei,Diao,University of Massachusetts,Amherst,PhD Workshop PC Members,United States,
+"Alin Dobra (University of Florida, United States)",Alin,Dobra,University of Florida,Gainesville,PhD Workshop PC Members,United States,
+"Vuk Ercegovac (IBM Almaden, United States)",Vuk,Ercegovac,IBM Almaden,,PhD Workshop PC Members,United States,
+"Raghav Kaushik (Microsoft Research, United States)",Raghav,Kaushik,Microsoft Research,Redmond,PhD Workshop PC Members,United States,
+"Kristen Lefevre (University of Michigan, United States)",Kristen,Lefevre,University of Michigan,Ann Arbor,PhD Workshop PC Members,United States,
+"Boon Thau Loo (University of Pennsylvania, United States)",Boon Thau,Loo,University of Pennsylvania,Philadelphia,PhD Workshop PC Members,United States,
+"Qiong Luo (Hong Kong University of Science and Technology, China)",Qiong,Luo,Hong Kong University of Science and Technology,Hong Kong,PhD Workshop PC Members,China,
+"Stefan Manegold (CWI, Netherlands)",Stefan,Manegold,Centrum Wiskunde & Informatica,Amsterdam,PhD Workshop PC Members,Netherlands,
+"Stratos Papadomanolakis (Oracle, United States)",Stratos,Papadomanolakis,Oracle,?,PhD Workshop PC Members,United States,
+"Altigran Silva (Universidade Federal do Amazonas, Brazil)",Altigran,Silva,Federal University of Amazonas,Manaus,PhD Workshop PC Members,Brazil,https://orcid.org/0000-0002-8992-495X
+"Stratis Viglas (University of Edinburgh, UK)",Stratis,Viglas,University of Edinburgh,Edinburgh,PhD Workshop PC Members,United Kingdom,
+"Volker Markl, IBM Almaden Research Center, United States",Volker,Markl,IBM Research,Almaden,Experiments and Analyses PC Chair,United States,
+"Gustavo Alonso (Swiss Federal Institute of Technology, Switzerland)",Gustavo,Alonso,ETH Zurich,Zurich,Experiments and Analyses PC Member,Switzerland,
+"Johann-Christoph Freytag (Humboldt University, Germany)",Johann-Christoph,Freytag,Humboldt University of Berlin,Berlin,Experiments and Analyses PC Member,Germany,
+"Nick Koudas (University of Toronto, Canada)",Nick,Koudas,University of Toronto,Toronto,Experiments and Analyses PC Member,Canada,
+"Paul Larson (Microsoft Research, United States)",Paul,Larson,Microsoft Research,Redmond,Experiments and Analyses PC Member,United States,
+"Hamid Pirahesh (IBM Almaden Research Center, United States)",Hamid,Pirahesh,IBM Research,Almaden,Experiments and Analyses PC Member,United States,
+"Raghu Ramakrishnan (Yahoo, United States)",Raghu,Ramakrishnan,Yahoo,?,Experiments and Analyses PC Member,United States,https://orcid.org/0000-0003-1704-8644
+"Jun Rao (IBM Almaden Research Center, United States)",Jun,Rao,IBM Research,Almaden,Experiments and Analyses PC Member,United States,
+"Gerhard Weikum (MPI Saarbruecken, Germany)",Gerhard,Weikum,Max Planck Institute,Saarbrücken,Experiments and Analyses PC Member,Germany,
+"Tova Milo (Tel Aviv University, Israel)",Tova,Milo,Tel Aviv University,Tel Aviv,Demo PC Chair,Israel,
+"Serge Abiteboul (INRIA, France)",Serge,Abiteboul,INRIA,Saclay,Demo PC Member,France,
+"Denilson Barbosa (University of Calgary, Canada)",Denilson,Barbosa,University of Calgary,Calgary,Demo PC Member,Canada,
+"Edith Cohen (AT&T, United States)",Edith,Cohen,AT&T,?,Demo PC Member,United States,https://orcid.org/0000-0002-3926-8237
+"Sara Cohen (Hebrew University, Israel)",Sara,Cohen,Hebrew University of Jerusalem,Jerusalem,Demo PC Member,Israel,
+"Gao Cong (Microsoft Research Asia, China)",Gao,Cong,Microsoft Research,Asia,Demo PC Member,China,
+"Xin Dong (AT&T, United States)",Xin,Dong,AT&T,?,Demo PC Member,United States,
+"Ariel Fuxman (Microsoft, United States)",Ariel,Fuxman,Microsoft Research,Redmond,Demo PC Member,United States,
+"Bertram Ludäscher (University of California, Davis, United States)",Bertram,Ludäscher,University of California,Davis,Demo PC Member,United States,https://orcid.org/0000-0001-9140-936X
+"Amélie Marian (Rutgers University, United States)",Amélie,Marian,Rutgers University,New Brunswick,Demo PC Member,United States,
+"Norman May (SAP, Germany)",Norman,May,SAP Research,Karlsruhe,Demo PC Member,Germany,
+"Neoklis Polyzotis (University of California, Santa Cruz, United States)",Neoklis,Polyzotis,University of California,Santa Cruz,Demo PC Member,United States,https://orcid.org/0000-0002-2694-8591
+"Dan Suciu (University of Washington and Microsoft, United States)",Dan,Suciu,University of Washington,Seattle,Demo PC Member,United States,
+"Val Tannen (University of Pennsylvania, United States)",Val,Tannen,University of Pennsylvania,Philadelphia,Demo PC Member,United States,
+"Vasilis Vassalos (Athens University of Economics and Business, Greece)",Vasilis,Vassalos,Athens University of Economics and Business,Athens,Demo PC Member,Greece,
+"Cong Yu (Yahoo! Research, United States)",Cong,Yu,Yahoo Research,?,Demo PC Member,United States,
+"Rajeev Rastogi (Yahoo! Labs Bangalore, India)",Rajeev,Rastogi,Yahoo Labs,Bangalore,"Industrial, Applications and Experience PC Chair",India,
+"Jose A. Blakely (Microsoft, United States)",Jose A.,Blakely,Microsoft Research,Redmond/Gray Systems Lab/? Asia/Seattle/Asia/?/Mountain View/India,"Industrial, Applications and Experience PC Member",United States,
+"Michael Carey (BEA Systems, United States)",Michael J.,Carey,BEA Systems,San Jose,"Industrial, Applications and Experience PC Member",United States,
+"Sang Cha (Seoul National University, Korea)",Sang Kyun,Cha,Seoul National University,Seoul,"Industrial, Applications and Experience PC Member",Korea,
+"Latha Colby (IBM Almaden Research Center, United States)",Latha,Colby,IBM Research,Almaden,"Industrial, Applications and Experience PC Member",United States,
+"Graham Cormode (AT&T Labs, United States)",Graham,Cormode,AT&T Labs,?,"Industrial, Applications and Experience PC Member",United States,https://orcid.org/0000-0002-0698-0922
+"Anand Deshpande (Persistent Systems, India)",Anand,Deshpande,Persistent Systems,Pune,"Industrial, Applications and Experience PC Member",India,
+"Goetz Graefe (HP Labs, United States)",Goetz,Graefe,HP Labs,?,"Industrial, Applications and Experience PC Member",United States,
+"Meichin Hsu (HP Labs, China)",Meichin,Hsu,HP Labs,?/China/Palo Alto,"Industrial, Applications and Experience PC Member",China,
+"Masaru Kitsuregawa (Univ of Tokyo, Japan)",Masaru,Kitsuregawa,University of Tokyo,Tokyo,"Industrial, Applications and Experience PC Member",Japan,https://orcid.org/0000-0003-4027-2994
+"Yannis Kotidis (Athens University of Economics and Business, Greece)",Yannis,Kotidis,Athens University of Economics and Business,Athens,"Industrial, Applications and Experience PC Member",Greece,
+"Wolfgang Lehner (TU Dresden, Germany)",Wolfgang,Lehner,Technical University of Dresden,Dresden,"Industrial, Applications and Experience PC Member",Germany,https://orcid.org/0000-0001-8107-2775
+"Samuel Madden (MIT CSAIL, United States)",Samuel,Madden,Massachusetts Institute of Technology,CSAIL,"Industrial, Applications and Experience PC Member",United States,
+"Heikki Manilla (Univ of Helsinki, Finland)",Heikki,Manilla,University of Helsinki,Helsinki,"Industrial, Applications and Experience PC Member",Finland,
+"Florian Matthes (TU Munchen, Germany)",Florian,Matthes,Technical University of Munich,Munich,"Industrial, Applications and Experience PC Member",Germany,
+"Joann Ordille (Avaya Labs Research, United States)",Joann,Ordille,Avaya,Santa Clara,"Industrial, Applications and Experience PC Member",United States,
+"Erhard Rahm (Univ of Leipzig, Germany)",Erhard,Rahm,University of Leipzig,Leipzig,"Industrial, Applications and Experience PC Member",Germany,https://orcid.org/0000-0002-2665-1114
+"Srinivasan Seshadri (Kosmix, United States)",Srinivasan,Seshadri,Kosmix,Mountain View,"Industrial, Applications and Experience PC Member",United States,
+"Nisheeth Shrivastava (Bell Labs Research, India)",Nisheeth,Shrivastava,Bell Labs,India,"Industrial, Applications and Experience PC Member",India,
+"Nandit Soparkar (Ubiquiti, United States)",Nandit,Soparkar,Ubiquiti,Ann Arbor,"Industrial, Applications and Experience PC Member",United States,
+"Sihem Amer Yahia (Yahoo Research, United States)",Sihem,Amer-Yahia,Yahoo Research,?,"Industrial, Applications and Experience PC Member",United States,
+"Gill Dobbie, University of Auckland, New Zealand",Gill,Dobbie,University of Auckland,Auckland,General Chair,New Zealand,
+"Laura Haas, IBM Almaden Research Center, United States",Laura,Haas,IBM Research,Almaden,General Chair,United States,
+"Rene J. Miller, University of Toronto, Canada",Renée J.,Miller,University of Toronto,Toronto,VLDB Liaison,Canada,https://orcid.org/0000-0002-1484-4787
+"Peter Buneman, University of Edinburgh",Peter,Buneman,University of Edinburgh,Edinburgh,General Program Chair,United Kingdom,
+"Beng Chin Ooi, National University of Singapore",Beng Chin,Ooi,National University of Singapore,Singapore,Core Database Technology Program Chair,Singapore,https://orcid.org/0000-0003-4446-1100
+"Kenneth Ross, Columbia University, United States",Kenneth A.,Ross,Columbia University,New York City,Infrastructure for Information Systems Program Chair,United States,
+"Rick Hull, Bell Labs Research, United States",Rick,Hull,Bell Labs,?,Tutorial Program Co-chairs,United States,
+"Yannis Velegrakis, University of Trento, Italy",Yannis,Velegrakis,University of Trento,Trento,Tutorial Program Co-chairs,Italy,https://orcid.org/0000-0001-6332-0296
+"Xiaofang Zhou, University of Queensland, Australia",Xiaofang,Zhou,University of Queensland,Brisbane,Tutorial Program Co-chairs,Australia,
+"Susan Davidson, University of Pennsylvania, United States",Susan,Davidson,University of Pennsylvania,Philadelphia,Workshop Co-chairs,United States,
+"Fred Lochovsky, Hong Kong University of Science and Technology, China",Fred,Lochovsky,Hong Kong University of Science and Technology,Hong Kong,Workshop Co-chairs,China,
+"Eric Simon, Business Objects, France",Eric,Simon,Business Objects,Paris,Workshop Co-chairs,France,
+"Gerald Weber, University of Auckland, New Zealand",Gerald,Weber,University of Auckland,Auckland,Organizing Committee Chair,New Zealand,https://orcid.org/0000-0002-2935-1571
+"Gerald Weber, University of Auckland, New Zealand",Gerald,Weber,University of Auckland,Auckland,Proceedings Chair,New Zealand,https://orcid.org/0000-0002-2935-1571
